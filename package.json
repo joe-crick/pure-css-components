@@ -12,7 +12,11 @@
     },
     "plugins": [
       "steal-less"
-    ]
+    ],
+    "directories": {
+      "lib": "src"
+    },
+    "main": "index"
   },
   "devDependencies": {
     "steal": "^1.2.5",
