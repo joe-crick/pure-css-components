@@ -1,3 +1,5 @@
+@import 'locate://responsive-css-accordion/less/components/close-button.less';
+
 .toggle-modal {
   background-color: blue;
   &:checked ~ .modal-container {
@@ -7,19 +9,8 @@
   }
 }
 
-.modalButton() {
-  cursor: pointer;
-  padding: 7px;
-  border: 1px solid lightgray;
-  border-radius: 5px;
-  &:hover {
-    background-color: #4DBBDB;
-    color: white;
-  }
-}
-
 .open-modal {
-  .modalButton();
+  .button();
 }
 
 .modal-container {
@@ -43,14 +34,8 @@
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
       color: white;
-      .close-modal {
-        background-color: white;
-        color: #000;
-        .modalButton();
-        padding: 3px 7px;
-        position: absolute;
-        right: 3px;
-        top: 4px;
+      .close-button {
+        .close-button();
       }
     }
     .modal-body {
