@@ -34,6 +34,14 @@ or
 npm i
 ```
 
+### Running
+
+To run the site, start up an http server that will serve the project's contents. If you don't have one,
+[http-server](https://www.npmjs.com/package/http-server) is a good option. Navigate to the root of the 
+project.
+
+_NOTE:_ If you're using `http-server`, this will be `localhost:8080`.
+
 ## Built With
 
 * [LESS](http://lesscss.org/) - The CSS pre-processor used - though the LESS is pretty generic, and can easily be converted to SASS, or CSS
