@@ -1,0 +1,59 @@
+#dropdown {
+  margin-top: 50px;
+  .onclick-menu {
+    left: 5%
+  }
+}
+
+.onclick-menu {
+  position: relative;
+  cursor: pointer;
+  &:before {
+    padding: 5px 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    content: "...";
+  }
+  &:focus {
+    pointer-events: none;
+    outline: none;
+    .onclick-menu-content {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+  }
+
+  .onclick-menu-content {
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.5s;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    width: auto;
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    li {
+      list-style-type: none;
+      white-space: nowrap;
+      button {
+        background: transparent;
+        border: none;
+        border-radius: 5px;
+        color: inherit;
+        outline: 0;
+        cursor: pointer;
+        width: 120px;
+        text-align: left;
+        &:hover {
+          color: #fff;
+          background: #4DBBDB;
+        }
+      }
+    }
+  }
+}

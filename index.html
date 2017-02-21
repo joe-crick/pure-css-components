@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Pepper</title>
+        <title>CSS Only Widgets</title>
     </head>
 
     <body>
 
-        <section id="static-content">
-            <h1>Static Content</h1>
+        <section id="tab-content">
+            <h1>Tabs that become Accordion</h1>
             <ul class="accordion-tab">
                 <li class="section">
                     <input type="radio" class="hidden-header" id="zero" name="tab-head" role="tab" checked/>
@@ -16,13 +16,6 @@
                         <h2>Heading 1</h2>
                         Donec mattis mauris gravida metus laoreet non rutrum sem viverra. Aenean nibh libero, viverra
                         vel vestibulum in,
-                        porttitor ut sapien. Phasellus tempor lorem id justo ornare tincidunt. Nulla faucibus, purus eu
-                        placerat fermentum,
-                        velit mi iaculis nunc, bibendum tincidunt ipsum justo eu mauris. Nulla facilisi. Vestibulum vel
-                        lectus ac purus
-                        tempus suscipit nec sit amet eros. Nullam fringilla, enim eu lobortis dapibus, quam magna
-                        tincidunt nibh, sit
-                        amet imperdiet dolor justo congue turpis.
                     </div>
                 </li>
                 <li class="section">
@@ -41,57 +34,23 @@
                         Lorem Ipsum
                     </div>
                 </li>
-                <li class="section">
-                    <input type="radio" class="hidden-header" id="three" name="tab-head" role="tab"/>
-                    <label for="three" class="tab-header">Option 3</label>
-                    <div class="content">
-                        <h2>Heading 3</h2>
-                        Dolor sit
-                    </div>
-                </li>
             </ul>
         </section>
 
-        <section id="dynamic-content">
-            <h1>Dynamic content</h1>
-            <ul class="accordion-tab">
-                <li class="section">
-                    <input type="radio" class="hidden-header" id="omega" name="tab-head-dynamic" role="tab" checked/>
-                    <label for="omega" class="tab-header">Option 0</label>
-                    <div class="content">
-                        Ut laoreet augue et neque pretium non sagittis nibh pulvinar. Etiam ornare tincidunt orci quis
-                        ultrices. Pellentesque ac sapien ac purus gravida ullamcorper. Duis rhoncus sodales lacus,
-                        vitae adipiscing tellus pharetra sed. Praesent bibendum lacus quis metus condimentum ac
-                        accumsan orci vulputate. Aenean fringilla massa vitae metus facilisis congue. Morbi placerat
-                        eros ac sapien semper pulvinar. Vestibulum facilisis, ligula a molestie venenatis, metus justo
-                        ullamcorper ipsum, congue aliquet dolor tortor eu neque. Sed imperdiet, nibh ut vestibulum tempor,
-                        nibh dui volutpat lacus, vel gravida magna justo sit amet quam. Quisque tincidunt ligula at nisl
-                        imperdiet sagittis. Morbi rutrum tempor arcu, non ultrices sem semper a. Aliquam quis sem mi.
-                    </div>
-                </li>
-                <li class="section">
-                    <input type="radio" class="hidden-header" id="alpha" name="tab-head-dynamic" role="tab"/>
-                    <label for="alpha" class="tab-header">Option 1</label>
-                    <div class="content" data-content-type="lorem">
-
-                    </div>
-                </li>
-                <li class="section">
-                    <input type="radio" class="hidden-header" id="beta" name="tab-head-dynamic" role="tab"/>
-                    <label for="beta" class="tab-header">Option 2</label>
-                    <div class="content" data-content-type="ipsum">
-
-                    </div>
-                </li>
-                <li class="section">
-                    <input type="radio" class="hidden-header" id="gamma" name="tab-head-dynamic" role="tab"/>
-                    <label for="gamma" class="tab-header">Option 3</label>
-                    <div class="content" data-content-type="dolor">
-
-                    </div>
-                </li>
-            </ul>
+        <section id="dropdown">
+            <h1>Dropdown</h1>
+            <div tabindex="0" class="onclick-menu">
+                <ul class="onclick-menu-content">
+                    <li>
+                        <button>Edit</button>
+                    </li>
+                    <li>
+                        <button>Delete</button>
+                    </li>
+                </ul>
+            </div>
         </section>
+
 
         <script src="node_modules/steal/steal.js"></script>
     </body>
