@@ -1,0 +1,66 @@
+.accordion-tab {
+  list-style: none;
+  font-family: sans-serif;
+
+  .section-one{
+    visibility: hidden;
+  }
+
+  .section {
+    margin: 0;
+    padding: 18px 0 4px;
+    display: block;
+    @media only screen and (min-width: 768px) {
+      display: inline;
+    }
+
+    .hidden-header {
+      display: none;
+      outline: none;
+      &:checked ~ .content {
+        display: block;
+        @media only screen and (min-width: 768px) {
+          float: left;
+        }
+      }
+      &:checked + .tab-header{
+        background-color: white;
+        color: gray;
+      }
+    }
+    .tab-header {
+      cursor: pointer;
+      padding: 10px;
+      background-color: lightgray;
+      margin-right: -2px;
+    }
+
+    .content {
+      margin-top: 14px;
+      display: none;
+      width: 100%;
+    }
+
+  }
+}
+
+#static-content {
+  .clearfix();
+}
+
+#dynamic-content {
+  margin-top: 100px;
+}
+
+
+// Mixins
+.clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}

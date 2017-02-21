@@ -1,0 +1,22 @@
+{
+  "name": "pepper",
+  "version": "1.0.0",
+  "description": "pepper",
+  "main": "index.js",
+  "author": "joe@josephcrick.com",
+  "license": "MIT",
+  "steal": {
+    "transpiler": "babel",
+    "babelOptions": {
+      "blacklist": []
+    },
+    "plugins": [
+      "steal-less"
+    ]
+  },
+  "devDependencies": {
+    "steal": "^1.2.5",
+    "steal-tools": "^1.1.2",
+    "steal-less": "^1.1.0"
+  }
+}
