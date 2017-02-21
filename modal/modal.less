@@ -1,10 +1,27 @@
 .toggle-modal {
-  &:focus + .modal-container {
+  background-color: blue;
+  &:checked ~ .modal-container {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 }
+
+.modalButton() {
+  cursor: pointer;
+  padding: 7px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  &:hover {
+    background-color: #4DBBDB;
+    color: white;
+  }
+}
+
+.open-modal {
+  .modalButton();
+}
+
 .modal-container {
   position: fixed;
   width: 100%;
@@ -12,7 +29,6 @@
   top: 0;
   left: 0;
   background: rgba(2, 2, 2, 0.80);
-  display: none;
   .modal-frame {
     width: 50%;
     height: 50%;
@@ -27,9 +43,14 @@
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
       color: white;
-      .close {
+      .close-modal {
+        background-color: white;
+        color: #000;
+        .modalButton();
+        padding: 3px 7px;
         position: absolute;
-        right: 2px;
+        right: 3px;
+        top: 4px;
       }
     }
     .modal-body {
@@ -39,3 +60,4 @@
     }
   }
 }
+

@@ -10,7 +10,7 @@
             <h1>Tabs that become Accordion</h1>
             <ul class="accordion-tab">
                 <li class="section">
-                    <input type="radio" class="hidden-header" id="zero" name="tab-head" role="tab" checked/>
+                    <input type="radio" class="hidden-header hidden" id="zero" name="tab-head" role="tab" checked/>
                     <label for="zero" class="tab-header">Option 0</label>
                     <div class="content">
                         <h2>Heading 1</h2>
@@ -19,7 +19,7 @@
                     </div>
                 </li>
                 <li class="section">
-                    <input type="radio" class="hidden-header" id="one" name="tab-head" role="tab"/>
+                    <input type="radio" class="hidden-header hidden" id="one" name="tab-head" role="tab"/>
                     <label for="one" class="tab-header">Option 1</label>
                     <div class="content">
                         <h2>Heading 1</h2>
@@ -27,7 +27,7 @@
                     </div>
                 </li>
                 <li class="section">
-                    <input type="radio" class="hidden-header" id="two" name="tab-head" role="tab"/>
+                    <input type="radio" class="hidden-header hidden" id="two" name="tab-head" role="tab"/>
                     <label for="two" class="tab-header">Option 2</label>
                     <div class="content">
                         <h2>Heading 2</h2>
@@ -53,12 +53,14 @@
 
         <section id="modal">
             <h1>Modal</h1>
-            <button class="toggle-modal">Show Modal</button>
-            <div class="modal-container">
+            <input type="radio" class="toggle-modal hidden" id="test-modal" name="modal-toggle"/>
+            <label for="test-modal" class="open-modal">Option 0</label>
+            <div class="modal-container hidden">
                 <div class="modal-frame">
                     <div class="modal-header">
                         Header
-                        <button class="close">x</button>
+                        <input type="radio" id="close-modal" name="modal-toggle" class="hidden"/>
+                        <label for="close-modal" class="close-modal">x</label>
                     </div>
                     <div class="modal-body">
                         Body
