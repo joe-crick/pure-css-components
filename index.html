@@ -73,7 +73,9 @@
             <h3>Dismissable</h3>
 
             <div class="popover-container">
-                <div tabindex="0" class="popover-toggle popover-toggle-dismissable popover-dismissable-right">Dismissable Right Popover</div>
+                <div tabindex="0" class="popover-toggle popover-toggle-dismissable popover-dismissable-right">
+                    Dismissable Right Popover
+                </div>
                 <div class="popover popover-right">
                     <div class="arrow left-arrow"></div>
                     <h3 class="popover-title">Popover Right</h3>
@@ -106,13 +108,12 @@
         <!-- TODO: // Looping carousel. Remove disables, and put label for first in last place -->
 
         <section id="carousel" class="section">
-            <h1>Carousel</h1>
-
+            <h1>Linear Carousel</h1>
 
             <ul class="carousel">
                 <li class="carousel-item">
                     <input class="carousel-nav hidden" type="radio" name="carousel" id="carousel-one" checked/>
-                    <label for="carousel-one"></label>
+                    <label for="carousel-one" class="linear-carousel-label"></label>
                     <img class="carousel-image"
                          src="http://www.preussenchronik.de/bilder/1186_Klemens_Wenzel_Fuerst_von_Metternich.jpeg"
                          alt=""/>
@@ -120,7 +121,7 @@
                 </li>
                 <li class="carousel-item">
                     <input class="carousel-nav hidden" type="radio" name="carousel" id="carousel-two"/>
-                    <label for="carousel-one"></label>
+                    <label for="carousel-one" class="linear-carousel-label"></label>
                     <img class="carousel-image"
                          src="https://s-media-cache-ak0.pinimg.com/originals/fc/d7/b6/fcd7b6242ad041739357da9a237058ef.jpg"
                          alt=""/>
@@ -128,14 +129,43 @@
                 </li>
                 <li class="carousel-item">
                     <input class="carousel-nav hidden" type="radio" name="carousel" id="carousel-three"/>
-                    <label for="carousel-two"></label>
+                    <label for="carousel-two" class="linear-carousel-label"></label>
                     <img class="carousel-image"
                          src="http://adamworld.typepad.com/.a/6a012876b7eaf6970c0120a7bd78bf970b-pi" alt=""/>
                     <label class="carousel-last-nav"></label>
                 </li>
             </ul>
 
+            <h1>Circular Carousel</h1>
+
+            <ul class="carousel">
+                <li class="carousel-item">
+                    <input class="carousel-nav hidden" type="radio" name="c-carousel" id="c-carousel-one" checked/>
+                    <label for="c-carousel-three" class="circular-carousel-label"></label>
+                    <img class="carousel-image"
+                         src="http://www.preussenchronik.de/bilder/1186_Klemens_Wenzel_Fuerst_von_Metternich.jpeg"
+                         alt=""/>
+                    <label for="c-carousel-two"></label>
+                </li>
+                <li class="carousel-item">
+                    <input class="carousel-nav hidden" type="radio" name="c-carousel" id="c-carousel-two"/>
+                    <label for="c-carousel-one"class="circular-carousel-label"></label>
+                    <img class="carousel-image"
+                         src="https://s-media-cache-ak0.pinimg.com/originals/fc/d7/b6/fcd7b6242ad041739357da9a237058ef.jpg"
+                         alt=""/>
+                    <label for="c-carousel-three"></label>
+                </li>
+                <li class="carousel-item">
+                    <input class="carousel-nav hidden" type="radio" name="c-carousel" id="c-carousel-three"/>
+                    <label for="c-carousel-two"class="circular-carousel-label"></label>
+                    <img class="carousel-image"
+                         src="http://adamworld.typepad.com/.a/6a012876b7eaf6970c0120a7bd78bf970b-pi" alt=""/>
+                    <label for="c-carousel-one"></label>
+                </li>
+            </ul>
+
         </section>
+
 
         <script src="node_modules/steal/steal.js"></script>
     </body>
