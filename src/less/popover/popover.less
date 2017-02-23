@@ -15,8 +15,24 @@
     &:checked ~ .popover {
       display: block;
     }
-    &.popover-toggle-dismissable:focus ~ .popover {
-      display: block;
+    &.popover-toggle-dismissable {
+      &.popover-dismissable-right {
+        float: left;
+      }
+      &:focus + .popover {
+        display: block;
+        &.popover-right {
+          display: block;
+          margin-top: -35px;
+          position: static;
+          float: right;
+          .left-arrow {
+            width: 0;
+            height: 0;
+            .arrow(15px);
+          }
+        }
+      }
     }
   }
 
@@ -44,11 +60,6 @@
         margin-top: -16px;
         left: 50%;
         margin-left: -11px;
-      }
-      .left-arrow {
-        width: 0;
-        height: 0;
-        .arrow(15px);
       }
     }
 
