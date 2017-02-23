@@ -1,6 +1,9 @@
 @import 'locate://responsive-css-accordion/mixins.less';
 @import 'locate://responsive-css-accordion/less/components/close-button.less';
 
+@arrow-size: 15px;
+@arrow-color: #F7F7F7;
+
 .popover-container {
 
   display: inline-block;
@@ -27,9 +30,10 @@
           position: static;
           float: right;
           .left-arrow {
-            width: 0;
-            height: 0;
-            .arrow(15px);
+            .arrowWidth();
+            border-top: @arrow-size solid transparent;
+            border-bottom: @arrow-size solid transparent;
+            border-right: @arrow-size solid @arrow-color;
           }
         }
       }
@@ -53,9 +57,10 @@
       margin-top: 30px;
       .up-arrow {
         position: relative;
-        width: 0;
-        height: 0;
-        .arrow(15px);
+        .arrowWidth();
+        border-left: @arrow-size solid transparent;
+        border-right: @arrow-size solid transparent;
+        border-bottom: @arrow-size solid @arrow-color;
         z-index: 10;
         margin-top: -16px;
         left: 50%;
