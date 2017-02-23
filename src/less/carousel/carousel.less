@@ -1,3 +1,30 @@
-// Relax// Relax
-  // Slow down
-  // Think through it first, plan it, then code
+@import 'locate://responsive-css-accordion/mixins.less';
+
+.carousel {
+  list-style-type: none;
+  .carousel-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .carousel-nav {
+      &:checked {
+       & ~ .carousel-image {
+          display: inline;
+        }
+       & + label:after {
+          content: '\003c';
+          color: lightgray;
+          cursor: not-allowed;
+        }
+      }
+    }
+    .carousel-image {
+      height: 400px;
+      width: 300px;
+      display: none;
+    }
+    label {
+      cursor: pointer;
+    }
+  }
+}
