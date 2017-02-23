@@ -22,7 +22,7 @@
       .carousel-nav {
         &:checked {
           // left side disabled on first item
-          & ~ label:after {
+          .carousel-last-nav:after {
             content: '\003e';
             color: lightgray;
             cursor: not-allowed;
@@ -39,6 +39,9 @@
           content: '\003e';
           color: black;
           cursor: pointer;
+        }
+        & + label:after {
+          content: '\003c';
         }
       }
     }
