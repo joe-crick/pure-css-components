@@ -8,10 +8,15 @@
     justify-content: space-around;
     .carousel-nav {
       &:checked {
-       & ~ .carousel-image {
+        & ~ .carousel-image {
           display: inline;
         }
-       & + label:after {
+        & ~ label:after {
+          content: '\003c';
+          color: black;
+          cursor: pointer;
+        }
+        & + label:after {
           content: '\003c';
           color: lightgray;
           cursor: not-allowed;
