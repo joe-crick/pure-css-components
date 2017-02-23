@@ -1,17 +1,21 @@
+@import 'locate://responsive-css-accordion/mixins.less';
 @import 'locate://responsive-css-accordion/less/components/close-button.less';
 
 .popover-container {
 
   display: inline-block;
 
-  .popover-toggle-label {
+  .popover-toggle-label,
+  .popover-toggle-dismissable {
     .button();
     cursor: pointer;
   }
 
   .popover-toggle {
-    &:checked ~ .popover,
-    &:checked + .arrow {
+    &:checked ~ .popover {
+      display: block;
+    }
+    &.popover-toggle-dismissable:focus ~ .popover {
       display: block;
     }
   }
@@ -35,13 +39,16 @@
         position: relative;
         width: 0;
         height: 0;
-        border-left: 15px solid transparent;
-        border-right: 15px solid transparent;
-        border-bottom: 15px solid #F7F7F7;
+        .arrow(15px);
         z-index: 10;
         margin-top: -16px;
         left: 50%;
         margin-left: -11px;
+      }
+      .left-arrow {
+        width: 0;
+        height: 0;
+        .arrow(15px);
       }
     }
 
