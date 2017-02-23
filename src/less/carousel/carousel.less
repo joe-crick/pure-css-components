@@ -6,20 +6,39 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    &:first-child {
+      .carousel-nav {
+        &:checked {
+          // left side disabled on first item
+          & + label:after {
+            content: '\003c';
+            color: lightgray;
+            cursor: not-allowed;
+          }
+        }
+      }
+    }
+    &:last-child {
+      .carousel-nav {
+        &:checked {
+          // left side disabled on first item
+          & ~ label:after {
+            content: '\003e';
+            color: lightgray;
+            cursor: not-allowed;
+          }
+        }
+      }
+    }
     .carousel-nav {
       &:checked {
         & ~ .carousel-image {
           display: inline;
         }
         & ~ label:after {
-          content: '\003c';
+          content: '\003e';
           color: black;
           cursor: pointer;
-        }
-        & + label:after {
-          content: '\003c';
-          color: lightgray;
-          cursor: not-allowed;
         }
       }
     }
