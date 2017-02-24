@@ -3,7 +3,7 @@ require('gulp-easy')(require('gulp'))
     dest: 'dist',
     watch: false
   })
-  .less('src/imports.less', 'pure-css-components-alone.min.css', {
+  .less('src/stand-alone-imports.less', 'pure-css-components-alone.min.css', {
     minifycss: {
       compatibility: 'ie9'
     }
