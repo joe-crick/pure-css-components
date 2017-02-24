@@ -28,6 +28,9 @@
                             <a href="#accordion" class="pure-menu-link">Accordion</a>
                         </li>
                         <li class="pure-menu-item">
+                            <a href="#alert" class="pure-menu-link">Alert</a>
+                        </li>
+                        <li class="pure-menu-item">
                             <a href="#carousel" class="pure-menu-link">Carousel</a>
                         </li>
                         <li class="pure-menu-item">
@@ -35,9 +38,6 @@
                         </li>
                         <li class="pure-menu-item">
                             <a href="#dropdown" class="pure-menu-link">Dropdown</a>
-                        </li>
-                        <li class="pure-menu-item">
-                            <a href="#alert" class="pure-menu-link">Alert</a>
                         </li>
                         <li class="pure-menu-item menu-item-divided">
                             <a href="#modal" class="pure-menu-link">Modal</a>
@@ -63,7 +63,7 @@
                     <h2>CSS Only Components for Pure CSS.</h2>
                 </div>
 
-                <div class="content">
+                <div class="content preamble">
                     <h2 id="add-pure-to-your-page" class="content-subhead">Pure CSS<a
                             href="#add-pure-to-your-page" class="content-link" title="Heading anchor"></a></h2>
 
@@ -152,11 +152,28 @@
 
                 </div>
 
+                <div class="content alert-content">
+                    <a name="alert"></a>
+                    <h2 class="content-subhead">Alert</h2>
+                    <p>
+                        <em>NOTE: A few styles have been applied here for illustrative purposes. The actual
+                        styling of an alert is, in keeping with the spirit of Pure, up to you.</em>
+                    </p>
+                    <input type="checkbox" id="close-alert" class="alert-toggle hidden"/>
+                    <div class="alert alert-success alert-dismissible" role="alert">
+                        <span><strong>Uh oh...</strong> Something happened...</span>
+                        <label for="close-alert" class="close-alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </label>
+                    </div>
+
+                </div>
+
                 <div class="content carousel-content">
                     <a name="carousel"></a>
                     <h2 class="content-subhead">Carousel</h2>
 
-                    <h1>Linear Carousel</h1>
+                    <h3>Linear Carousel</h3>
 
                     <ul class="carousel">
                         <li class="carousel-item">
@@ -184,7 +201,7 @@
                         </li>
                     </ul>
 
-                    <h1>Circular Carousel</h1>
+                    <h3>Circular Carousel</h3>
 
                     <ul class="carousel">
                         <li class="carousel-item">
@@ -215,27 +232,34 @@
 
                 </div>
 
-                <div class="content collapse-content">
+                <div class="content collapsing-content">
                     <a name="collapse"></a>
                     <h2 class="content-subhead">Collapse</h2>
+
+                    <p>
+                        <em>NOTE: A few styles have been applied to the collapse content for illustrative purposes. The actual
+                            styling of an alert is, in keeping with the spirit of Pure, up to you.</em>
+                    </p>
+
+                    <h3>Basic Collapse</h3>
 
                     <label for="collapse-toggle" class="pure-button" aria-label="Toggle">
                         <span>Toggle</span>
                     </label>
                     <input type="checkbox" id="collapse-toggle" class="collapse-toggle hidden"/>
-                    <div class="collapse-content hidden">
+                    <div class="collapse-content invisible">
                         Pooka pooka!
                     </div>
 
-                    <h1>Toggling Button Collapse</h1>
+                    <h3>Toggling Button Label Collapse</h3>
 
                     <div class="collapse-toggle-button">
                         <input type="checkbox" id="collapse-toggle-button" class="collapse-toggle hidden"/>
                         <label for="collapse-toggle-button" class="pure-button" aria-label="Toggle">
                             <span>Open</span>
-                            <span class="hidden">Close</span>
+                            <span class="invisible">Close</span>
                         </label>
-                        <div class="collapse-content hidden">
+                        <div class="collapse-content invisible">
                             Pooka pooka!
                         </div>
                     </div>
@@ -259,27 +283,13 @@
 
                 </div>
 
-                <div class="content alert-content">
-                    <a name="alert"></a>
-                    <h2 class="content-subhead">Alert</h2>
-
-                    <input type="checkbox" id="close-alert" class="alert-toggle hidden"/>
-                    <div class="alert alert-success alert-dismissible" role="alert">
-                        <span><strong>Holy guacamole!</strong> You should check in on some of those fields below.</span>
-                        <label for="close-alert" class="close-alert" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </label>
-                    </div>
-
-                </div>
-
                 <div class="content modal-content">
                     <a name="modal"></a>
                     <h2 class="content-subhead">Modal</h2>
 
                     <input type="radio" class="toggle-modal hidden" id="test-modal" name="modal-toggle"/>
                     <label for="test-modal" class="open-modal">Open Modal</label>
-                    <div class="modal-container hidden">
+                    <div class="modal-container invisible">
                         <div class="modal-frame">
                             <div class="modal-header">
                                 Header
