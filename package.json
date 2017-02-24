@@ -10,19 +10,6 @@
     "build:clean": "rimraf dist",
     "build": "npm-run-all build:clean build:css"
   },
-  "steal": {
-    "transpiler": "babel",
-    "babelOptions": {
-      "blacklist": []
-    },
-    "plugins": [
-      "steal-less"
-    ],
-    "directories": {
-      "lib": "src"
-    },
-    "main": "index"
-  },
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-easy": "^0.2.6",
