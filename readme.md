@@ -9,7 +9,7 @@ Pure CSS Components
 ![Current Version](https://img.shields.io/badge/version-0.0.1-green.svg)
 
 
-![Pure Components](https://raw.githubusercontent.com/joe-crick/pure-css-components/master/static/pure-css.png)
+![Pure Components](https://github.com/joe-crick/pure-css-components/blob/master/static/pure-css-components.png)
 
 CSS Only Components for Pure CSS
 
