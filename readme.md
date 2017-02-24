@@ -9,6 +9,8 @@ Pure CSS Components
 ![Current Version](https://img.shields.io/badge/version-0.0.1-green.svg)
 
 
+![Pure Components](static/pure-components.svg)
+
 CSS Only Components for Pure CSS
 
 ## Getting Started
