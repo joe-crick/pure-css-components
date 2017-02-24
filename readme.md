@@ -12,7 +12,7 @@ Pure CSS Components
 
 ![Pure Components](https://github.com/joe-crick/pure-css-components/blob/master/static/pure-css-components.png)
 
-CSS Only Components for Pure CSS
+CSS Only Components for Pure CSS. You can view the demo/man pages here [Pure.CSS Components Demo](https://joe-crick.github.io/pure-css-components/).
 
 ## Getting Started
 
