@@ -1,4 +1,4 @@
-Responsive CSS Only Accordion
+Pure CSS Components
 ==================
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/joe-crick/Responsive-CSS-Accordion.svg)](https://greenkeeper.io/)
@@ -8,14 +8,13 @@ Responsive CSS Only Accordion
 [![GitHub Issues](https://img.shields.io/github/issues/joe-crick/responsive-css-accordion.svg)](https://github.com/joe-crick/responsive-css-accordion/issues)
 ![Current Version](https://img.shields.io/badge/version-0.0.1-green.svg)
 
-# Responsive CSS Only Accordion
 
-A CSS-only accordion that converts to tabs on larger devices.
+CSS Only Components for Pure CSS
 
 ## Getting Started
 
 ```
-git clone https://github.com/joe-crick/responsive-css-accordion.git
+git clone https://github.com/joe-crick/pure-css-components.git
 ```
 
 ### Prerequisites
