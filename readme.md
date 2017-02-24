@@ -19,12 +19,6 @@ CSS Only Components for Pure CSS
 git clone https://github.com/joe-crick/pure-css-components.git
 ```
 
-### Prerequisites
-
-The usual FE requirements:
-
- - node
-
 ### Installing
 
 Once you've cloned the repo, install dependencies
