@@ -65,5 +65,6 @@ I use [SemVer](http://semver.org/) for versioning.
 
 ## Acknowledgments
 
-* [CSS-Tricks](https://css-tricks.com/)
+* [CSS-Tricks](https://css-tricks.com/).
+* The inimitable [Ryan Wilson](http://github.com/ryangwilson), for directing me to PureCSS.
 
