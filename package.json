@@ -6,10 +6,9 @@
   "author": "joe@josephcrick.com",
   "license": "MIT",
   "scripts": {
-    "build:css": "node build/build",
+    "build:css": "gulp",
     "build:clean": "rimraf dist",
-    "build:move": "build/move-files.sh",
-    "build": "npm-run-all build:clean build:css build:move"
+    "build": "npm-run-all build:clean build:css"
   },
   "steal": {
     "transpiler": "babel",
@@ -30,8 +29,7 @@
     "npm-run-all": "^4.0.2",
     "rimraf": "^2.6.1",
     "steal": "^1.2.5",
-    "steal-less": "^1.1.0",
-    "steal-tools": "^1.1.2"
+    "steal-less": "^1.1.0"
   },
   "dependencies": {
     "clipboard": "^1.6.0",
