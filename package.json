@@ -25,6 +25,8 @@
     "main": "index"
   },
   "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-easy": "^0.2.6",
     "npm-run-all": "^4.0.2",
     "rimraf": "^2.6.1",
     "steal": "^1.2.5",
