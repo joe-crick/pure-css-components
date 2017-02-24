@@ -10,3 +10,18 @@
   background-color: #DFF0D8;
   border: 1px solid green;
 }
+
+.alert-toggle:checked + .alert {
+  display: none;
+}
+
+.alert {
+  display: flex;
+  justify-content: space-between;
+  .close-alert {
+    cursor: pointer;
+    &:hover {
+
+    }
+  }
+}

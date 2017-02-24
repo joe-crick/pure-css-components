@@ -105,8 +105,6 @@
             </div>
         </section>
 
-        <!-- TODO: // Looping carousel. Remove disables, and put label for first in last place -->
-
         <section id="carousel" class="section">
             <h1>Linear Carousel</h1>
 
@@ -166,6 +164,19 @@
 
         </section>
 
+        <section id="alert" class="section">
+
+            <h1>Alerts</h1>
+
+            <input type="checkbox" id="close-alert" class="alert-toggle hidden"/>
+            <div class="alert alert-success alert-dismissible" role="alert">
+                <span><strong>Holy guacamole!</strong> You should check in on some of those fields below.</span>
+                <label for="close-alert" type="button" class="close-alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </label>
+            </div>
+
+        </section>
 
         <script src="node_modules/steal/steal.js"></script>
     </body>
