@@ -1,243 +1,388 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>CSS Only Widgets</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Start your next web project with Pure.">
+        <title>Pure Extended: CSS Only Components for Pure CSS</title>
 
+        <link rel="stylesheet" href="node_modules/purecss/build/pure-min.css">
+        <link rel="stylesheet" href="baby-blue.css">
+
+    </head>
     <body>
 
-        <section id="tab-content" class="section">
-            <h1>Tabs that become Accordion</h1>
-
-            <ul class="accordion accordion-tab">
-                <li class="section">
-                    <input type="radio" class="hidden-header hidden" id="zero" name="tab-head" role="tab" checked/>
-                    <label for="zero" class="tab-header">Option 0</label>
-                    <div class="content">
-                        <h2>Heading 1</h2>
-                        Donec mattis mauris gravida metus laoreet non rutrum sem viverra. Aenean nibh libero, viverra
-                        vel vestibulum in,
-                    </div>
-                </li>
-                <li class="section">
-                    <input type="radio" class="hidden-header hidden" id="one" name="tab-head" role="tab"/>
-                    <label for="one" class="tab-header">Option 1</label>
-                    <div class="content">
-                        <h2>Heading 1</h2>
-                        Content goes here
-                    </div>
-                </li>
-                <li class="section">
-                    <input type="radio" class="hidden-header hidden" id="two" name="tab-head" role="tab"/>
-                    <label for="two" class="tab-header">Option 2</label>
-                    <div class="content">
-                        <h2>Heading 2</h2>
-                        Lorem Ipsum
-                    </div>
-                </li>
-            </ul>
-
-            <h1 class="in-section-header">Accordion</h1>
-
-            <ul class="accordion">
-                <li class="section">
-                    <input type="radio" class="hidden-header hidden" id="a-1" name="a-tab-head" role="tab" checked/>
-                    <label for="a-1" class="tab-header">Option 0</label>
-                    <div class="content">
-                        <h2>Heading 1</h2>
-                        Donec mattis mauris gravida metus laoreet non rutrum sem viverra. Aenean nibh libero, viverra
-                        vel vestibulum in,
-                    </div>
-                </li>
-                <li class="section">
-                    <input type="radio" class="hidden-header hidden" id="a-2" name="a-tab-head" role="tab"/>
-                    <label for="a-2" class="tab-header">Option 1</label>
-                    <div class="content">
-                        <h2>Heading 1</h2>
-                        Content goes here
-                    </div>
-                </li>
-                <li class="section">
-                    <input type="radio" class="hidden-header hidden" id="a-3" name="a-tab-head" role="tab"/>
-                    <label for="a-3" class="tab-header">Option 2</label>
-                    <div class="content">
-                        <h2>Heading 2</h2>
-                        Lorem Ipsum
-                    </div>
-                </li>
-            </ul>
-
-
-        </section>
-
-        <section id="dropdown" class="section">
-            <h1>Dropdown</h1>
-            <div tabindex="0" class="onclick-menu">
-                <ul class="onclick-menu-content">
-                    <li>
-                        <button>Edit</button>
-                    </li>
-                    <li>
-                        <button>Delete</button>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="popover">
-
-            <h1>Popover</h1>
-
-            <h3>Toggleable</h3>
-
-            <div class="popover-container">
-                <label class="popover-toggle-label" for="popover-one">Bottom Popover</label>
-                <input class="popover-toggle hidden" type="checkbox" name="popover-toggle" id="popover-one"/>
-                <div class="popover popover-bottom">
-                    <div class="arrow up-arrow"></div>
-                    <h3 class="popover-title">Popover bottom</h3>
-                    <div class="popover-content">
-                        <p>The quick brown fox jumped over the lazy dog.</p>
-                    </div>
+        <div id="layout">
+            <a href="#menu" id="menuLink" class="menu-link">
+                <span></span>
+            </a>
+            <div id="menu">
+                <div class="pure-menu">
+                    <a class="pure-menu-heading" href="#top">Pure-extended</a>
+                    <ul class="pure-menu-list">
+                        <li class="pure-menu-item">
+                            <a href="#installation" class="pure-menu-link">Installation</a>
+                        </li>
+                        <li class="pure-menu-item menu-item-divided">
+                            <a href="#accordion" class="pure-menu-link">Accordion</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="#carousel" class="pure-menu-link">Carousel</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="#collapse" class="pure-menu-link">Collapse</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="#dropdown" class="pure-menu-link">Dropdown</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="#alert" class="pure-menu-link">Alert</a>
+                        </li>
+                        <li class="pure-menu-item menu-item-divided">
+                            <a href="#modal" class="pure-menu-link">Modal</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="#popover" class="pure-menu-link">Popover</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="#tabs" class="pure-menu-link">Tabs</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="#releases" class="pure-menu-link">Releases</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
-            <h3>Dismissable</h3>
+            <div id="main">
+                <a name="top"></a>
+                <div class="header">
+                    <h1>Pure Extended</h1>
 
-            <div class="popover-container">
-                <div tabindex="0" class="popover-toggle popover-toggle-dismissable popover-dismissable-right">
-                    Dismissable Right Popover
+                    <h2>CSS Only Components for Pure CSS.</h2>
                 </div>
-                <div class="popover popover-right">
-                    <div class="arrow left-arrow"></div>
-                    <h3 class="popover-title">Popover Right</h3>
-                    <div class="popover-content">
-                        <p>The quick brown fox jumped over the lazy dog.</p>
+
+                <div class="content">
+                    <h2 id="add-pure-to-your-page" class="content-subhead">Pure CSS<a
+                            href="#add-pure-to-your-page" class="content-link" title="Heading anchor"></a></h2>
+
+                    <p>
+                        <a href="https://purecss.io/">Pure CSS</a> is a great set of small, responsive CSS modules. As their docs say, it is tiny.
+                        The entire set of modules is only 3.8KB* (minified and gzipped).
+                    </p>
+                    <p>
+                        Pure is responsive out of the box.
+                    </p>
+                    <p>
+                        Pure has minimal styles. It encourages you to write your application styles on top of it.
+                        Pure does not look like this page out of the box. The styles for this page were blatantly
+                        and lovingly copied from Pure CSS' home page. Pure is designed to get out of your way.
+                        It is easy to override styles. You can use it alongside <a href="http://etbootstrap.com">Bootstrap</a>,
+                        if you want (as you can Pure-extended).
+                    </p>
+                    <p>
+                        For details on Pure, see their website (<a href="https://purecss.io/start/">Pure CSS</a>)
+                    </p>
+                    <p>
+                        Pure doesn't have any components. Boo. So, I wrote some. My goal is to get parity with
+                        Bootstraps menu of components. I'm <em>very</em> close.
+                    </p>
+                </div>
+
+                <div class="content introduction-content">
+                    <a name="installation"></a>
+                    <h2 class="content-subhead">Installation</h2>
+
+                    <p>
+                        Pure-extended offers two builds:
+                    </p>
+                    <ul>
+                        <li>
+                            Bundled: This build has Pure CSS bundled with Pure-extended
+                        </li>
+                        <li>
+                            Stand Alone: Just Pure-extended
+                        </li>
+                    </ul>
+                    <p>
+                        You can install Pure-extended from npm, download it, or get it from a CDN
+                    </p>
+
+                    <div class="is-code-full">
+                        <pre class="code code-wrap" data-language="html" data-trimmed="true">
+                            <code class="rainbow">yarn add pure-extended</code>
+                        </pre>
+                    </div>
+                </div>
+
+                <div class="content accordion-content">
+                    <a name="accordion"></a>
+                    <h2 class="content-subhead">Accordion</h2>
+
+                    <ul class="accordion">
+                        <li class="section">
+                            <input type="radio" class="hidden-header hidden" id="a-1" name="a-tab-head" role="tab"
+                                   checked/>
+                            <label for="a-1" class="tab-header">Option 0</label>
+                            <div class="content">
+                                <h2>Heading 1</h2>
+                                Donec mattis mauris gravida metus laoreet non rutrum sem viverra. Aenean nibh libero,
+                                viverra
+                                vel vestibulum in,
+                            </div>
+                        </li>
+                        <li class="section">
+                            <input type="radio" class="hidden-header hidden" id="a-2" name="a-tab-head" role="tab"/>
+                            <label for="a-2" class="tab-header">Option 1</label>
+                            <div class="content">
+                                <h2>Heading 1</h2>
+                                Content goes here
+                            </div>
+                        </li>
+                        <li class="section">
+                            <input type="radio" class="hidden-header hidden" id="a-3" name="a-tab-head" role="tab"/>
+                            <label for="a-3" class="tab-header">Option 2</label>
+                            <div class="content">
+                                <h2>Heading 2</h2>
+                                Lorem Ipsum
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="content carousel-content">
+                    <a name="carousel"></a>
+                    <h2 class="content-subhead">Carousel</h2>
+
+                    <h1>Linear Carousel</h1>
+
+                    <ul class="carousel">
+                        <li class="carousel-item">
+                            <input class="carousel-nav hidden" type="radio" name="carousel" id="carousel-one" checked/>
+                            <label for="carousel-one" class="linear-carousel-label"></label>
+                            <img class="carousel-image"
+                                 src="http://www.preussenchronik.de/bilder/1186_Klemens_Wenzel_Fuerst_von_Metternich.jpeg"
+                                 alt=""/>
+                            <label for="carousel-two"></label>
+                        </li>
+                        <li class="carousel-item">
+                            <input class="carousel-nav hidden" type="radio" name="carousel" id="carousel-two"/>
+                            <label for="carousel-one" class="linear-carousel-label"></label>
+                            <img class="carousel-image"
+                                 src="https://s-media-cache-ak0.pinimg.com/originals/fc/d7/b6/fcd7b6242ad041739357da9a237058ef.jpg"
+                                 alt=""/>
+                            <label for="carousel-three"></label>
+                        </li>
+                        <li class="carousel-item">
+                            <input class="carousel-nav hidden" type="radio" name="carousel" id="carousel-three"/>
+                            <label for="carousel-two" class="linear-carousel-label"></label>
+                            <img class="carousel-image"
+                                 src="http://adamworld.typepad.com/.a/6a012876b7eaf6970c0120a7bd78bf970b-pi" alt=""/>
+                            <label class="carousel-last-nav"></label>
+                        </li>
+                    </ul>
+
+                    <h1>Circular Carousel</h1>
+
+                    <ul class="carousel">
+                        <li class="carousel-item">
+                            <input class="carousel-nav hidden" type="radio" name="c-carousel" id="c-carousel-one"
+                                   checked/>
+                            <label for="c-carousel-three" class="circular-carousel-label"></label>
+                            <img class="carousel-image"
+                                 src="http://www.preussenchronik.de/bilder/1186_Klemens_Wenzel_Fuerst_von_Metternich.jpeg"
+                                 alt=""/>
+                            <label for="c-carousel-two"></label>
+                        </li>
+                        <li class="carousel-item">
+                            <input class="carousel-nav hidden" type="radio" name="c-carousel" id="c-carousel-two"/>
+                            <label for="c-carousel-one" class="circular-carousel-label"></label>
+                            <img class="carousel-image"
+                                 src="https://s-media-cache-ak0.pinimg.com/originals/fc/d7/b6/fcd7b6242ad041739357da9a237058ef.jpg"
+                                 alt=""/>
+                            <label for="c-carousel-three"></label>
+                        </li>
+                        <li class="carousel-item">
+                            <input class="carousel-nav hidden" type="radio" name="c-carousel" id="c-carousel-three"/>
+                            <label for="c-carousel-two" class="circular-carousel-label"></label>
+                            <img class="carousel-image"
+                                 src="http://adamworld.typepad.com/.a/6a012876b7eaf6970c0120a7bd78bf970b-pi" alt=""/>
+                            <label for="c-carousel-one"></label>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="content collapse-content">
+                    <a name="collapse"></a>
+                    <h2 class="content-subhead">Collapse</h2>
+
+                    <label for="collapse-toggle" class="pure-button" aria-label="Toggle">
+                        <span>Toggle</span>
+                    </label>
+                    <input type="checkbox" id="collapse-toggle" class="collapse-toggle hidden"/>
+                    <div class="collapse-content hidden">
+                        Pooka pooka!
+                    </div>
+
+                    <h1>Toggling Button Collapse</h1>
+
+                    <div class="collapse-toggle-button">
+                        <input type="checkbox" id="collapse-toggle-button" class="collapse-toggle hidden"/>
+                        <label for="collapse-toggle-button" class="pure-button" aria-label="Toggle">
+                            <span>Open</span>
+                            <span class="hidden">Close</span>
+                        </label>
+                        <div class="collapse-content hidden">
+                            Pooka pooka!
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="content dropdown-content">
+                    <a name="dropdown"></a>
+                    <h2 class="content-subhead">Dropdown</h2>
+
+                    <div tabindex="0" class="onclick-menu">
+                        <ul class="onclick-menu-content">
+                            <li>
+                                <button>Edit</button>
+                            </li>
+                            <li>
+                                <button>Delete</button>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="content alert-content">
+                    <a name="alert"></a>
+                    <h2 class="content-subhead">Alert</h2>
+
+                    <input type="checkbox" id="close-alert" class="alert-toggle hidden"/>
+                    <div class="alert alert-success alert-dismissible" role="alert">
+                        <span><strong>Holy guacamole!</strong> You should check in on some of those fields below.</span>
+                        <label for="close-alert" class="close-alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </label>
+                    </div>
+
+                </div>
+
+                <div class="content modal-content">
+                    <a name="modal"></a>
+                    <h2 class="content-subhead">Modal</h2>
+
+                    <input type="radio" class="toggle-modal hidden" id="test-modal" name="modal-toggle"/>
+                    <label for="test-modal" class="open-modal">Open Modal</label>
+                    <div class="modal-container hidden">
+                        <div class="modal-frame">
+                            <div class="modal-header">
+                                Header
+                                <input type="radio" id="close-modal" name="modal-toggle" class="hidden"/>
+                                <label for="close-modal" class="close-button">x</label>
+                            </div>
+                            <div class="modal-body">
+                                Body
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="content popover-content">
+                    <a name="popover"></a>
+                    <h2 class="content-subhead">Popover</h2>
+
+                    <h3>Toggleable</h3>
+
+                    <div class="popover-container">
+                        <label class="popover-toggle-label" for="popover-one">Bottom Popover</label>
+                        <input class="popover-toggle hidden" type="checkbox" name="popover-toggle" id="popover-one"/>
+                        <div class="popover popover-bottom">
+                            <div class="arrow up-arrow"></div>
+                            <h3 class="popover-title">Popover bottom</h3>
+                            <div class="popover-content">
+                                <p>The quick brown fox jumped over the lazy dog.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3>Dismissable</h3>
+
+                    <div class="popover-container">
+                        <div tabindex="0" class="popover-toggle popover-toggle-dismissable popover-dismissable-right">
+                            Dismissable Right Popover
+                        </div>
+                        <div class="popover popover-right">
+                            <div class="arrow left-arrow"></div>
+                            <h3 class="popover-title">Popover Right</h3>
+                            <div class="popover-content">
+                                <p>The quick brown fox jumped over the lazy dog.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="content modal-content">
+                    <a name="tabs"></a>
+                    <h2 class="content-subhead">Tabs</h2>
+
+                    <ul class="accordion accordion-tab">
+                        <li class="section">
+                            <input type="radio" class="hidden-header hidden" id="zero" name="tab-head" role="tab" checked/>
+                            <label for="zero" class="tab-header">Option 0</label>
+                            <div class="content">
+                                <h2>Heading 1</h2>
+                                Donec mattis mauris gravida metus laoreet non rutrum sem viverra. Aenean nibh libero, viverra
+                                vel vestibulum in,
+                            </div>
+                        </li>
+                        <li class="section">
+                            <input type="radio" class="hidden-header hidden" id="one" name="tab-head" role="tab"/>
+                            <label for="one" class="tab-header">Option 1</label>
+                            <div class="content">
+                                <h2>Heading 1</h2>
+                                Content goes here
+                            </div>
+                        </li>
+                        <li class="section">
+                            <input type="radio" class="hidden-header hidden" id="two" name="tab-head" role="tab"/>
+                            <label for="two" class="tab-header">Option 2</label>
+                            <div class="content">
+                                <h2>Heading 2</h2>
+                                Lorem Ipsum
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="footer">
+                    <div class="legal pure-g">
+                        <div class="pure-u-1 u-sm-1-2">
+                            <p class="legal-license">
+                                This site is built with &lt;3 using Pure v0.6.2<br>
+                                All code on this site is licensed under the <a
+                                    href="https://opensource.org/licenses/MIT">MIT License</a>
+                            </p>
+                        </div>
+
+                        <div class="pure-u-1 u-sm-1-2">
+                            <ul class="legal-links">
+                                <li><a href="https://github.com/joe-crick/pure-extended/">GitHub Project</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-
-        </section>
-
-        <section id="modal" class="section">
-            <h1>Modal</h1>
-            <input type="radio" class="toggle-modal hidden" id="test-modal" name="modal-toggle"/>
-            <label for="test-modal" class="open-modal">Open Modal</label>
-            <div class="modal-container hidden">
-                <div class="modal-frame">
-                    <div class="modal-header">
-                        Header
-                        <input type="radio" id="close-modal" name="modal-toggle" class="hidden"/>
-                        <label for="close-modal" class="close-button">x</label>
-                    </div>
-                    <div class="modal-body">
-                        Body
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="carousel" class="section">
-            <h1>Linear Carousel</h1>
-
-            <ul class="carousel">
-                <li class="carousel-item">
-                    <input class="carousel-nav hidden" type="radio" name="carousel" id="carousel-one" checked/>
-                    <label for="carousel-one" class="linear-carousel-label"></label>
-                    <img class="carousel-image"
-                         src="http://www.preussenchronik.de/bilder/1186_Klemens_Wenzel_Fuerst_von_Metternich.jpeg"
-                         alt=""/>
-                    <label for="carousel-two"></label>
-                </li>
-                <li class="carousel-item">
-                    <input class="carousel-nav hidden" type="radio" name="carousel" id="carousel-two"/>
-                    <label for="carousel-one" class="linear-carousel-label"></label>
-                    <img class="carousel-image"
-                         src="https://s-media-cache-ak0.pinimg.com/originals/fc/d7/b6/fcd7b6242ad041739357da9a237058ef.jpg"
-                         alt=""/>
-                    <label for="carousel-three"></label>
-                </li>
-                <li class="carousel-item">
-                    <input class="carousel-nav hidden" type="radio" name="carousel" id="carousel-three"/>
-                    <label for="carousel-two" class="linear-carousel-label"></label>
-                    <img class="carousel-image"
-                         src="http://adamworld.typepad.com/.a/6a012876b7eaf6970c0120a7bd78bf970b-pi" alt=""/>
-                    <label class="carousel-last-nav"></label>
-                </li>
-            </ul>
-
-            <h1>Circular Carousel</h1>
-
-            <ul class="carousel">
-                <li class="carousel-item">
-                    <input class="carousel-nav hidden" type="radio" name="c-carousel" id="c-carousel-one" checked/>
-                    <label for="c-carousel-three" class="circular-carousel-label"></label>
-                    <img class="carousel-image"
-                         src="http://www.preussenchronik.de/bilder/1186_Klemens_Wenzel_Fuerst_von_Metternich.jpeg"
-                         alt=""/>
-                    <label for="c-carousel-two"></label>
-                </li>
-                <li class="carousel-item">
-                    <input class="carousel-nav hidden" type="radio" name="c-carousel" id="c-carousel-two"/>
-                    <label for="c-carousel-one" class="circular-carousel-label"></label>
-                    <img class="carousel-image"
-                         src="https://s-media-cache-ak0.pinimg.com/originals/fc/d7/b6/fcd7b6242ad041739357da9a237058ef.jpg"
-                         alt=""/>
-                    <label for="c-carousel-three"></label>
-                </li>
-                <li class="carousel-item">
-                    <input class="carousel-nav hidden" type="radio" name="c-carousel" id="c-carousel-three"/>
-                    <label for="c-carousel-two" class="circular-carousel-label"></label>
-                    <img class="carousel-image"
-                         src="http://adamworld.typepad.com/.a/6a012876b7eaf6970c0120a7bd78bf970b-pi" alt=""/>
-                    <label for="c-carousel-one"></label>
-                </li>
-            </ul>
-
-        </section>
-
-        <section id="alert" class="section">
-
-            <h1>Alerts</h1>
-
-            <input type="checkbox" id="close-alert" class="alert-toggle hidden"/>
-            <div class="alert alert-success alert-dismissible" role="alert">
-                <span><strong>Holy guacamole!</strong> You should check in on some of those fields below.</span>
-                <label for="close-alert" class="close-alert" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </label>
-            </div>
-
-        </section>
-
-        <section id="collapse" class="section">
-            <h1>Basic Collapse</h1>
-
-            <label for="collapse-toggle" class="pure-button" aria-label="Toggle">
-                <span>Toggle</span>
-            </label>
-            <input type="checkbox" id="collapse-toggle" class="collapse-toggle hidden"/>
-            <div class="collapse-content hidden">
-                Pooka pooka!
-            </div>
-
-            <h1>Toggling Button Collapse</h1>
-
-            <div class="collapse-toggle-button">
-                <input type="checkbox" id="collapse-toggle-button" class="collapse-toggle hidden"/>
-                <label for="collapse-toggle-button" class="pure-button" aria-label="Toggle">
-                    <span>Open</span>
-                    <span class="hidden">Close</span>
-                </label>
-                <div class="collapse-content hidden">
-                    Pooka pooka!
-                </div>
-            </div>
-
-        </section>
+        </div>
 
         <script src="node_modules/steal/steal.js"></script>
     </body>
 </html>
-
