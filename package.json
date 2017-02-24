@@ -28,7 +28,6 @@
     "gulp-easy": "^0.2.6",
     "npm-run-all": "^4.0.2",
     "rimraf": "^2.6.1",
-    "steal": "^1.2.5",
     "steal-less": "^1.1.0"
   },
   "dependencies": {

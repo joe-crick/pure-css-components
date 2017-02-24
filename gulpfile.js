@@ -12,4 +12,10 @@ require('gulp-easy')(require('gulp'))
     minifycss: {
       compatibility: 'ie9'
     }
-  });
+  })
+  .less('src/main.less', 'main.css', {
+    minifycss: {
+      compatibility: 'ie9'
+    }
+  })
+  .files('dist/main.css', './');
