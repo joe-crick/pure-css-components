@@ -37,11 +37,21 @@ or
 npm i
 ```
 
-### Running
+## Building
 
-To run the site, start up an http server that will serve the project's contents. If you don't have one,
-[http-server](https://www.npmjs.com/package/http-server) is a good option. Navigate to the root of the 
-project.
+To compile the CSS, run:
+
+```js
+npm run build
+```
+
+The compiled, minified CSS will be located in the `dist` folder.
+
+### Running the Demo Site
+
+The lib comes with a demo site you can run to see the components in action. To run the demo site, start up an http server 
+that will serve the project's contents. If you don't have one, [http-server](https://www.npmjs.com/package/http-server) 
+is a good option. Navigate to the root of the project.
 
 _NOTE:_ If you're using `http-server`, this will be `localhost:8080`.
 

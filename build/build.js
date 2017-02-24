@@ -1,8 +1,11 @@
 var stealTools = require("steal-tools");
 
-var buildPromise = stealTools.build({
-  config: 'package.json!npm'
-}, {
-  bundleAssets: true
-});
-
+var promise = stealTools.build({
+    main: ["src/stand-alone", "src/with-pure"],
+    config: 'package.json!npm'
+  },
+  {
+    bundleSteal: false,
+    bundleAssets: true
+  }
+);
