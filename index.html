@@ -9,7 +9,7 @@
 
         <link rel="stylesheet" href="node_modules/purecss/build/pure-min.css">
         <link rel="stylesheet" href="baby-blue.css">
-
+        <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
     </head>
     <body>
 
@@ -68,7 +68,8 @@
                             href="#add-pure-to-your-page" class="content-link" title="Heading anchor"></a></h2>
 
                     <p>
-                        <a href="https://purecss.io/">Pure CSS</a> is a great set of small, responsive CSS modules. As their docs say, it is tiny.
+                        <a href="https://purecss.io/">Pure CSS</a> is a great set of small, responsive CSS modules. As
+                        their docs say, it is tiny.
                         The entire set of modules is only 3.8KB* (minified and gzipped).
                     </p>
                     <p>
@@ -110,9 +111,11 @@
                     </p>
 
                     <div class="is-code-full">
-                        <pre class="code code-wrap" data-language="html" data-trimmed="true">
-                            <code class="rainbow">yarn add pure-extended</code>
-                        </pre>
+                        <pre>yarn add pure<span>-</span>extended</pre>
+                    </div>
+                    <p>or</p>
+                    <div class="is-code-full">
+                        <pre>npm i pure<span>-</span>extended</pre>
                     </div>
                 </div>
 
@@ -150,6 +153,38 @@
                         </li>
                     </ul>
 
+<div style="background: #ffffff; margin-top: 50px; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">&lt;ul <span style="color: #0000ff">class</span>=<span style="color: #a31515">&quot;accordion&quot;</span>&gt;
+    &lt;li <span style="color: #0000ff">class</span>=<span style="color: #a31515">&quot;section&quot;</span>&gt;
+        &lt;input type=<span style="color: #a31515">&quot;radio&quot;</span> <span style="color: #0000ff">class</span>=<span style="color: #a31515">&quot;hidden-header hidden&quot;</span> id=<span style="color: #a31515">&quot;a-1&quot;</span> name=<span style="color: #a31515">&quot;a-tab-head&quot;</span> role=<span style="color: #a31515">&quot;tab&quot;</span>
+               checked/&gt;
+        &lt;label <span style="color: #0000ff">for</span>=<span style="color: #a31515">&quot;a-1&quot;</span> <span style="color: #0000ff">class</span>=<span style="color: #a31515">&quot;tab-header&quot;</span>&gt;Option 0&lt;<span ">/label&gt;</span>
+        &lt;div <span style="color: #0000ff">class</span>=<span style="color: #a31515">&quot;content&quot;</span>&gt;
+            &lt;h2&gt;Heading 1&lt;<span ">/h2&gt;</span>
+            Donec mattis mauris gravida metus laoreet non rutrum sem viverra. Aenean nibh libero,
+            viverra
+            vel vestibulum <span style="color: #0000ff">in</span>,
+        &lt;<span ">/div&gt;</span>
+    &lt;<span ">/li&gt;</span>
+    &lt;li <span style="color: #0000ff">class</span>=<span style="color: #a31515">&quot;section&quot;</span>&gt;
+        &lt;input type=<span style="color: #a31515">&quot;radio&quot;</span> <span style="color: #0000ff">class</span>=<span style="color: #a31515">&quot;hidden-header hidden&quot;</span> id=<span style="color: #a31515">&quot;a-2&quot;</span> name=<span style="color: #a31515">&quot;a-tab-head&quot;</span> role=<span style="color: #a31515">&quot;tab&quot;</span>/&gt;
+        &lt;label <span style="color: #0000ff">for</span>=<span style="color: #a31515">&quot;a-2&quot;</span> <span style="color: #0000ff">class</span>=<span style="color: #a31515">&quot;tab-header&quot;</span>&gt;Option 1&lt;<span ">/label&gt;</span>
+        &lt;div <span style="color: #0000ff">class</span>=<span style="color: #a31515">&quot;content&quot;</span>&gt;
+            &lt;h2&gt;Heading 1&lt;<span ">/h2&gt;</span>
+            Content goes here
+        &lt;<span ">/div&gt;</span>
+    &lt;<span ">/li&gt;</span>
+    &lt;li <span style="color: #0000ff">class</span>=<span style="color: #a31515">&quot;section&quot;</span>&gt;
+        &lt;input type=<span style="color: #a31515">&quot;radio&quot;</span> <span style="color: #0000ff">class</span>=<span style="color: #a31515">&quot;hidden-header hidden&quot;</span> id=<span style="color: #a31515">&quot;a-3&quot;</span> name=<span style="color: #a31515">&quot;a-tab-head&quot;</span> role=<span style="color: #a31515">&quot;tab&quot;</span>/&gt;
+        &lt;label <span style="color: #0000ff">for</span>=<span style="color: #a31515">&quot;a-3&quot;</span> <span style="color: #0000ff">class</span>=<span style="color: #a31515">&quot;tab-header&quot;</span>&gt;Option 2&lt;<span ">/label&gt;</span>
+        &lt;div <span style="color: #0000ff">class</span>=<span style="color: #a31515">&quot;content&quot;</span>&gt;
+            &lt;h2&gt;Heading 2&lt;<span ">/h2&gt;</span>
+            Lorem Ipsum
+        &lt;<span ">/div&gt;</span>
+    &lt;<span ">/li&gt;</span>
+&lt;<span ">/ul&gt;</span>
+</pre></div>
+                    
+
                 </div>
 
                 <div class="content alert-content">
@@ -157,7 +192,7 @@
                     <h2 class="content-subhead">Alert</h2>
                     <p>
                         <em>NOTE: A few styles have been applied here for illustrative purposes. The actual
-                        styling of an alert is, in keeping with the spirit of Pure, up to you.</em>
+                            styling of an alert is, in keeping with the spirit of Pure, up to you.</em>
                     </p>
                     <input type="checkbox" id="close-alert" class="alert-toggle hidden"/>
                     <div class="alert alert-success alert-dismissible" role="alert">
@@ -166,6 +201,17 @@
                             <span aria-hidden="true">&times;</span>
                         </label>
                     </div>
+
+<div style="background: #ffffff; margin-top: 50px; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">
+&lt;input type=<span style="color: #a31515">&quot;checkbox&quot;</span> id=<span style="color: #a31515">&quot;close-alert&quot;</span> <span style="color: #0000ff">class</span>=<span style="color: #a31515">&quot;alert-toggle hidden&quot;</span>/&gt;
+&lt;div <span style="color: #0000ff">class</span>=<span style="color: #a31515">&quot;alert alert-success alert-dismissible&quot;</span> role=<span style="color: #a31515">&quot;alert&quot;</span>&gt;
+    &lt;span&gt;&lt;strong&gt;Uh oh...&lt;<span>/strong&gt; Something happened...&lt;/span&gt;</span>
+    &lt;label <span style="color: #0000ff">for</span>=<span style="color: #a31515">&quot;close-alert&quot;</span> <span style="color: #0000ff">class</span>=<span style="color: #a31515">&quot;close-alert&quot;</span> aria-label=<span style="color: #a31515">&quot;Close&quot;</span>&gt;
+        &lt;span aria-hidden=<span style="color: #a31515">&quot;true&quot;</span>&gt;&amp;times;&lt;<span >/span&gt;</span>
+    &lt;<span >/label&gt;</span>
+&lt;<span >/div&gt;</span>
+</pre></div>
+
 
                 </div>
 
@@ -201,6 +247,35 @@
                         </li>
                     </ul>
 
+<div style="background: #ffffff; margin-top: 50px; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">
+&lt;ul class=<span style="color: #a31515">&quot;carousel&quot;</span>&gt;
+    &lt;li class=<span style="color: #a31515">&quot;carousel-item&quot;</span>&gt;
+        &lt;input class=<span style="color: #a31515">&quot;carousel-nav hidden&quot;</span> type=<span style="color: #a31515">&quot;radio&quot;</span> name=<span style="color: #a31515">&quot;carousel&quot;</span> id=<span style="color: #a31515">&quot;carousel-one&quot;</span> checked/&gt;
+        &lt;label <span style="color: #0000ff">for</span>=<span style="color: #a31515">&quot;carousel-one&quot;</span> class=<span style="color: #a31515">&quot;linear-carousel-label&quot;</span>&gt;&lt;/label&gt;
+        &lt;img class=<span style="color: #a31515">&quot;carousel-image&quot;</span>
+             src=<span style="color: #a31515">&quot;http://www.preussenchronik.de/bilder/1186_Klemens_Wenzel_Fuerst_von_Metternich.jpeg&quot;</span>
+             alt=<span style="color: #a31515">&quot;&quot;</span>/&gt;
+        &lt;label <span style="color: #0000ff">for</span>=<span style="color: #a31515">&quot;carousel-two&quot;</span>&gt;&lt;/label&gt;
+    &lt;/li&gt;
+    &lt;li class=<span style="color: #a31515">&quot;carousel-item&quot;</span>&gt;
+        &lt;input class=<span style="color: #a31515">&quot;carousel-nav hidden&quot;</span> type=<span style="color: #a31515">&quot;radio&quot;</span> name=<span style="color: #a31515">&quot;carousel&quot;</span> id=<span style="color: #a31515">&quot;carousel-two&quot;</span>/&gt;
+        &lt;label <span style="color: #0000ff">for</span>=<span style="color: #a31515">&quot;carousel-one&quot;</span> class=<span style="color: #a31515">&quot;linear-carousel-label&quot;</span>&gt;&lt;/label&gt;
+        &lt;img class=<span style="color: #a31515">&quot;carousel-image&quot;</span>
+             src=<span style="color: #a31515">&quot;https://s-media-cache-ak0.pinimg.com/originals/fc/d7/b6/fcd7b6242ad041739357da9a237058ef.jpg&quot;</span>
+             alt=<span style="color: #a31515">&quot;&quot;</span>/&gt;
+        &lt;label <span style="color: #0000ff">for</span>=<span style="color: #a31515">&quot;carousel-three&quot;</span>&gt;&lt;/label&gt;
+    &lt;/li&gt;
+    &lt;li class=<span style="color: #a31515">&quot;carousel-item&quot;</span>&gt;
+        &lt;input class=<span style="color: #a31515">&quot;carousel-nav hidden&quot;</span> type=<span style="color: #a31515">&quot;radio&quot;</span> name=<span style="color: #a31515">&quot;carousel&quot;</span> id=<span style="color: #a31515">&quot;carousel-three&quot;</span>/&gt;
+        &lt;label <span style="color: #0000ff">for</span>=<span style="color: #a31515">&quot;carousel-two&quot;</span> class=<span style="color: #a31515">&quot;linear-carousel-label&quot;</span>&gt;&lt;/label&gt;
+        &lt;img class=<span style="color: #a31515">&quot;carousel-image&quot;</span>
+             src=<span style="color: #a31515">&quot;http://adamworld.typepad.com/.a/6a012876b7eaf6970c0120a7bd78bf970b-pi&quot;</span> alt=<span style="color: #a31515">&quot;&quot;</span>/&gt;
+        &lt;label class=<span style="color: #a31515">&quot;carousel-last-nav&quot;</span>&gt;&lt;/label&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+</pre></div>
+
+
                     <h3>Circular Carousel</h3>
 
                     <ul class="carousel">
@@ -230,6 +305,36 @@
                         </li>
                     </ul>
 
+<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">
+&lt;ul class=<span style="color: #a31515">&quot;carousel&quot;</span>&gt;
+    &lt;li class=<span style="color: #a31515">&quot;carousel-item&quot;</span>&gt;
+        &lt;input class=<span style="color: #a31515">&quot;carousel-nav hidden&quot;</span> type=<span style="color: #a31515">&quot;radio&quot;</span> name=<span style="color: #a31515">&quot;c-carousel&quot;</span> id=<span style="color: #a31515">&quot;c-carousel-one&quot;</span>
+               checked/&gt;
+        &lt;label <span style="color: #0000ff">for</span>=<span style="color: #a31515">&quot;c-carousel-three&quot;</span> class=<span style="color: #a31515">&quot;circular-carousel-label&quot;</span>&gt;&lt;/label&gt;
+        &lt;img class=<span style="color: #a31515">&quot;carousel-image&quot;</span>
+             src=<span style="color: #a31515">&quot;http://www.preussenchronik.de/bilder/1186_Klemens_Wenzel_Fuerst_von_Metternich.jpeg&quot;</span>
+             alt=<span style="color: #a31515">&quot;&quot;</span>/&gt;
+        &lt;label <span style="color: #0000ff">for</span>=<span style="color: #a31515">&quot;c-carousel-two&quot;</span>&gt;&lt;/label&gt;
+    &lt;/li&gt;
+    &lt;li class=<span style="color: #a31515">&quot;carousel-item&quot;</span>&gt;
+        &lt;input class=<span style="color: #a31515">&quot;carousel-nav hidden&quot;</span> type=<span style="color: #a31515">&quot;radio&quot;</span> name=<span style="color: #a31515">&quot;c-carousel&quot;</span> id=<span style="color: #a31515">&quot;c-carousel-two&quot;</span>/&gt;
+        &lt;label <span style="color: #0000ff">for</span>=<span style="color: #a31515">&quot;c-carousel-one&quot;</span> class=<span style="color: #a31515">&quot;circular-carousel-label&quot;</span>&gt;&lt;/label&gt;
+        &lt;img class=<span style="color: #a31515">&quot;carousel-image&quot;</span>
+             src=<span style="color: #a31515">&quot;https://s-media-cache-ak0.pinimg.com/originals/fc/d7/b6/fcd7b6242ad041739357da9a237058ef.jpg&quot;</span>
+             alt=<span style="color: #a31515">&quot;&quot;</span>/&gt;
+        &lt;label <span style="color: #0000ff">for</span>=<span style="color: #a31515">&quot;c-carousel-three&quot;</span>&gt;&lt;/label&gt;
+    &lt;/li&gt;
+    &lt;li class=<span style="color: #a31515">&quot;carousel-item&quot;</span>&gt;
+        &lt;input class=<span style="color: #a31515">&quot;carousel-nav hidden&quot;</span> type=<span style="color: #a31515">&quot;radio&quot;</span> name=<span style="color: #a31515">&quot;c-carousel&quot;</span> id=<span style="color: #a31515">&quot;c-carousel-three&quot;</span>/&gt;
+        &lt;label <span style="color: #0000ff">for</span>=<span style="color: #a31515">&quot;c-carousel-two&quot;</span> class=<span style="color: #a31515">&quot;circular-carousel-label&quot;</span>&gt;&lt;/label&gt;
+        &lt;img class=<span style="color: #a31515">&quot;carousel-image&quot;</span>
+             src=<span style="color: #a31515">&quot;http://adamworld.typepad.com/.a/6a012876b7eaf6970c0120a7bd78bf970b-pi&quot;</span> alt=<span style="color: #a31515">&quot;&quot;</span>/&gt;
+        &lt;label <span style="color: #0000ff">for</span>=<span style="color: #a31515">&quot;c-carousel-one&quot;</span>&gt;&lt;/label&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+</pre></div>
+
+
                 </div>
 
                 <div class="content collapsing-content">
@@ -237,7 +342,8 @@
                     <h2 class="content-subhead">Collapse</h2>
 
                     <p>
-                        <em>NOTE: A few styles have been applied to the collapse content for illustrative purposes. The actual
+                        <em>NOTE: A few styles have been applied to the collapse content for illustrative purposes. The
+                            actual
                             styling of an alert is, in keeping with the spirit of Pure, up to you.</em>
                     </p>
 
@@ -345,11 +451,13 @@
 
                     <ul class="accordion accordion-tab">
                         <li class="section">
-                            <input type="radio" class="hidden-header hidden" id="zero" name="tab-head" role="tab" checked/>
+                            <input type="radio" class="hidden-header hidden" id="zero" name="tab-head" role="tab"
+                                   checked/>
                             <label for="zero" class="tab-header">Option 0</label>
                             <div class="content">
                                 <h2>Heading 1</h2>
-                                Donec mattis mauris gravida metus laoreet non rutrum sem viverra. Aenean nibh libero, viverra
+                                Donec mattis mauris gravida metus laoreet non rutrum sem viverra. Aenean nibh libero,
+                                viverra
                                 vel vestibulum in,
                             </div>
                         </li>

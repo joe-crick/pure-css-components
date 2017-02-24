@@ -24,6 +24,7 @@
     "steal-tools": "^1.1.2"
   },
   "dependencies": {
+    "clipboard": "^1.6.0",
     "purecss": "^0.6.2"
   }
 }
