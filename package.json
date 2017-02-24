@@ -20,7 +20,10 @@
   },
   "devDependencies": {
     "steal": "^1.2.5",
-    "steal-tools": "^1.1.2",
-    "steal-less": "^1.1.0"
+    "steal-less": "^1.1.0",
+    "steal-tools": "^1.1.2"
+  },
+  "dependencies": {
+    "purecss": "^0.6.2"
   }
 }
