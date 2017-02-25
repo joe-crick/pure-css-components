@@ -1,5 +1,5 @@
 {
-  "name": "pure-css-components",
+  "name": "purecss-components",
   "version": "1.0.0",
   "description": "responsive-css-accordion",
   "main": "index.js",
@@ -10,6 +10,7 @@
     "build:css": "build/./build.sh",
     "build": "npm-run-all build:lint build:css"
   },
+  "files": "dist",
   "devDependencies": {
     "less": "^2.7.2",
     "less-plugin-autoprefix": "^1.5.1",
