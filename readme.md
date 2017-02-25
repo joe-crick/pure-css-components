@@ -17,7 +17,7 @@ CSS Only Components for Pure CSS.
 ### Use from the CDN
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css">
+<link rel="stylesheet" href="https://unpkg.com/purecss-components@0.0.1/build/pure-min.css">
 ```
 
 ### Install from NPM
