@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "responsive-css-accordion",
   "main": "index.js",
-  "author": "joe@josephcrick.com",
+  "author": "jcrick@josephcrick.com",
   "license": "MIT",
   "scripts": {
     "build:lint": "build/./lint.sh",
