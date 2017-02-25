@@ -1,6 +1,6 @@
 {
   "name": "purecss-components",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Pure.CSS Components is a responsive lib of CSS Only components built to work with Pure.CSS",
   "main": "index.js",
   "author": "jcrick@josephcrick.com",
