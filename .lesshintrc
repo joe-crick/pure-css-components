@@ -1,0 +1,11 @@
+{
+  "fileExtensions": [
+    ".less"
+  ],
+  "propertyOrdering": false,
+  "zeroUnit": {
+    "enabled": true,
+    "style": "no_unit"
+  },
+  "qualifyingElement": false
+}

@@ -3,17 +3,24 @@
 }
 
 .collapse-toggle-button {
+
   .collapse-toggle:checked {
+
     & ~ .collapse-content {
       display: block;
     }
+
     & + label {
       span:first-child {
         display: none;
       }
+
       span:last-child {
         display: inline;
       }
+
     }
+
   }
+
 }

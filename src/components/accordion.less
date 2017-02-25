@@ -1,4 +1,4 @@
-@import '../../mixins';
+@import '../mixins';
 
 .accordion {
   list-style: none;
@@ -6,21 +6,29 @@
   .clearfix();
 
   &.accordion-tab {
+
     .section {
       @media only screen and (min-width: 768px) {
         display: inline;
       }
+
       .hidden-header {
+
         &:checked ~ .content {
           @media only screen and (min-width: 768px) {
             float: left;
           }
+
         }
+
       }
+
       .tab-header {
         display: inline;
       }
+
     }
+
   }
 
   .section {
@@ -30,13 +38,16 @@
 
     .hidden-header {
       outline: none;
+
       &:checked ~ .content {
         display: block;
       }
+
       &:checked + .tab-header {
         background-color: white;
         color: gray;
       }
+
     }
 
     .tab-header {
@@ -54,6 +65,5 @@
     }
 
   }
+
 }
-
-

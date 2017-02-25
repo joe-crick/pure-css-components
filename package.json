@@ -6,16 +6,16 @@
   "author": "joe@josephcrick.com",
   "license": "MIT",
   "scripts": {
-    "build:css": "gulp",
-    "build:clean": "rimraf dist",
-    "build": "npm-run-all build:clean build:css"
+    "build:lint": "./lint.sh",
+    "build:css": "./build.sh",
+    "build": "npm-run-all build:lint build:css"
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-easy": "^0.2.6",
-    "npm-run-all": "^4.0.2",
-    "rimraf": "^2.6.1",
-    "steal-less": "^1.1.0"
+    "less": "^2.7.2",
+    "less-plugin-pleeease": "^0.0.3",
+    "lesshint": "^3.1.0",
+    "lesshint-reporter-stylish": "^2.0.0",
+    "npm-run-all": "^4.0.2"
   },
   "dependencies": {
     "clipboard": "^1.6.0",

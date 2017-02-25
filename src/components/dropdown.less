@@ -1,23 +1,27 @@
-
+@import '../variables';
 
 .onclick-menu {
   position: relative;
   cursor: pointer;
+
   &:before {
     padding: 5px 10px;
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: @white;
+    border: 1px solid @off-white;
     border-radius: 5px;
-    content: "...";
+    content: '...';
   }
+
   &:focus {
     pointer-events: none;
     outline: none;
+
     .onclick-menu-content {
       opacity: 1;
       visibility: visible;
       pointer-events: auto;
     }
+
   }
 
   .onclick-menu-content {
@@ -26,29 +30,36 @@
     opacity: 0;
     visibility: hidden;
     transition: visibility 0.5s;
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: @white;
+    border: 1px solid @off-white;
     width: auto;
     margin-top: 5px;
     padding: 10px;
     border-radius: 5px;
+
     li {
       list-style-type: none;
       white-space: nowrap;
+
       button {
         background: transparent;
-        border: none;
+        border: 0;
         border-radius: 5px;
         color: inherit;
         outline: 0;
         cursor: pointer;
         width: 120px;
         text-align: left;
+
         &:hover {
-          color: #fff;
-          background: #4DBBDB;
+          color: @white;
+          background: @light-blue;
         }
+
       }
+
     }
+
   }
+
 }

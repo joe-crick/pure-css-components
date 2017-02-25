@@ -1,8 +1,6 @@
-@import '../../mixins.less';
-@import '../components/close-button.less';
-
-@arrow-size: 15px;
-@arrow-color: #F7F7F7;
+@import '../mixins';
+@import 'close-button';
+@import '../variables';
 
 .popover-container {
 
@@ -15,35 +13,48 @@
   }
 
   .popover-toggle {
+
     &:checked ~ .popover {
       display: block;
     }
+
     &.popover-toggle-dismissable {
+
       &.popover-dismissable-right {
         float: left;
       }
+
       &:focus {
         outline: none;
+
         & + .popover {
           display: block;
+
           &.popover-right {
             display: inherit;
             margin-left: 25px;
             margin-top: -35px;
             float: right;
+
             .left-arrow {
               position: absolute;
               margin-left: -18px;
               margin-top: 12%;
+
               .arrowWidth();
               border-top: @arrow-size solid transparent;
               border-bottom: @arrow-size solid transparent;
               border-right: @arrow-size solid @arrow-color;
             }
+
           }
+
         }
+
       }
+
     }
+
   }
 
   .popover {
@@ -54,15 +65,17 @@
     line-break: auto;
     line-height: 1.5;
     word-wrap: break-word;
-    background-color: #fff;
+    background-color: @white;
     background-clip: padding-box;
-    border: 1px solid rgba(0, 0, 0, .2);
-    border-radius: .3rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.3rem;
 
     &.popover-bottom {
       margin-top: 30px;
+
       .up-arrow {
         position: relative;
+
         .arrowWidth();
         border-left: @arrow-size solid transparent;
         border-right: @arrow-size solid transparent;
@@ -72,6 +85,7 @@
         left: 50%;
         margin-left: -11px;
       }
+
     }
 
     .popover-title {
@@ -81,8 +95,8 @@
       font-size: 1rem;
       background-color: #f7f7f7;
       border-bottom: 1px solid #ebebeb;
-      border-top-right-radius: calc(.3rem - 1px);
-      border-top-left-radius: calc(.3rem - 1px);
+      border-top-right-radius: calc(0.3rem - 1px);
+      border-top-left-radius: calc(0.3rem - 1px);
     }
 
     .popover-content {
@@ -96,5 +110,5 @@
     }
 
   }
-}
 
+}

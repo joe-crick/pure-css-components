@@ -1,13 +1,16 @@
 // Mixins
 .clearfix() {
+
   &:before,
   &:after {
-    content: " ";
+    content: ' ';
     display: table;
   }
+
   &:after {
     clear: both;
   }
+
 }
 
 .buttonLink() {
