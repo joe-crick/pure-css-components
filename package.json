@@ -1,7 +1,7 @@
 {
   "name": "purecss-components",
   "version": "0.0.3",
-  "description": "responsive-css-accordion",
+  "description": "Pure.CSS Components is a responsive lib of CSS Only components built to work with Pure.CSS",
   "main": "index.js",
   "author": "jcrick@josephcrick.com",
   "license": "MIT",
@@ -10,7 +10,15 @@
     "build:css": "build/./build.sh",
     "build": "npm-run-all build:lint build:css"
   },
-  "files": "dist",
+  "files": "dist/",
+  "keywords": [
+    "pure",
+    "css",
+    "purecss",
+    "purecss-components",
+    "components"
+  ],
+  "homepage": "https://joe-crick.github.io/pure-css-components/",
   "devDependencies": {
     "less": "^2.7.2",
     "less-plugin-autoprefix": "^1.5.1",
