@@ -51,27 +51,27 @@
   display: none;
   width: 100%;
 }
-.onclick-menu {
+.dropdown {
   position: relative;
   cursor: pointer;
 }
-.onclick-menu:before {
+.dropdown:before {
   padding: 5px 10px;
   background-color: #ffffff;
   border: 1px solid #dddddd;
   border-radius: 5px;
   content: '...';
 }
-.onclick-menu:focus {
+.dropdown:focus {
   pointer-events: none;
   outline: none;
 }
-.onclick-menu:focus .onclick-menu-content {
+.dropdown:focus .dropdown-content {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
 }
-.onclick-menu .onclick-menu-content {
+.dropdown .dropdown-content {
   position: absolute;
   z-index: 1;
   opacity: 0;
@@ -84,11 +84,11 @@
   padding: 10px;
   border-radius: 5px;
 }
-.onclick-menu .onclick-menu-content li {
+.dropdown .dropdown-content li {
   list-style-type: none;
   white-space: nowrap;
 }
-.onclick-menu .onclick-menu-content li button {
+.dropdown .dropdown-content li button {
   background: transparent;
   border: 0;
   border-radius: 5px;
@@ -98,7 +98,7 @@
   width: 120px;
   text-align: left;
 }
-.onclick-menu .onclick-menu-content li button:hover {
+.dropdown .dropdown-content li button:hover {
   color: #ffffff;
   background: #4dbbdb;
 }
@@ -321,10 +321,10 @@
 .collapse-toggle-button .collapse-toggle:checked ~ .collapse-content {
   display: block;
 }
-.collapse-toggle-button .collapse-toggle:checked + label span:first-child {
+.collapse-toggle-button .collapse-toggle:checked + .collapse-button .collapse-button-label:first-child {
   display: none;
 }
-.collapse-toggle-button .collapse-toggle:checked + label span:last-child {
+.collapse-toggle-button .collapse-toggle:checked + .collapse-button .collapse-button-label:last-child {
   display: inline;
 }
 .invisible {
