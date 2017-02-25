@@ -1,5 +1,4 @@
 sudo: true
 language: node_js
 node_js: node
-script:
- - npm run build
+script: npm run build
