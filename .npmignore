@@ -1,0 +1,8 @@
+static
+.travis.yml
+index.html
+baby-blue.css
+main.css
+main.css.map
+yarn.lock
+node_modules
