@@ -38,17 +38,17 @@
 
       &:checked {
 
-        & ~ .carousel-image {
+        & ~ .carousel-content {
           display: inline;
         }
 
-        & ~ label:after {
+        & ~ .carousel-label:after {
           content: '\003e';
           color: black;
           cursor: pointer;
         }
 
-        & + label:after {
+        & + .carousel-label:after {
           content: '\003c';
         }
 
@@ -56,13 +56,13 @@
 
     }
 
-    .carousel-image {
+    .carousel-content {
       height: 400px;
       width: 300px;
       display: none;
     }
 
-    label {
+    .carousel-label {
       cursor: pointer;
     }
 

@@ -208,23 +208,23 @@
   color: lightgray;
   cursor: not-allowed;
 }
-.carousel .carousel-item .carousel-nav:checked ~ .carousel-image {
+.carousel .carousel-item .carousel-nav:checked ~ .carousel-content {
   display: inline;
 }
-.carousel .carousel-item .carousel-nav:checked ~ label:after {
+.carousel .carousel-item .carousel-nav:checked ~ .carousel-label:after {
   content: '\003e';
   color: black;
   cursor: pointer;
 }
-.carousel .carousel-item .carousel-nav:checked + label:after {
+.carousel .carousel-item .carousel-nav:checked + .carousel-label:after {
   content: '\003c';
 }
-.carousel .carousel-item .carousel-image {
+.carousel .carousel-item .carousel-content {
   height: 400px;
   width: 300px;
   display: none;
 }
-.carousel .carousel-item label {
+.carousel .carousel-item .carousel-label {
   cursor: pointer;
 }
 .popover-container {
