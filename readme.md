@@ -53,19 +53,8 @@ _NOTE:_ If you're using `http-server`, this will be `localhost:8080`.
 ## Built With
 
 * [LESS](http://lesscss.org/) - The CSS pre-processor used - though the LESS is pretty generic, and can easily be converted to SASS, or CSS
-* [StealJS](https://stealjs.com/) - Dependency Loader
-* [Pure.CSS](https://purecss.io) - Responsive CSS modules that you can use in every web project
-
-## Versioning
-
-I use [SemVer](http://semver.org/) for versioning.  
-
-## Authors
-
-* **Joe Crick** - *Initial work* - [Joe Crick](https://github.com/joe-crick)
 
 ## Acknowledgments
 
-* [CSS-Tricks](https://css-tricks.com/).
-* The inimitable [Ryan Wilson](http://github.com/ryangwilson), for directing me to PureCSS.
+* The inimitable [Ryan Wilson](http://github.com/ryangwilson)
 
