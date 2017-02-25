@@ -14,7 +14,7 @@ do
   eval "${COMPILE_DIST} ${file} dist/${DEST_FILE//\.less/.css}"
 done
 
-eval "${COMPILE_MAP} src/main.less ./main.css"
+eval "${COMPILE_MAP} src/layout.less ./main.css"
 eval "${COMPILE_DIST} src/stand-alone-imports.less dist/pure-components.css"
 eval "${COMPILE_DIST} src/with-pure-imports.less dist/pure-components-bundled.css"
 
