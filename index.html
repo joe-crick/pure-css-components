@@ -296,7 +296,7 @@
                         </li>
                     </ul>
 
-                    <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">
+                    <div style="background: #ffffff; margin-top: 50px; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">
 &lt;ul class=<span style="color: #a31515">&quot;carousel&quot;</span>&gt;
     &lt;li class=<span style="color: #a31515">&quot;carousel-item&quot;</span>&gt;
         &lt;input class=<span style="color: #a31515">&quot;carousel-nav hidden&quot;</span> type=<span style="color: #a31515">&quot;radio&quot;</span> name=<span style="color: #a31515">&quot;carousel&quot;</span> id=<span style="color: #a31515">&quot;carousel-one&quot;</span> checked/&gt;
@@ -355,7 +355,7 @@
                         </li>
                     </ul>
 
-                    <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">
+                    <div style="background: #ffffff; margin-top: 50px; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">
 &lt;ul class=<span style="color: #a31515">&quot;carousel&quot;</span>&gt;
     &lt;li class=<span style="color: #a31515">&quot;carousel-item&quot;</span>&gt;
         &lt;input class=<span style="color: #a31515">&quot;carousel-nav hidden&quot;</span> type=<span style="color: #a31515">&quot;radio&quot;</span> name=<span style="color: #a31515">&quot;c-carousel&quot;</span> id=<span style="color: #a31515">&quot;c-carousel-one&quot;</span>
@@ -400,7 +400,7 @@
 
                     <h3>Basic Collapse</h3>
 
-                    <label for="collapse-toggle" class="pure-button" aria-label="Toggle">
+                    <label for="collapse-toggle" class="collapse-button pure-button" aria-label="Toggle">
                         <span>Toggle</span>
                     </label>
                     <input type="checkbox" id="collapse-toggle" class="collapse-toggle hidden"/>
@@ -408,53 +408,46 @@
                         Pooka pooka!
                     </div>
 
-                    <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;margin-top: 50px;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre
-                            style="margin: 0; line-height: 125%">
-&lt;label <span style="color: #0000ff">for</span>=<span style="color: #a31515">&quot;collapse-toggle&quot;</span> class=<span
-                            style="color: #a31515">&quot;pure-button&quot;</span> aria-label=<span
-                            style="color: #a31515">&quot;Toggle&quot;</span>&gt;
+
+                    <div style="background: #ffffff; margin-top: 50px; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">
+&lt;label for=<span style="color: #a31515">&quot;collapse-toggle&quot;</span> class=<span style="color: #a31515">&quot;collapse-button pure-button&quot;</span> aria-label=<span style="color: #a31515">&quot;Toggle&quot;</span>&gt;
     &lt;span&gt;Toggle&lt;/span&gt;
 &lt;/label&gt;
-&lt;input type=<span style="color: #a31515">&quot;checkbox&quot;</span> id=<span style="color: #a31515">&quot;collapse-toggle&quot;</span> class=<span
-                            style="color: #a31515">&quot;collapse-toggle hidden&quot;</span>/&gt;
+&lt;input type=<span style="color: #a31515">&quot;checkbox&quot;</span> id=<span style="color: #a31515">&quot;collapse-toggle&quot;</span> class=<span style="color: #a31515">&quot;collapse-toggle hidden&quot;</span>/&gt;
 &lt;div class=<span style="color: #a31515">&quot;collapse-content invisible&quot;</span>&gt;
-    Pooka pooka<span>!</span>
+    Pooka pooka!
 &lt;/div&gt;
-</pre>
-                    </div>
+</pre></div>
+
 
 
                     <h3>Toggling Button Label Collapse</h3>
 
                     <div class="collapse-toggle-button">
                         <input type="checkbox" id="collapse-toggle-button" class="collapse-toggle hidden"/>
-                        <label for="collapse-toggle-button" class="pure-button" aria-label="Toggle">
-                            <span>Open</span>
-                            <span class="invisible">Close</span>
+                        <label for="collapse-toggle-button" class="collapse-button pure-button" aria-label="Toggle">
+                            <span class="collapse-button-label">Open</span>
+                            <span class="collapse-button-label invisible">Close</span>
                         </label>
                         <div class="collapse-content invisible">
                             Pooka pooka!
                         </div>
                     </div>
 
-                    <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;margin-top: 50px;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre
-                            style="margin: 0; line-height: 125%">
+                    <div style="background: #ffffff; margin-top: 50px;overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">
 &lt;div class=<span style="color: #a31515">&quot;collapse-toggle-button&quot;</span>&gt;
-    &lt;input type=<span style="color: #a31515">&quot;checkbox&quot;</span> id=<span style="color: #a31515">&quot;collapse-toggle-button&quot;</span> class=<span
-                            style="color: #a31515">&quot;collapse-toggle hidden&quot;</span>/&gt;
-    &lt;label <span style="color: #0000ff">for</span>=<span
-                            style="color: #a31515">&quot;collapse-toggle-button&quot;</span> class=<span
-                            style="color: #a31515">&quot;pure-button&quot;</span> aria-label=<span
-                            style="color: #a31515">&quot;Toggle&quot;</span>&gt;
-        &lt;span&gt;Open&lt;/span&gt;
-        &lt;span class=<span style="color: #a31515">&quot;invisible&quot;</span>&gt;Close&lt;/span&gt;
+    &lt;input type=<span style="color: #a31515">&quot;checkbox&quot;</span> id=<span style="color: #a31515">&quot;collapse-toggle-button&quot;</span> class=<span style="color: #a31515">&quot;collapse-toggle hidden&quot;</span>/&gt;
+    &lt;label for=<span style="color: #a31515">&quot;collapse-toggle-button&quot;</span> class=<span style="color: #a31515">&quot;collapse-button pure-button&quot;</span> aria-label=<span style="color: #a31515">&quot;Toggle&quot;</span>&gt;
+        &lt;span class=<span style="color: #a31515">&quot;collapse-button-label&quot;</span>&gt;Open&lt;/span&gt;
+        &lt;span class=<span style="color: #a31515">&quot;collapse-button-label invisible&quot;</span>&gt;Close&lt;/span&gt;
     &lt;/label&gt;
     &lt;div class=<span style="color: #a31515">&quot;collapse-content invisible&quot;</span>&gt;
-        Pooka pooka<span>!</span>
+        Pooka pooka!
     &lt;/div&gt;
 &lt;/div&gt;
-</pre>
-                    </div>
+</pre></div>
+
+                </div>
 
 
                 </div>
