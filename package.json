@@ -17,10 +17,10 @@
     "lesshint": "^3.1.0",
     "lesshint-reporter-stylish": "^2.0.0",
     "npm-run-all": "^4.0.2",
-    "postcss-cli": "^3.0.0-beta"
+    "postcss-cli": "^3.0.0-beta",
+    "purecss": "^0.6.2"
   },
   "dependencies": {
-    "clipboard": "^1.6.0",
-    "purecss": "^0.6.2"
+    "clipboard": "^1.6.0"
   }
 }
