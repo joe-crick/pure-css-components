@@ -12,9 +12,31 @@ Pure CSS Components
 
 ![Pure Components](https://github.com/joe-crick/pure-css-components/blob/master/static/pure-css-components.png)
 
-CSS Only Components for Pure CSS. You can view the demo/man pages here [Pure.CSS Components Demo](https://joe-crick.github.io/pure-css-components/).
+CSS Only Components for Pure CSS. 
 
-## Getting Started
+### Use from the CDN
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css">
+```
+
+### Install from NPM
+
+```js
+yarn add purecss-components
+```
+or
+```js
+npm i purecss-components -S
+```
+
+## Get Started
+
+You can view the demo/man pages here [Pure.CSS Components Demo](https://joe-crick.github.io/pure-css-components/).
+
+## Building
+
+### Get Source
 
 ```
 git clone https://github.com/joe-crick/pure-css-components.git
@@ -32,7 +54,7 @@ or
 npm i
 ```
 
-## Building
+### Compile
 
 To compile the CSS, run:
 
@@ -41,14 +63,6 @@ npm run build
 ```
 
 The compiled, minified CSS will be located in the `dist` folder.
-
-### Running the Demo Site
-
-The lib comes with a demo site you can run to see the components in action. To run the demo site, start up an http server 
-that will serve the project's contents. If you don't have one, [http-server](https://www.npmjs.com/package/http-server) 
-is a good option. Navigate to the root of the project.
-
-_NOTE:_ If you're using `http-server`, this will be `localhost:8080`.
 
 ## Built With
 
