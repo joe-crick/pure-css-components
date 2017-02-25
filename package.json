@@ -6,16 +6,18 @@
   "author": "joe@josephcrick.com",
   "license": "MIT",
   "scripts": {
-    "build:lint": "./lint.sh",
-    "build:css": "./build.sh",
+    "build:lint": "build/./lint.sh",
+    "build:css": "build/./build.sh",
     "build": "npm-run-all build:lint build:css"
   },
   "devDependencies": {
     "less": "^2.7.2",
-    "less-plugin-pleeease": "^0.0.3",
+    "less-plugin-autoprefix": "^1.5.1",
+    "less-plugin-clean-css": "^1.5.1",
     "lesshint": "^3.1.0",
     "lesshint-reporter-stylish": "^2.0.0",
-    "npm-run-all": "^4.0.2"
+    "npm-run-all": "^4.0.2",
+    "postcss-cli": "^3.0.0-beta"
   },
   "dependencies": {
     "clipboard": "^1.6.0",

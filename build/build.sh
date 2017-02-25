@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 COMPONENTS=src/components/*
-COMPILE_DIST="lessc "
+COMPILE_DIST="lessc --autoprefix=\"last 4 versions\" --clean-css=\"--s1 --compatibility=ie9\" "
 COMPILE_MAP="lessc --source-map"
 
 # Clean
