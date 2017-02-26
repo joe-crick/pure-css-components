@@ -311,7 +311,6 @@
 }
 .tooltip {
   display: inline-block;
-  position: absolute;
 }
 @media only screen and (max-width: 479px) {
   .tooltip {
@@ -370,8 +369,11 @@ body .alert-success {
   background-color: #dff0d8;
   border: 1px solid green;
 }
-body .tooltip-body {
-  margin-top: -100px;
+body .tooltip {
+  margin-bottom: 30px;
+}
+body .tooltip .tooltip-body {
+  margin-top: -90px;
   margin-left: 100px;
 }
 /*# sourceMappingURL=main.css.map */
