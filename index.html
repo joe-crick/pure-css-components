@@ -151,7 +151,7 @@
 
                     <ul class="accordion">
                         <li class="accordion-section">
-                            <input type="radio" class="accordion-section-selector hidden" id="a-1" name="a-tab-head"
+                            <input type="radio" class="accordion-section-selector pcssc-invisible" id="a-1" name="a-tab-head"
                                    role="tab"
                                    checked/>
                             <label for="a-1" class="accordion-section-header">Option 0</label>
@@ -163,7 +163,7 @@
                             </div>
                         </li>
                         <li class="accordion-section">
-                            <input type="radio" class="accordion-section-selector hidden" id="a-2" name="a-tab-head"
+                            <input type="radio" class="accordion-section-selector pcssc-invisible" id="a-2" name="a-tab-head"
                                    role="tab"/>
                             <label for="a-2" class="accordion-section-header">Option 1</label>
                             <div class="accordion-section-content">
@@ -172,7 +172,7 @@
                             </div>
                         </li>
                         <li class="accordion-section">
-                            <input type="radio" class="accordion-section-selector hidden" id="a-3" name="a-tab-head"
+                            <input type="radio" class="accordion-section-selector pcssc-invisible" id="a-3" name="a-tab-head"
                                    role="tab"/>
                             <label for="a-3" class="accordion-section-header">Option 2</label>
                             <div class="accordion-section-content">
@@ -186,7 +186,7 @@
                             style="margin: 0; line-height: 125%">
 &lt;ul class=<span style="color: #a31515">&quot;accordion&quot;</span>&gt;
     &lt;li class=<span style="color: #a31515">&quot;accordion-section&quot;</span>&gt;
-        &lt;input type=<span style="color: #a31515">&quot;radio&quot;</span> class=<span style="color: #a31515">&quot;accordion-section-selector hidden&quot;</span> id=<span
+        &lt;input type=<span style="color: #a31515">&quot;radio&quot;</span> class=<span style="color: #a31515">&quot;accordion-section-selector pcssc-invisible&quot;</span> id=<span
                             style="color: #a31515">&quot;a-1&quot;</span> name=<span style="color: #a31515">&quot;a-tab-head&quot;</span> role=<span
                             style="color: #a31515">&quot;tab&quot;</span>
                checked/&gt;
@@ -199,7 +199,7 @@
         &lt;/div&gt;
     &lt;/li&gt;
     &lt;li class=<span style="color: #a31515">&quot;accordion-section&quot;</span>&gt;
-        &lt;input type=<span style="color: #a31515">&quot;radio&quot;</span> class=<span style="color: #a31515">&quot;accordion-section-selector hidden&quot;</span> id=<span
+        &lt;input type=<span style="color: #a31515">&quot;radio&quot;</span> class=<span style="color: #a31515">&quot;accordion-section-selector pcssc-invisible&quot;</span> id=<span
                             style="color: #a31515">&quot;a-2&quot;</span> name=<span style="color: #a31515">&quot;a-tab-head&quot;</span> role=<span
                             style="color: #a31515">&quot;tab&quot;</span>/&gt;
         &lt;label for=<span style="color: #a31515">&quot;a-2&quot;</span> class=<span style="color: #a31515">&quot;accordion-section-header&quot;</span>&gt;Option 1&lt;/label&gt;
@@ -209,7 +209,7 @@
         &lt;/div&gt;
     &lt;/li&gt;
     &lt;li class=<span style="color: #a31515">&quot;accordion-section&quot;</span>&gt;
-        &lt;input type=<span style="color: #a31515">&quot;radio&quot;</span> class=<span style="color: #a31515">&quot;accordion-section-selector hidden&quot;</span> id=<span
+        &lt;input type=<span style="color: #a31515">&quot;radio&quot;</span> class=<span style="color: #a31515">&quot;accordion-section-selector pcssc-invisible&quot;</span> id=<span
                             style="color: #a31515">&quot;a-3&quot;</span> name=<span style="color: #a31515">&quot;a-tab-head&quot;</span> role=<span
                             style="color: #a31515">&quot;tab&quot;</span>/&gt;
         &lt;label for=<span style="color: #a31515">&quot;a-3&quot;</span> class=<span style="color: #a31515">&quot;accordion-section-header&quot;</span>&gt;Option 2&lt;/label&gt;
@@ -232,18 +232,18 @@
                         <em>NOTE: A few styles have been applied here for illustrative purposes. The actual
                             styling of an alert is, in keeping with the spirit of Pure, up to you.</em>
                     </p>
-                    <input type="checkbox" id="close-alert" class="alert-toggle hidden"/>
+                    <input type="checkbox" id="close-alert" class="alert-toggle pcssc-invisible"/>
                     <div class="alert alert-success alert-dismissible" role="alert">
                         <span><strong>Uh oh...</strong> Something happened...</span>
                         <label for="close-alert" class="close-alert" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
+                            <span aria-pcssc-invisible="true">&times;</span>
                         </label>
                     </div>
 
                     <div style="background: #ffffff; margin-top: 50px; overflow:auto;width:auto;border:solid gray;margin-top: 50px;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre
                             style="margin: 0; line-height: 125%">
 &lt;input type=<span style="color: #a31515">&quot;checkbox&quot;</span> id=<span style="color: #a31515">&quot;close-alert&quot;</span> <span
-                            style="color: #0000ff">class</span>=<span style="color: #a31515">&quot;alert-toggle hidden&quot;</span>/&gt;
+                            style="color: #0000ff">class</span>=<span style="color: #a31515">&quot;alert-toggle pcssc-invisible&quot;</span>/&gt;
 &lt;div <span style="color: #0000ff">class</span>=<span style="color: #a31515">&quot;alert alert-success alert-dismissible&quot;</span> role=<span
                             style="color: #a31515">&quot;alert&quot;</span>&gt;
     &lt;span&gt;&lt;strong&gt;Uh oh...&lt;<span>/strong&gt; Something happened...&lt;/span&gt;</span>
@@ -251,7 +251,7 @@
                             style="color: #0000ff">class</span>=<span
                             style="color: #a31515">&quot;close-alert&quot;</span> aria-label=<span
                             style="color: #a31515">&quot;Close&quot;</span>&gt;
-        &lt;span aria-hidden=<span
+        &lt;span aria-pcssc-invisible=<span
                             style="color: #a31515">&quot;true&quot;</span>&gt;&amp;times;&lt;<span>/span&gt;</span>
     &lt;<span>/label&gt;</span>
 &lt;<span>/div&gt;</span>
@@ -269,7 +269,7 @@
 
                     <ul class="carousel">
                         <li class="carousel-item">
-                            <input class="carousel-nav hidden" type="radio" name="carousel" id="carousel-one" checked/>
+                            <input class="carousel-nav pcssc-invisible" type="radio" name="carousel" id="carousel-one" checked/>
                             <label for="carousel-one" class="carousel-label linear-carousel-label"></label>
                             <img class="carousel-content"
                                  src="http://www.preussenchronik.de/bilder/1186_Klemens_Wenzel_Fuerst_von_Metternich.jpeg"
@@ -277,7 +277,7 @@
                             <label for="carousel-two" class="carousel-label"></label>
                         </li>
                         <li class="carousel-item">
-                            <input class="carousel-nav hidden" type="radio" name="carousel" id="carousel-two"/>
+                            <input class="carousel-nav pcssc-invisible" type="radio" name="carousel" id="carousel-two"/>
                             <label for="carousel-one" class="carousel-label linear-carousel-label"></label>
                             <img class="carousel-content"
                                  src="https://s-media-cache-ak0.pinimg.com/originals/fc/d7/b6/fcd7b6242ad041739357da9a237058ef.jpg"
@@ -285,7 +285,7 @@
                             <label for="carousel-three" class="carousel-label"></label>
                         </li>
                         <li class="carousel-item">
-                            <input class="carousel-nav hidden" type="radio" name="carousel" id="carousel-three"/>
+                            <input class="carousel-nav pcssc-invisible" type="radio" name="carousel" id="carousel-three"/>
                             <label for="carousel-two" class="carousel-label linear-carousel-label"></label>
                             <img class="carousel-content"
                                  src="http://adamworld.typepad.com/.a/6a012876b7eaf6970c0120a7bd78bf970b-pi" alt=""/>
@@ -297,7 +297,7 @@
                             style="margin: 0; line-height: 125%">
 &lt;ul class=<span style="color: #a31515">&quot;carousel&quot;</span>&gt;
     &lt;li class=<span style="color: #a31515">&quot;carousel-item&quot;</span>&gt;
-        &lt;input class=<span style="color: #a31515">&quot;carousel-nav hidden&quot;</span> type=<span
+        &lt;input class=<span style="color: #a31515">&quot;carousel-nav pcssc-invisible&quot;</span> type=<span
                             style="color: #a31515">&quot;radio&quot;</span> name=<span style="color: #a31515">&quot;carousel&quot;</span> id=<span
                             style="color: #a31515">&quot;carousel-one&quot;</span> checked/&gt;
         &lt;label for=<span style="color: #a31515">&quot;carousel-one&quot;</span> class=<span style="color: #a31515">&quot;carousel-label linear-carousel-label&quot;</span>&gt;&lt;/label&gt;
@@ -307,7 +307,7 @@
         &lt;label for=<span style="color: #a31515">&quot;carousel-two&quot;</span> class=<span style="color: #a31515">&quot;carousel-label&quot;</span>&gt;&lt;/label&gt;
     &lt;/li&gt;
     &lt;li class=<span style="color: #a31515">&quot;carousel-item&quot;</span>&gt;
-        &lt;input class=<span style="color: #a31515">&quot;carousel-nav hidden&quot;</span> type=<span
+        &lt;input class=<span style="color: #a31515">&quot;carousel-nav pcssc-invisible&quot;</span> type=<span
                             style="color: #a31515">&quot;radio&quot;</span> name=<span style="color: #a31515">&quot;carousel&quot;</span> id=<span
                             style="color: #a31515">&quot;carousel-two&quot;</span>/&gt;
         &lt;label for=<span style="color: #a31515">&quot;carousel-one&quot;</span> class=<span style="color: #a31515">&quot;carousel-label linear-carousel-label&quot;</span>&gt;&lt;/label&gt;
@@ -317,7 +317,7 @@
         &lt;label for=<span style="color: #a31515">&quot;carousel-three&quot;</span> class=<span style="color: #a31515">&quot;carousel-label&quot;</span>&gt;&lt;/label&gt;
     &lt;/li&gt;
     &lt;li class=<span style="color: #a31515">&quot;carousel-item&quot;</span>&gt;
-        &lt;input class=<span style="color: #a31515">&quot;carousel-nav hidden&quot;</span> type=<span
+        &lt;input class=<span style="color: #a31515">&quot;carousel-nav pcssc-invisible&quot;</span> type=<span
                             style="color: #a31515">&quot;radio&quot;</span> name=<span style="color: #a31515">&quot;carousel&quot;</span> id=<span
                             style="color: #a31515">&quot;carousel-three&quot;</span>/&gt;
         &lt;label for=<span style="color: #a31515">&quot;carousel-two&quot;</span> class=<span style="color: #a31515">&quot;carousel-label linear-carousel-label&quot;</span>&gt;&lt;/label&gt;
@@ -335,7 +335,7 @@
 
                     <ul class="carousel">
                         <li class="carousel-item">
-                            <input class="carousel-nav hidden" type="radio" name="c-carousel" id="c-carousel-one"
+                            <input class="carousel-nav pcssc-invisible" type="radio" name="c-carousel" id="c-carousel-one"
                                    checked/>
                             <label for="c-carousel-three" class="carousel-label"></label>
                             <img class="carousel-content"
@@ -344,7 +344,7 @@
                             <label for="c-carousel-two" class="carousel-label"></label>
                         </li>
                         <li class="carousel-item">
-                            <input class="carousel-nav hidden" type="radio" name="c-carousel" id="c-carousel-two"/>
+                            <input class="carousel-nav pcssc-invisible" type="radio" name="c-carousel" id="c-carousel-two"/>
                             <label for="c-carousel-one" class="carousel-label"></label>
                             <img class="carousel-content"
                                  src="https://s-media-cache-ak0.pinimg.com/originals/fc/d7/b6/fcd7b6242ad041739357da9a237058ef.jpg"
@@ -352,7 +352,7 @@
                             <label for="c-carousel-three" class="carousel-label"></label>
                         </li>
                         <li class="carousel-item">
-                            <input class="carousel-nav hidden" type="radio" name="c-carousel" id="c-carousel-three"/>
+                            <input class="carousel-nav pcssc-invisible" type="radio" name="c-carousel" id="c-carousel-three"/>
                             <label for="c-carousel-two" class="carousel-label"></label>
                             <img class="carousel-content"
                                  src="http://adamworld.typepad.com/.a/6a012876b7eaf6970c0120a7bd78bf970b-pi" alt=""/>
@@ -364,7 +364,7 @@
                             style="margin: 0; line-height: 125%">
 &lt;ul class=<span style="color: #a31515">&quot;carousel&quot;</span>&gt;
     &lt;li class=<span style="color: #a31515">&quot;carousel-item&quot;</span>&gt;
-        &lt;input class=<span style="color: #a31515">&quot;carousel-nav hidden&quot;</span> type=<span
+        &lt;input class=<span style="color: #a31515">&quot;carousel-nav pcssc-invisible&quot;</span> type=<span
                             style="color: #a31515">&quot;radio&quot;</span> name=<span style="color: #a31515">&quot;c-carousel&quot;</span> id=<span
                             style="color: #a31515">&quot;c-carousel-one&quot;</span>
                checked/&gt;
@@ -376,7 +376,7 @@
         &lt;label for=<span style="color: #a31515">&quot;c-carousel-two&quot;</span> class=<span style="color: #a31515">&quot;carousel-label&quot;</span>&gt;&lt;/label&gt;
     &lt;/li&gt;
     &lt;li class=<span style="color: #a31515">&quot;carousel-item&quot;</span>&gt;
-        &lt;input class=<span style="color: #a31515">&quot;carousel-nav hidden&quot;</span> type=<span
+        &lt;input class=<span style="color: #a31515">&quot;carousel-nav pcssc-invisible&quot;</span> type=<span
                             style="color: #a31515">&quot;radio&quot;</span> name=<span style="color: #a31515">&quot;c-carousel&quot;</span> id=<span
                             style="color: #a31515">&quot;c-carousel-two&quot;</span>/&gt;
         &lt;label for=<span style="color: #a31515">&quot;c-carousel-one&quot;</span> class=<span style="color: #a31515">&quot;carousel-label&quot;</span>&gt;&lt;/label&gt;
@@ -387,7 +387,7 @@
                             style="color: #a31515">&quot;carousel-label&quot;</span>&gt;&lt;/label&gt;
     &lt;/li&gt;
     &lt;li class=<span style="color: #a31515">&quot;carousel-item&quot;</span>&gt;
-        &lt;input class=<span style="color: #a31515">&quot;carousel-nav hidden&quot;</span> type=<span
+        &lt;input class=<span style="color: #a31515">&quot;carousel-nav pcssc-invisible&quot;</span> type=<span
                             style="color: #a31515">&quot;radio&quot;</span> name=<span style="color: #a31515">&quot;c-carousel&quot;</span> id=<span
                             style="color: #a31515">&quot;c-carousel-three&quot;</span>/&gt;
         &lt;label for=<span style="color: #a31515">&quot;c-carousel-two&quot;</span> class=<span style="color: #a31515">&quot;carousel-label&quot;</span>&gt;&lt;/label&gt;
@@ -418,8 +418,8 @@
                     <label for="collapse-toggle" class="collapse-button pure-button" aria-label="Toggle">
                         <span>Toggle</span>
                     </label>
-                    <input type="checkbox" id="collapse-toggle" class="collapse-toggle hidden"/>
-                    <div class="collapse-content invisible">
+                    <input type="checkbox" id="collapse-toggle" class="collapse-toggle pcssc-invisible"/>
+                    <div class="collapse-content pcssc-invisible">
                         Pooka pooka!
                     </div>
 
@@ -431,8 +431,8 @@
     &lt;span&gt;Toggle&lt;/span&gt;
 &lt;/label&gt;
 &lt;input type=<span style="color: #a31515">&quot;checkbox&quot;</span> id=<span style="color: #a31515">&quot;collapse-toggle&quot;</span> class=<span
-                            style="color: #a31515">&quot;collapse-toggle hidden&quot;</span>/&gt;
-&lt;div class=<span style="color: #a31515">&quot;collapse-content invisible&quot;</span>&gt;
+                            style="color: #a31515">&quot;collapse-toggle pcssc-invisible&quot;</span>/&gt;
+&lt;div class=<span style="color: #a31515">&quot;collapse-content pcssc-invisible&quot;</span>&gt;
     Pooka pooka!
 &lt;/div&gt;
 </pre>
@@ -442,12 +442,12 @@
                     <h3>Toggling Button Label Collapse</h3>
 
                     <div class="collapse-toggle-button">
-                        <input type="checkbox" id="collapse-toggle-button" class="collapse-toggle hidden"/>
+                        <input type="checkbox" id="collapse-toggle-button" class="collapse-toggle pcssc-invisible"/>
                         <label for="collapse-toggle-button" class="collapse-button pure-button" aria-label="Toggle">
                             <span class="collapse-button-label">Open</span>
-                            <span class="collapse-button-label invisible">Close</span>
+                            <span class="collapse-button-label pcssc-invisible">Close</span>
                         </label>
-                        <div class="collapse-content invisible">
+                        <div class="collapse-content pcssc-invisible">
                             Pooka pooka!
                         </div>
                     </div>
@@ -456,14 +456,14 @@
                             style="margin: 0; line-height: 125%">
 &lt;div class=<span style="color: #a31515">&quot;collapse-toggle-button&quot;</span>&gt;
     &lt;input type=<span style="color: #a31515">&quot;checkbox&quot;</span> id=<span style="color: #a31515">&quot;collapse-toggle-button&quot;</span> class=<span
-                            style="color: #a31515">&quot;collapse-toggle hidden&quot;</span>/&gt;
+                            style="color: #a31515">&quot;collapse-toggle pcssc-invisible&quot;</span>/&gt;
     &lt;label for=<span style="color: #a31515">&quot;collapse-toggle-button&quot;</span> class=<span
                             style="color: #a31515">&quot;collapse-button pure-button&quot;</span> aria-label=<span
                             style="color: #a31515">&quot;Toggle&quot;</span>&gt;
         &lt;span class=<span style="color: #a31515">&quot;collapse-button-label&quot;</span>&gt;Open&lt;/span&gt;
-        &lt;span class=<span style="color: #a31515">&quot;collapse-button-label invisible&quot;</span>&gt;Close&lt;/span&gt;
+        &lt;span class=<span style="color: #a31515">&quot;collapse-button-label pcssc-invisible&quot;</span>&gt;Close&lt;/span&gt;
     &lt;/label&gt;
-    &lt;div class=<span style="color: #a31515">&quot;collapse-content invisible&quot;</span>&gt;
+    &lt;div class=<span style="color: #a31515">&quot;collapse-content pcssc-invisible&quot;</span>&gt;
         Pooka pooka!
     &lt;/div&gt;
 &lt;/div&gt;
@@ -507,13 +507,13 @@
                     <a name="modal"></a>
                     <h2 class="content-subhead">Modal</h2>
 
-                    <input type="radio" class="open-modal hidden" id="test-modal" name="modal-toggle"/>
+                    <input type="radio" class="open-modal pcssc-invisible" id="test-modal" name="modal-toggle"/>
                     <label for="test-modal" class="pure-button">Open Modal</label>
-                    <div class="modal-container invisible">
+                    <div class="modal-container pcssc-invisible">
                         <div class="modal-frame">
                             <div class="modal-header">
                                 Header
-                                <input type="radio" id="close-modal" name="modal-toggle" class="close-modal hidden"/>
+                                <input type="radio" id="close-modal" name="modal-toggle" class="close-modal pcssc-invisible"/>
                                 <label for="close-modal" class="close-button">x</label>
                             </div>
                             <div class="modal-body">
@@ -524,16 +524,16 @@
 
                     <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;margin-top: 50px;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre
                             style="margin: 0; line-height: 125%">
-&lt;input type=<span style="color: #a31515">&quot;radio&quot;</span> class=<span style="color: #a31515">&quot;open-modal hidden&quot;</span> id=<span
+&lt;input type=<span style="color: #a31515">&quot;radio&quot;</span> class=<span style="color: #a31515">&quot;open-modal pcssc-invisible&quot;</span> id=<span
                             style="color: #a31515">&quot;test-modal&quot;</span> name=<span style="color: #a31515">&quot;modal-toggle&quot;</span>/&gt;
 &lt;label <span style="color: #0000ff">for</span>=<span style="color: #a31515">&quot;test-modal&quot;</span> class=<span
                             style="color: #a31515">&quot;pure-button&quot;</span>&gt;Open Modal&lt;/label&gt;
-&lt;div class=<span style="color: #a31515">&quot;modal-container invisible&quot;</span>&gt;
+&lt;div class=<span style="color: #a31515">&quot;modal-container pcssc-invisible&quot;</span>&gt;
     &lt;div class=<span style="color: #a31515">&quot;modal-frame&quot;</span>&gt;
         &lt;div class=<span style="color: #a31515">&quot;modal-header&quot;</span>&gt;
             Header
             &lt;input type=<span style="color: #a31515">&quot;radio&quot;</span> id=<span style="color: #a31515">&quot;close-modal&quot;</span> name=<span
-                            style="color: #a31515">&quot;close-modal modal-toggle&quot;</span> class=<span style="color: #a31515">&quot;hidden&quot;</span>/&gt;
+                            style="color: #a31515">&quot;close-modal modal-toggle&quot;</span> class=<span style="color: #a31515">&quot;pcssc-invisible&quot;</span>/&gt;
             &lt;label <span style="color: #0000ff">for</span>=<span
                             style="color: #a31515">&quot;close-modal&quot;</span> class=<span style="color: #a31515">&quot;close-button&quot;</span>&gt;x&lt;/label&gt;
         &lt;/div&gt;
@@ -556,7 +556,7 @@
 
                     <div class="popover-container">
                         <label class="pure-button popover-toggle-label" for="popover-one">Bottom Popover</label>
-                        <input class="popover-toggle hidden" type="checkbox" name="popover-toggle" id="popover-one"/>
+                        <input class="popover-toggle pcssc-invisible" type="checkbox" name="popover-toggle" id="popover-one"/>
                         <div class="popover popover-bottom">
                             <div class="arrow up-arrow"></div>
                             <h3 class="popover-title">Popover bottom</h3>
@@ -572,7 +572,7 @@
     &lt;label class=<span style="color: #a31515">&quot;pure-button popover-toggle-label&quot;</span> <span
                             style="color: #0000ff">for</span>=<span
                             style="color: #a31515">&quot;popover-one&quot;</span>&gt;Bottom Popover&lt;/label&gt;
-    &lt;input class=<span style="color: #a31515">&quot;popover-toggle hidden&quot;</span> type=<span
+    &lt;input class=<span style="color: #a31515">&quot;popover-toggle pcssc-invisible&quot;</span> type=<span
                             style="color: #a31515">&quot;checkbox&quot;</span> name=<span style="color: #a31515">&quot;popover-toggle&quot;</span> id=<span
                             style="color: #a31515">&quot;popover-one&quot;</span>/&gt;
     &lt;div class=<span style="color: #a31515">&quot;popover popover-bottom&quot;</span>&gt;
@@ -672,7 +672,7 @@
 
                     <ul class="accordion accordion-tab">
                         <li class="accordion-section">
-                            <input type="radio" class="accordion-section-selector hidden" id="zero" name="tab-head"
+                            <input type="radio" class="accordion-section-selector pcssc-invisible" id="zero" name="tab-head"
                                    role="tab"
                                    checked/>
                             <label for="zero" class="accordion-section-header">Option 0</label>
@@ -684,7 +684,7 @@
                             </div>
                         </li>
                         <li class="accordion-section">
-                            <input type="radio" class="accordion-section-selector hidden" id="one" name="tab-head"
+                            <input type="radio" class="accordion-section-selector pcssc-invisible" id="one" name="tab-head"
                                    role="tab"/>
                             <label for="one" class="accordion-section-header">Option 1</label>
                             <div class="accordion-section-content">
@@ -693,7 +693,7 @@
                             </div>
                         </li>
                         <li class="accordion-section">
-                            <input type="radio" class="accordion-section-selector hidden" id="two" name="tab-head"
+                            <input type="radio" class="accordion-section-selector pcssc-invisible" id="two" name="tab-head"
                                    role="tab"/>
                             <label for="two" class="accordion-section-header">Option 2</label>
                             <div class="accordion-section-content">
@@ -707,7 +707,7 @@
                             style="margin: 0; line-height: 125%">
 &lt;ul class=<span style="color: #a31515">&quot;accordion accordion-tab&quot;</span>&gt;
     &lt;li class=<span style="color: #a31515">&quot;accordion-section&quot;</span>&gt;
-        &lt;input type=<span style="color: #a31515">&quot;radio&quot;</span> class=<span style="color: #a31515">&quot;accordion-section-selector hidden&quot;</span> id=<span
+        &lt;input type=<span style="color: #a31515">&quot;radio&quot;</span> class=<span style="color: #a31515">&quot;accordion-section-selector pcssc-invisible&quot;</span> id=<span
                             style="color: #a31515">&quot;zero&quot;</span> name=<span style="color: #a31515">&quot;tab-head&quot;</span> role=<span
                             style="color: #a31515">&quot;tab&quot;</span>
                checked/&gt;
@@ -720,7 +720,7 @@
         &lt;/div&gt;
     &lt;/li&gt;
     &lt;li class=<span style="color: #a31515">&quot;accordion-section&quot;</span>&gt;
-        &lt;input type=<span style="color: #a31515">&quot;radio&quot;</span> class=<span style="color: #a31515">&quot;accordion-section-selector hidden&quot;</span> id=<span
+        &lt;input type=<span style="color: #a31515">&quot;radio&quot;</span> class=<span style="color: #a31515">&quot;accordion-section-selector pcssc-invisible&quot;</span> id=<span
                             style="color: #a31515">&quot;one&quot;</span> name=<span style="color: #a31515">&quot;tab-head&quot;</span> role=<span
                             style="color: #a31515">&quot;tab&quot;</span>/&gt;
         &lt;label for=<span style="color: #a31515">&quot;one&quot;</span> class=<span style="color: #a31515">&quot;accordion-section-header&quot;</span>&gt;Option 1&lt;/label&gt;
@@ -730,7 +730,7 @@
         &lt;/div&gt;
     &lt;/li&gt;
     &lt;li class=<span style="color: #a31515">&quot;accordion-section&quot;</span>&gt;
-        &lt;input type=<span style="color: #a31515">&quot;radio&quot;</span> class=<span style="color: #a31515">&quot;accordion-section-selector hidden&quot;</span> id=<span
+        &lt;input type=<span style="color: #a31515">&quot;radio&quot;</span> class=<span style="color: #a31515">&quot;accordion-section-selector pcssc-invisible&quot;</span> id=<span
                             style="color: #a31515">&quot;two&quot;</span> name=<span style="color: #a31515">&quot;tab-head&quot;</span> role=<span
                             style="color: #a31515">&quot;tab&quot;</span>/&gt;
         &lt;label for=<span style="color: #a31515">&quot;two&quot;</span> class=<span style="color: #a31515">&quot;accordion-section-header&quot;</span>&gt;Option 2&lt;/label&gt;
