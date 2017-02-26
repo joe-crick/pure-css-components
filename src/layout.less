@@ -1,4 +1,5 @@
 @import 'with-pure-imports';
+@import 'lib/variables';
 
 body {
   font-family: sans-serif;
@@ -72,5 +73,33 @@ body {
     }
 
   }
+
+  .section-indicator-content {
+    max-width: 75%;
+  }
+
+  .section-indicator-header {
+
+    &:nth-child(2) .section-indicator-selector {
+      margin-left: 10%;
+
+      @media @small-device {
+        margin-left: 0;
+      }
+
+    }
+
+    &:last-child .section-indicator-selector {
+      margin-left: 20%;
+
+      @media @small-device {
+        margin-left: 0;
+      }
+
+    }
+
+  }
+
+  //.section-indicator-header { &:last-child .section-indicator-selector
 
 }

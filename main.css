@@ -321,6 +321,60 @@
     min-width: 100px;
   }
 }
+.section-indicator {
+  list-style: none;
+  font-family: sans-serif;
+  position: relative;
+}
+.section-indicator .pure-menu-list {
+  margin-top: 40px;
+  position: static;
+}
+.section-indicator .pure-menu-list .section-indicator-header {
+  margin: 0;
+  padding: 18px 0 4px;
+  display: block;
+  position: static;
+}
+@media only screen and (max-width: 479px) {
+  .section-indicator .pure-menu-list .section-indicator-header {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.section-indicator .pure-menu-list .section-indicator-header .section-indicator-content {
+  margin-top: 14px;
+  width: 100%;
+  white-space: normal;
+}
+@media only screen and (max-width: 479px) {
+  .section-indicator .pure-menu-list .section-indicator-header .section-indicator-content {
+    order: 2;
+  }
+}
+.section-indicator .pure-menu-list .section-indicator-header .section-indicator-content:hover + .section-indicator-selector {
+  background-color: lightgrey;
+}
+.section-indicator .pure-menu-list .section-indicator-header .section-indicator-selector {
+  outline: none;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+@media only screen and (max-width: 479px) {
+  .section-indicator .pure-menu-list .section-indicator-header .section-indicator-selector {
+    position: static;
+    order: 1;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .section-indicator .pure-menu-list .section-indicator-header {
+    display: inline;
+  }
+}
+.section-indicator .pure-menu-list .section-indicator-header .section-indicator-header {
+  display: inline;
+}
 .invisible {
   display: none;
 }
@@ -379,5 +433,24 @@ body .dropdown-content .dropdown-menu-item .dropdown-action-item {
 body .dropdown-content .dropdown-menu-item .dropdown-action-item:hover {
   color: #ffffff;
   background: #4dbbdb;
+}
+body .section-indicator-content {
+  max-width: 75%;
+}
+body .section-indicator-header:nth-child(2) .section-indicator-selector {
+  margin-left: 10%;
+}
+@media only screen and (max-width: 479px) {
+  body .section-indicator-header:nth-child(2) .section-indicator-selector {
+    margin-left: 0;
+  }
+}
+body .section-indicator-header:last-child .section-indicator-selector {
+  margin-left: 20%;
+}
+@media only screen and (max-width: 479px) {
+  body .section-indicator-header:last-child .section-indicator-selector {
+    margin-left: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */

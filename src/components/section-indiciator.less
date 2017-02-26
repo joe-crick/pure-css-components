@@ -1,0 +1,66 @@
+@import '../lib/mixins';
+@import '../lib/variables';
+
+// NOTE: The Section Indicator is experimental, and not intended for release.
+
+.section-indicator {
+  list-style: none;
+  font-family: sans-serif;
+  position: relative;
+
+  .pure-menu-list {
+    margin-top: 40px;
+    position: static;
+
+    .section-indicator-header {
+      margin: 0;
+      padding: 18px 0 4px;
+      display: block;
+      position: static;
+
+      @media @small-device {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .section-indicator-content {
+        margin-top: 14px;
+        width: 100%;
+        white-space: normal;
+
+        @media @small-device {
+          order: 2;
+        }
+
+        &:hover + .section-indicator-selector {
+          background-color: lightgrey;
+        }
+
+      }
+
+      .section-indicator-selector {
+        outline: none;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+
+        @media @small-device {
+          position: static;
+          order: 1;
+        }
+
+      }
+
+      @media only screen and (min-width: 768px) {
+        display: inline;
+      }
+
+      .section-indicator-header {
+        display: inline;
+      }
+
+    }
+
+  }
+
+}
