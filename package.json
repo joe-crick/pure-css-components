@@ -10,7 +10,9 @@
     "build:css": "build/./build.sh",
     "build": "npm-run-all build:lint build:css"
   },
-  "files": ["dist/"],
+  "files": [
+    "dist/"
+  ],
   "keywords": [
     "pure",
     "css",
