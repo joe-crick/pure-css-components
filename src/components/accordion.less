@@ -12,9 +12,9 @@
         display: inline;
       }
 
-      .hidden-header {
+      .accordion-section-selector {
 
-        &:checked ~ .content {
+        &:checked ~ .accordion-section-content {
           @media only screen and (min-width: 768px) {
             float: left;
           }
@@ -36,10 +36,10 @@
     padding: 18px 0 4px;
     display: block;
 
-    .hidden-header {
+    .accordion-section-selector {
       outline: none;
 
-      &:checked ~ .content {
+      &:checked ~ .accordion-section-content {
         display: block;
       }
 
@@ -58,7 +58,7 @@
       display: block;;
     }
 
-    .content {
+    .accordion-section-content {
       margin-top: 14px;
       display: none;
       width: 100%;
