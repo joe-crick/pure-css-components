@@ -52,6 +52,9 @@
                         <li class="pure-menu-item">
                             <a href="#tabs" class="pure-menu-link">Tabs</a>
                         </li>
+                        <li class="pure-menu-item">
+                            <a href="#tooltip" class="pure-menu-link">Tooltip</a>
+                        </li>
                         <li class="pure-menu-item menu-item-divided ">
                             <a href="#releases" class="pure-menu-link">Releases</a>
                         </li>
@@ -60,10 +63,11 @@
             </div>
 
             <div id="main">
-                <a href="https://github.com/you"><img style="position: absolute; top: 0; right: 0; border: 0;"
-                                                      src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67"
-                                                      alt="Fork me on GitHub"
-                                                      data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+                <a href="https://github.com/you">
+                    <img style="position: absolute; top: 0; right: 0; border: 0;"
+                         src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67"
+                         alt="Fork me on GitHub"
+                         data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
                 <a name="top"></a>
                 <div class="header">
                     <h1>Pure Components</h1>
@@ -176,54 +180,37 @@
                         </li>
                     </ul>
 
-                    <div style="background: #ffffff; margin-top: 50px; overflow:auto;width:auto;border:solid gray;margin-top: 50px;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre
-                            style="margin: 0; line-height: 125%">&lt;ul <span style="color: #0000ff">class</span>=<span
-                            style="color: #a31515">&quot;accordion&quot;</span>&gt;
-    &lt;li <span style="color: #0000ff">class</span>=<span style="color: #a31515">&quot;section&quot;</span>&gt;
-        &lt;input type=<span style="color: #a31515">&quot;radio&quot;</span> <span
-                                style="color: #0000ff">class</span>=<span style="color: #a31515">&quot;hidden-header hidden&quot;</span> id=<span
-                                style="color: #a31515">&quot;a-1&quot;</span> name=<span style="color: #a31515">&quot;a-tab-head&quot;</span> role=<span
-                                style="color: #a31515">&quot;tab&quot;</span>
+<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">
+&lt;ul class=<span style="color: #a31515">&quot;accordion&quot;</span>&gt;
+    &lt;li class=<span style="color: #a31515">&quot;section&quot;</span>&gt;
+        &lt;input type=<span style="color: #a31515">&quot;radio&quot;</span> class=<span style="color: #a31515">&quot;hidden-header hidden&quot;</span> id=<span style="color: #a31515">&quot;a-1&quot;</span> name=<span style="color: #a31515">&quot;a-tab-head&quot;</span> role=<span style="color: #a31515">&quot;tab&quot;</span>
                checked/&gt;
-        &lt;label <span style="color: #0000ff">for</span>=<span style="color: #a31515">&quot;a-1&quot;</span> <span
-                                style="color: #0000ff">class</span>=<span
-                                style="color: #a31515">&quot;tab-header&quot;</span>&gt;Option 0&lt;<span ">/label&gt;</span>
-                        &lt;div <span style="color: #0000ff">class</span>=<span style="color: #a31515">&quot;content&quot;</span>&gt;
-            &lt;h2&gt;Heading 1&lt;<span ">/h2&gt;</span>
-                        Donec mattis mauris gravida metus laoreet non rutrum sem viverra. Aenean nibh libero,
+        &lt;label for=<span style="color: #a31515">&quot;a-1&quot;</span> class=<span style="color: #a31515">&quot;tab-header&quot;</span>&gt;Option 0&lt;/label&gt;
+        &lt;div class=<span style="color: #a31515">&quot;content&quot;</span>&gt;
+            &lt;h2&gt;Heading 1&lt;/h2&gt;
+            Donec mattis mauris gravida metus laoreet non rutrum sem viverra. Aenean nibh libero,
             viverra
-            vel vestibulum <span style="color: #0000ff">in</span>,
-        &lt;<span ">/div&gt;</span>
-                        &lt;<span ">/li&gt;</span>
-                        &lt;li <span style="color: #0000ff">class</span>=<span style="color: #a31515">&quot;section&quot;</span>&gt;
-        &lt;input type=<span style="color: #a31515">&quot;radio&quot;</span> <span
-                                style="color: #0000ff">class</span>=<span style="color: #a31515">&quot;hidden-header hidden&quot;</span> id=<span
-                                style="color: #a31515">&quot;a-2&quot;</span> name=<span style="color: #a31515">&quot;a-tab-head&quot;</span> role=<span
-                                style="color: #a31515">&quot;tab&quot;</span>/&gt;
-        &lt;label <span style="color: #0000ff">for</span>=<span style="color: #a31515">&quot;a-2&quot;</span> <span
-                                style="color: #0000ff">class</span>=<span
-                                style="color: #a31515">&quot;tab-header&quot;</span>&gt;Option 1&lt;<span ">/label&gt;</span>
-                        &lt;div <span style="color: #0000ff">class</span>=<span style="color: #a31515">&quot;content&quot;</span>&gt;
-            &lt;h2&gt;Heading 1&lt;<span ">/h2&gt;</span>
-                        Content goes here
-        &lt;<span ">/div&gt;</span>
-                        &lt;<span ">/li&gt;</span>
-                        &lt;li <span style="color: #0000ff">class</span>=<span style="color: #a31515">&quot;section&quot;</span>&gt;
-        &lt;input type=<span style="color: #a31515">&quot;radio&quot;</span> <span
-                                style="color: #0000ff">class</span>=<span style="color: #a31515">&quot;hidden-header hidden&quot;</span> id=<span
-                                style="color: #a31515">&quot;a-3&quot;</span> name=<span style="color: #a31515">&quot;a-tab-head&quot;</span> role=<span
-                                style="color: #a31515">&quot;tab&quot;</span>/&gt;
-        &lt;label <span style="color: #0000ff">for</span>=<span style="color: #a31515">&quot;a-3&quot;</span> <span
-                                style="color: #0000ff">class</span>=<span
-                                style="color: #a31515">&quot;tab-header&quot;</span>&gt;Option 2&lt;<span ">/label&gt;</span>
-                        &lt;div <span style="color: #0000ff">class</span>=<span style="color: #a31515">&quot;content&quot;</span>&gt;
-            &lt;h2&gt;Heading 2&lt;<span ">/h2&gt;</span>
-                        Lorem Ipsum
-        &lt;<span ">/div&gt;</span>
-                        &lt;<span ">/li&gt;</span>
-                        &lt;<span ">/ul&gt;</span>
-</pre>
-                    </div>
+            vel vestibulum in,
+        &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li class=<span style="color: #a31515">&quot;section&quot;</span>&gt;
+        &lt;input type=<span style="color: #a31515">&quot;radio&quot;</span> class=<span style="color: #a31515">&quot;hidden-header hidden&quot;</span> id=<span style="color: #a31515">&quot;a-2&quot;</span> name=<span style="color: #a31515">&quot;a-tab-head&quot;</span> role=<span style="color: #a31515">&quot;tab&quot;</span>/&gt;
+        &lt;label for=<span style="color: #a31515">&quot;a-2&quot;</span> class=<span style="color: #a31515">&quot;tab-header&quot;</span>&gt;Option 1&lt;/label&gt;
+        &lt;div class=<span style="color: #a31515">&quot;content&quot;</span>&gt;
+            &lt;h2&gt;Heading 1&lt;/h2&gt;
+            Content goes here
+        &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li class=<span style="color: #a31515">&quot;section&quot;</span>&gt;
+        &lt;input type=<span style="color: #a31515">&quot;radio&quot;</span> class=<span style="color: #a31515">&quot;hidden-header hidden&quot;</span> id=<span style="color: #a31515">&quot;a-3&quot;</span> name=<span style="color: #a31515">&quot;a-tab-head&quot;</span> role=<span style="color: #a31515">&quot;tab&quot;</span>/&gt;
+        &lt;label for=<span style="color: #a31515">&quot;a-3&quot;</span> class=<span style="color: #a31515">&quot;tab-header&quot;</span>&gt;Option 2&lt;/label&gt;
+        &lt;div class=<span style="color: #a31515">&quot;content&quot;</span>&gt;
+            &lt;h2&gt;Heading 2&lt;/h2&gt;
+            Lorem Ipsum
+        &lt;/div&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+</pre></div>
 
 
                 </div>
@@ -296,10 +283,13 @@
                         </li>
                     </ul>
 
-                    <div style="background: #ffffff; margin-top: 50px; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">
+                    <div style="background: #ffffff; margin-top: 50px; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre
+                            style="margin: 0; line-height: 125%">
 &lt;ul class=<span style="color: #a31515">&quot;carousel&quot;</span>&gt;
     &lt;li class=<span style="color: #a31515">&quot;carousel-item&quot;</span>&gt;
-        &lt;input class=<span style="color: #a31515">&quot;carousel-nav hidden&quot;</span> type=<span style="color: #a31515">&quot;radio&quot;</span> name=<span style="color: #a31515">&quot;carousel&quot;</span> id=<span style="color: #a31515">&quot;carousel-one&quot;</span> checked/&gt;
+        &lt;input class=<span style="color: #a31515">&quot;carousel-nav hidden&quot;</span> type=<span
+                            style="color: #a31515">&quot;radio&quot;</span> name=<span style="color: #a31515">&quot;carousel&quot;</span> id=<span
+                            style="color: #a31515">&quot;carousel-one&quot;</span> checked/&gt;
         &lt;label for=<span style="color: #a31515">&quot;carousel-one&quot;</span> class=<span style="color: #a31515">&quot;carousel-label linear-carousel-label&quot;</span>&gt;&lt;/label&gt;
         &lt;img class=<span style="color: #a31515">&quot;carousel-content&quot;</span>
              src=<span style="color: #a31515">&quot;http://www.preussenchronik.de/bilder/1186_Klemens_Wenzel_Fuerst_von_Metternich.jpeg&quot;</span>
@@ -307,7 +297,9 @@
         &lt;label for=<span style="color: #a31515">&quot;carousel-two&quot;</span> class=<span style="color: #a31515">&quot;carousel-label&quot;</span>&gt;&lt;/label&gt;
     &lt;/li&gt;
     &lt;li class=<span style="color: #a31515">&quot;carousel-item&quot;</span>&gt;
-        &lt;input class=<span style="color: #a31515">&quot;carousel-nav hidden&quot;</span> type=<span style="color: #a31515">&quot;radio&quot;</span> name=<span style="color: #a31515">&quot;carousel&quot;</span> id=<span style="color: #a31515">&quot;carousel-two&quot;</span>/&gt;
+        &lt;input class=<span style="color: #a31515">&quot;carousel-nav hidden&quot;</span> type=<span
+                            style="color: #a31515">&quot;radio&quot;</span> name=<span style="color: #a31515">&quot;carousel&quot;</span> id=<span
+                            style="color: #a31515">&quot;carousel-two&quot;</span>/&gt;
         &lt;label for=<span style="color: #a31515">&quot;carousel-one&quot;</span> class=<span style="color: #a31515">&quot;carousel-label linear-carousel-label&quot;</span>&gt;&lt;/label&gt;
         &lt;img class=<span style="color: #a31515">&quot;carousel-content&quot;</span>
              src=<span style="color: #a31515">&quot;https://s-media-cache-ak0.pinimg.com/originals/fc/d7/b6/fcd7b6242ad041739357da9a237058ef.jpg&quot;</span>
@@ -315,15 +307,18 @@
         &lt;label for=<span style="color: #a31515">&quot;carousel-three&quot;</span> class=<span style="color: #a31515">&quot;carousel-label&quot;</span>&gt;&lt;/label&gt;
     &lt;/li&gt;
     &lt;li class=<span style="color: #a31515">&quot;carousel-item&quot;</span>&gt;
-        &lt;input class=<span style="color: #a31515">&quot;carousel-nav hidden&quot;</span> type=<span style="color: #a31515">&quot;radio&quot;</span> name=<span style="color: #a31515">&quot;carousel&quot;</span> id=<span style="color: #a31515">&quot;carousel-three&quot;</span>/&gt;
+        &lt;input class=<span style="color: #a31515">&quot;carousel-nav hidden&quot;</span> type=<span
+                            style="color: #a31515">&quot;radio&quot;</span> name=<span style="color: #a31515">&quot;carousel&quot;</span> id=<span
+                            style="color: #a31515">&quot;carousel-three&quot;</span>/&gt;
         &lt;label for=<span style="color: #a31515">&quot;carousel-two&quot;</span> class=<span style="color: #a31515">&quot;carousel-label linear-carousel-label&quot;</span>&gt;&lt;/label&gt;
         &lt;img class=<span style="color: #a31515">&quot;carousel-content&quot;</span>
-             src=<span style="color: #a31515">&quot;http://adamworld.typepad.com/.a/6a012876b7eaf6970c0120a7bd78bf970b-pi&quot;</span> alt=<span style="color: #a31515">&quot;&quot;</span>/&gt;
+             src=<span style="color: #a31515">&quot;http://adamworld.typepad.com/.a/6a012876b7eaf6970c0120a7bd78bf970b-pi&quot;</span> alt=<span
+                            style="color: #a31515">&quot;&quot;</span>/&gt;
         &lt;label class=<span style="color: #a31515">&quot;carousel-label carousel-last-nav&quot;</span>&gt;&lt;/label&gt;
     &lt;/li&gt;
 &lt;/ul&gt;
-</pre></div>
-
+</pre>
+                    </div>
 
 
                     <h3>Circular Carousel</h3>
@@ -355,35 +350,45 @@
                         </li>
                     </ul>
 
-                    <div style="background: #ffffff; margin-top: 50px; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">
+                    <div style="background: #ffffff; margin-top: 50px; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre
+                            style="margin: 0; line-height: 125%">
 &lt;ul class=<span style="color: #a31515">&quot;carousel&quot;</span>&gt;
     &lt;li class=<span style="color: #a31515">&quot;carousel-item&quot;</span>&gt;
-        &lt;input class=<span style="color: #a31515">&quot;carousel-nav hidden&quot;</span> type=<span style="color: #a31515">&quot;radio&quot;</span> name=<span style="color: #a31515">&quot;c-carousel&quot;</span> id=<span style="color: #a31515">&quot;c-carousel-one&quot;</span>
+        &lt;input class=<span style="color: #a31515">&quot;carousel-nav hidden&quot;</span> type=<span
+                            style="color: #a31515">&quot;radio&quot;</span> name=<span style="color: #a31515">&quot;c-carousel&quot;</span> id=<span
+                            style="color: #a31515">&quot;c-carousel-one&quot;</span>
                checked/&gt;
-        &lt;label for=<span style="color: #a31515">&quot;c-carousel-three&quot;</span> class=<span style="color: #a31515">&quot;carousel-label&quot;</span>&gt;&lt;/label&gt;
+        &lt;label for=<span style="color: #a31515">&quot;c-carousel-three&quot;</span> class=<span
+                            style="color: #a31515">&quot;carousel-label&quot;</span>&gt;&lt;/label&gt;
         &lt;img class=<span style="color: #a31515">&quot;carousel-content&quot;</span>
              src=<span style="color: #a31515">&quot;http://www.preussenchronik.de/bilder/1186_Klemens_Wenzel_Fuerst_von_Metternich.jpeg&quot;</span>
              alt=<span style="color: #a31515">&quot;&quot;</span>/&gt;
         &lt;label for=<span style="color: #a31515">&quot;c-carousel-two&quot;</span> class=<span style="color: #a31515">&quot;carousel-label&quot;</span>&gt;&lt;/label&gt;
     &lt;/li&gt;
     &lt;li class=<span style="color: #a31515">&quot;carousel-item&quot;</span>&gt;
-        &lt;input class=<span style="color: #a31515">&quot;carousel-nav hidden&quot;</span> type=<span style="color: #a31515">&quot;radio&quot;</span> name=<span style="color: #a31515">&quot;c-carousel&quot;</span> id=<span style="color: #a31515">&quot;c-carousel-two&quot;</span>/&gt;
+        &lt;input class=<span style="color: #a31515">&quot;carousel-nav hidden&quot;</span> type=<span
+                            style="color: #a31515">&quot;radio&quot;</span> name=<span style="color: #a31515">&quot;c-carousel&quot;</span> id=<span
+                            style="color: #a31515">&quot;c-carousel-two&quot;</span>/&gt;
         &lt;label for=<span style="color: #a31515">&quot;c-carousel-one&quot;</span> class=<span style="color: #a31515">&quot;carousel-label&quot;</span>&gt;&lt;/label&gt;
         &lt;img class=<span style="color: #a31515">&quot;carousel-content&quot;</span>
              src=<span style="color: #a31515">&quot;https://s-media-cache-ak0.pinimg.com/originals/fc/d7/b6/fcd7b6242ad041739357da9a237058ef.jpg&quot;</span>
              alt=<span style="color: #a31515">&quot;&quot;</span>/&gt;
-        &lt;label for=<span style="color: #a31515">&quot;c-carousel-three&quot;</span> class=<span style="color: #a31515">&quot;carousel-label&quot;</span>&gt;&lt;/label&gt;
+        &lt;label for=<span style="color: #a31515">&quot;c-carousel-three&quot;</span> class=<span
+                            style="color: #a31515">&quot;carousel-label&quot;</span>&gt;&lt;/label&gt;
     &lt;/li&gt;
     &lt;li class=<span style="color: #a31515">&quot;carousel-item&quot;</span>&gt;
-        &lt;input class=<span style="color: #a31515">&quot;carousel-nav hidden&quot;</span> type=<span style="color: #a31515">&quot;radio&quot;</span> name=<span style="color: #a31515">&quot;c-carousel&quot;</span> id=<span style="color: #a31515">&quot;c-carousel-three&quot;</span>/&gt;
+        &lt;input class=<span style="color: #a31515">&quot;carousel-nav hidden&quot;</span> type=<span
+                            style="color: #a31515">&quot;radio&quot;</span> name=<span style="color: #a31515">&quot;c-carousel&quot;</span> id=<span
+                            style="color: #a31515">&quot;c-carousel-three&quot;</span>/&gt;
         &lt;label for=<span style="color: #a31515">&quot;c-carousel-two&quot;</span> class=<span style="color: #a31515">&quot;carousel-label&quot;</span>&gt;&lt;/label&gt;
         &lt;img class=<span style="color: #a31515">&quot;carousel-content&quot;</span>
-             src=<span style="color: #a31515">&quot;http://adamworld.typepad.com/.a/6a012876b7eaf6970c0120a7bd78bf970b-pi&quot;</span> alt=<span style="color: #a31515">&quot;&quot;</span>/&gt;
+             src=<span style="color: #a31515">&quot;http://adamworld.typepad.com/.a/6a012876b7eaf6970c0120a7bd78bf970b-pi&quot;</span> alt=<span
+                            style="color: #a31515">&quot;&quot;</span>/&gt;
         &lt;label for=<span style="color: #a31515">&quot;c-carousel-one&quot;</span> class=<span style="color: #a31515">&quot;carousel-label&quot;</span>&gt;&lt;/label&gt;
     &lt;/li&gt;
 &lt;/ul&gt;
-</pre></div>
-
+</pre>
+                    </div>
 
 
                 </div>
@@ -409,16 +414,19 @@
                     </div>
 
 
-                    <div style="background: #ffffff; margin-top: 50px; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">
-&lt;label for=<span style="color: #a31515">&quot;collapse-toggle&quot;</span> class=<span style="color: #a31515">&quot;collapse-button pure-button&quot;</span> aria-label=<span style="color: #a31515">&quot;Toggle&quot;</span>&gt;
+                    <div style="background: #ffffff; margin-top: 50px; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre
+                            style="margin: 0; line-height: 125%">
+&lt;label for=<span style="color: #a31515">&quot;collapse-toggle&quot;</span> class=<span style="color: #a31515">&quot;collapse-button pure-button&quot;</span> aria-label=<span
+                            style="color: #a31515">&quot;Toggle&quot;</span>&gt;
     &lt;span&gt;Toggle&lt;/span&gt;
 &lt;/label&gt;
-&lt;input type=<span style="color: #a31515">&quot;checkbox&quot;</span> id=<span style="color: #a31515">&quot;collapse-toggle&quot;</span> class=<span style="color: #a31515">&quot;collapse-toggle hidden&quot;</span>/&gt;
+&lt;input type=<span style="color: #a31515">&quot;checkbox&quot;</span> id=<span style="color: #a31515">&quot;collapse-toggle&quot;</span> class=<span
+                            style="color: #a31515">&quot;collapse-toggle hidden&quot;</span>/&gt;
 &lt;div class=<span style="color: #a31515">&quot;collapse-content invisible&quot;</span>&gt;
     Pooka pooka!
 &lt;/div&gt;
-</pre></div>
-
+</pre>
+                    </div>
 
 
                     <h3>Toggling Button Label Collapse</h3>
@@ -434,10 +442,14 @@
                         </div>
                     </div>
 
-                    <div style="background: #ffffff; margin-top: 50px;overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">
+                    <div style="background: #ffffff; margin-top: 50px;overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre
+                            style="margin: 0; line-height: 125%">
 &lt;div class=<span style="color: #a31515">&quot;collapse-toggle-button&quot;</span>&gt;
-    &lt;input type=<span style="color: #a31515">&quot;checkbox&quot;</span> id=<span style="color: #a31515">&quot;collapse-toggle-button&quot;</span> class=<span style="color: #a31515">&quot;collapse-toggle hidden&quot;</span>/&gt;
-    &lt;label for=<span style="color: #a31515">&quot;collapse-toggle-button&quot;</span> class=<span style="color: #a31515">&quot;collapse-button pure-button&quot;</span> aria-label=<span style="color: #a31515">&quot;Toggle&quot;</span>&gt;
+    &lt;input type=<span style="color: #a31515">&quot;checkbox&quot;</span> id=<span style="color: #a31515">&quot;collapse-toggle-button&quot;</span> class=<span
+                            style="color: #a31515">&quot;collapse-toggle hidden&quot;</span>/&gt;
+    &lt;label for=<span style="color: #a31515">&quot;collapse-toggle-button&quot;</span> class=<span
+                            style="color: #a31515">&quot;collapse-button pure-button&quot;</span> aria-label=<span
+                            style="color: #a31515">&quot;Toggle&quot;</span>&gt;
         &lt;span class=<span style="color: #a31515">&quot;collapse-button-label&quot;</span>&gt;Open&lt;/span&gt;
         &lt;span class=<span style="color: #a31515">&quot;collapse-button-label invisible&quot;</span>&gt;Close&lt;/span&gt;
     &lt;/label&gt;
@@ -445,10 +457,8 @@
         Pooka pooka!
     &lt;/div&gt;
 &lt;/div&gt;
-</pre></div>
-
-                </div>
-
+</pre>
+                    </div>
 
                 </div>
 
@@ -490,7 +500,7 @@
                     <h2 class="content-subhead">Modal</h2>
 
                     <input type="radio" class="toggle-modal hidden" id="test-modal" name="modal-toggle"/>
-                    <label for="test-modal" class="open-modal">Open Modal</label>
+                    <label for="test-modal" class="pure-button">Open Modal</label>
                     <div class="modal-container invisible">
                         <div class="modal-frame">
                             <div class="modal-header">
@@ -509,7 +519,7 @@
 &lt;input type=<span style="color: #a31515">&quot;radio&quot;</span> class=<span style="color: #a31515">&quot;toggle-modal hidden&quot;</span> id=<span
                             style="color: #a31515">&quot;test-modal&quot;</span> name=<span style="color: #a31515">&quot;modal-toggle&quot;</span>/&gt;
 &lt;label <span style="color: #0000ff">for</span>=<span style="color: #a31515">&quot;test-modal&quot;</span> class=<span
-                            style="color: #a31515">&quot;open-modal&quot;</span>&gt;Open Modal&lt;/label&gt;
+                            style="color: #a31515">&quot;pure-button&quot;</span>&gt;Open Modal&lt;/label&gt;
 &lt;div class=<span style="color: #a31515">&quot;modal-container invisible&quot;</span>&gt;
     &lt;div class=<span style="color: #a31515">&quot;modal-frame&quot;</span>&gt;
         &lt;div class=<span style="color: #a31515">&quot;modal-header&quot;</span>&gt;
@@ -537,7 +547,7 @@
                     <h3>Toggleable</h3>
 
                     <div class="popover-container">
-                        <label class="popover-toggle-label" for="popover-one">Bottom Popover</label>
+                        <label class="pure-button popover-toggle-label" for="popover-one">Bottom Popover</label>
                         <input class="popover-toggle hidden" type="checkbox" name="popover-toggle" id="popover-one"/>
                         <div class="popover popover-bottom">
                             <div class="arrow up-arrow"></div>
@@ -551,7 +561,7 @@
                     <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;margin-top: 50px;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre
                             style="margin: 0; line-height: 125%">
 &lt;div class=<span style="color: #a31515">&quot;popover-container&quot;</span>&gt;
-    &lt;label class=<span style="color: #a31515">&quot;popover-toggle-label&quot;</span> <span style="color: #0000ff">for</span>=<span
+    &lt;label class=<span style="color: #a31515">&quot;pure-button popover-toggle-label&quot;</span> <span style="color: #0000ff">for</span>=<span
                             style="color: #a31515">&quot;popover-one&quot;</span>&gt;Bottom Popover&lt;/label&gt;
     &lt;input class=<span style="color: #a31515">&quot;popover-toggle hidden&quot;</span> type=<span
                             style="color: #a31515">&quot;checkbox&quot;</span> name=<span style="color: #a31515">&quot;popover-toggle&quot;</span> id=<span
@@ -571,7 +581,7 @@
                     <h3>Dismissable</h3>
 
                     <div class="popover-container">
-                        <div tabindex="0" class="popover-toggle popover-toggle-dismissable popover-dismissable-right">
+                        <div tabindex="0" class="pure-button popover-toggle popover-toggle-dismissable popover-dismissable-right">
                             Dismissable Right Popover
                         </div>
                         <div class="popover popover-right">
@@ -586,7 +596,7 @@
                     <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;margin-top: 50px;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre
                             style="margin: 0; line-height: 125%">
 &lt;div class=<span style="color: #a31515">&quot;popover-container&quot;</span>&gt;
-    &lt;div tabindex=<span style="color: #a31515">&quot;0&quot;</span> class=<span style="color: #a31515">&quot;popover-toggle popover-toggle-dismissable popover-dismissable-right&quot;</span>&gt;
+    &lt;div tabindex=<span style="color: #a31515">&quot;0&quot;</span> class=<span style="color: #a31515">&quot;pure-button popover-toggle popover-toggle-dismissable popover-dismissable-right&quot;</span>&gt;
         Dismissable Right Popover
     &lt;/div&gt;
     &lt;div class=<span style="color: #a31515">&quot;popover popover-right&quot;</span>&gt;
@@ -684,6 +694,18 @@
 
                 </div>
 
+                <div class="content tooltip-content">
+                    <a name="tooltip"></a>
+                    <h2 class="content-subhead">Tooltip</h2>
+
+                    <div class="tooltip">
+                        <span class="tooltip-target">Hover Me.</span>
+                        <div class="tooltip-body">
+                            <p>All around the mulberry bush, the Plunky chased the Sneezle</p>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="footer">
                     <div class="legal pure-g">
                         <div class="pure-u-1 u-sm-1-2">
@@ -700,6 +722,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </body>

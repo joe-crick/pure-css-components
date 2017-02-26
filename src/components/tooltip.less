@@ -1,0 +1,42 @@
+@import '../lib/variables';
+
+.tooltip {
+  display: inline-block;
+  position: absolute;
+
+  @media @small-device {
+    min-width: 0;
+    font-size: 12px;
+  }
+
+  .tooltip-target {
+    cursor: help;
+
+    &:hover + .tooltip-body {
+      display: block;
+    }
+
+  }
+
+  .tooltip-body {
+    display: none;
+    position: absolute;
+    padding: 20px;
+    text-align: justify;
+    min-width: 250px;
+    max-width: 350px;
+    z-index: 2000;
+
+    @media @medium-device {
+      min-width: 200px;
+    }
+
+    @media @small-device {
+      left: -150px;
+      max-width: 200px;
+      min-width: 100px;
+    }
+
+  }
+
+}

@@ -126,16 +126,6 @@
   justify-content: center;
   align-items: center;
 }
-.open-modal {
-  cursor: pointer;
-  padding: 7px;
-  border: 1px solid lightgray;
-  border-radius: 5px;
-}
-.open-modal:hover {
-  background-color: #4dbbdb;
-  color: white;
-}
 .modal-container {
   position: fixed;
   width: 100%;
@@ -232,15 +222,7 @@
 }
 .popover-container .popover-toggle-label,
 .popover-container .popover-toggle-dismissable {
-  padding: 7px;
-  border: 1px solid lightgray;
-  border-radius: 5px;
   cursor: pointer;
-}
-.popover-container .popover-toggle-label:hover,
-.popover-container .popover-toggle-dismissable:hover {
-  background-color: #4dbbdb;
-  color: white;
 }
 .popover-container .popover-toggle:checked ~ .popover {
   display: block;
@@ -327,6 +309,43 @@
 .collapse-toggle-button .collapse-toggle:checked + .collapse-button .collapse-button-label:last-child {
   display: inline;
 }
+.tooltip {
+  display: inline-block;
+  position: absolute;
+}
+@media only screen and (max-width: 479px) {
+  .tooltip {
+    min-width: 0;
+    font-size: 12px;
+  }
+}
+.tooltip .tooltip-target {
+  cursor: help;
+}
+.tooltip .tooltip-target:hover + .tooltip-body {
+  display: block;
+}
+.tooltip .tooltip-body {
+  display: none;
+  position: absolute;
+  padding: 20px;
+  text-align: justify;
+  min-width: 250px;
+  max-width: 350px;
+  z-index: 2000;
+}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .tooltip .tooltip-body {
+    min-width: 200px;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .tooltip .tooltip-body {
+    left: -150px;
+    max-width: 200px;
+    min-width: 100px;
+  }
+}
 .invisible {
   display: none;
 }
@@ -350,5 +369,9 @@ body .alert {
 body .alert-success {
   background-color: #dff0d8;
   border: 1px solid green;
+}
+body .tooltip-body {
+  margin-top: -100px;
+  margin-left: 100px;
 }
 /*# sourceMappingURL=main.css.map */
