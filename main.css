@@ -12,41 +12,41 @@
   clear: both;
 }
 @media only screen and (min-width: 768px) {
-  .accordion.accordion-tab .section {
+  .accordion.accordion-tab .accordion-section {
     display: inline;
   }
 }
 @media only screen and (min-width: 768px) {
-  .accordion.accordion-tab .section .hidden-header:checked ~ .content {
+  .accordion.accordion-tab .accordion-section .hidden-header:checked ~ .content {
     float: left;
   }
 }
-.accordion.accordion-tab .section .tab-header {
+.accordion.accordion-tab .accordion-section .tab-header {
   display: inline;
 }
-.accordion .section {
+.accordion .accordion-section {
   margin: 0;
   padding: 18px 0 4px;
   display: block;
 }
-.accordion .section .hidden-header {
+.accordion .accordion-section .hidden-header {
   outline: none;
 }
-.accordion .section .hidden-header:checked ~ .content {
+.accordion .accordion-section .hidden-header:checked ~ .content {
   display: block;
 }
-.accordion .section .hidden-header:checked + .tab-header {
+.accordion .accordion-section .hidden-header:checked + .tab-header {
   background-color: white;
   color: gray;
 }
-.accordion .section .tab-header {
+.accordion .accordion-section .tab-header {
   cursor: pointer;
   padding: 10px;
   background-color: lightgray;
   margin-right: -2px;
   display: block;
 }
-.accordion .section .content {
+.accordion .accordion-section .content {
   margin-top: 14px;
   display: none;
   width: 100%;
