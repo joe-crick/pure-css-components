@@ -20,7 +20,7 @@ NOTE: This is an independent project, and is not directly associated with Pure C
 ```html
 <link rel="stylesheet" 
 	  href="https://unpkg.com/purecss-components@0.0.9/dist/pure-components.css" 
-	  integrity="sha384-U/kbTc0zcolF+VdFxsdrmSVBfCKROkrRIF7WQzZNd9XDtwCdLP1j6iCVcw/K7sXc" 
+	  integrity="sha384-dJ2gufvATt32d7AQvqg2ujM2BfTlepT8ZpWdAPJvCLG4McGWgG7D7EorGAe6I0FI" 
 	  crossorigin="anonymous">
 ```
 
