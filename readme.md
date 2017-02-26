@@ -19,7 +19,10 @@ NOTE: This is an independent project, and is not directly associated with Pure C
 ### Use from the CDN
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/purecss-components@0.0.8/dist/pure-components.css">
+<link rel="stylesheet" 
+	  href="https://unpkg.com/purecss-components@0.0.8/dist/pure-components.css" 
+	  integrity="sha384-U/kbTc0zcolF+VdFxsdrmSVBfCKROkrRIF7WQzZNd9XDtwCdLP1j6iCVcw/K7sXc" 
+	  crossorigin="anonymous">
 ```
 
 ### Install from NPM
