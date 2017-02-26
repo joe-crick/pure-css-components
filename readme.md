@@ -6,7 +6,7 @@ Pure CSS Components
 [![Build Status](https://travis-ci.org/joe-crick/pure-css-components.svg?branch=master)](https://travis-ci.org/joe-crick/pure-css-components)
 [![GitHub license](https://img.shields.io/github/license/Day8/re-frame.svg)](license.txt) 
 ![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen.svg)
-![Current Version](https://img.shields.io/badge/version-0.0.9-green.svg)
+![Current Version](https://img.shields.io/badge/version-0.0.10-green.svg)
 
 
 ![Pure Components](https://github.com/joe-crick/pure-css-components/blob/master/static/pure-css-components.png)
@@ -19,9 +19,7 @@ NOTE: This is an independent project, and is not directly associated with Pure C
 
 ```html
 <link rel="stylesheet" 
-	  href="https://unpkg.com/purecss-components@0.0.9/dist/pure-components.css" 
-	  integrity="sha384-dJ2gufvATt32d7AQvqg2ujM2BfTlepT8ZpWdAPJvCLG4McGWgG7D7EorGAe6I0FI" 
-	  crossorigin="anonymous">
+	  href="https://unpkg.com/purecss-components@0.0.10/dist/pure-components.css">
 ```
 
 ### Install from NPM
