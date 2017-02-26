@@ -35,4 +35,36 @@ body {
 
   }
 
+  .dropdown-content {
+    z-index: 1;
+    transition: visibility 0.5s;
+    background-color: @white;
+    border: 1px solid @off-white;
+    width: auto;
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 5px;
+
+    .dropdown-menu-item {
+
+      .dropdown-action-item {
+        border: 0;
+        border-radius: 5px;
+        color: inherit;
+        outline: 0;
+        cursor: pointer;
+        width: 120px;
+        text-align: left;
+
+        &:hover {
+          color: @white;
+          background: @light-blue;
+        }
+
+      }
+
+    }
+
+  }
+
 }

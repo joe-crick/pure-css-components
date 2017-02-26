@@ -3,61 +3,33 @@
 .dropdown {
   position: relative;
   cursor: pointer;
-
-  &:before {
-    padding: 5px 10px;
-    background-color: @white;
-    border: 1px solid @off-white;
-    border-radius: 5px;
-    content: '...';
-  }
+  display: inline-block;
 
   &:focus {
     pointer-events: none;
     outline: none;
 
-    .dropdown-content {
+    & + .dropdown-content {
       opacity: 1;
       visibility: visible;
       pointer-events: auto;
     }
 
   }
+}
 
-  .dropdown-content {
-    position: absolute;
-    z-index: 1;
-    opacity: 0;
-    visibility: hidden;
-    transition: visibility 0.5s;
-    background-color: @white;
-    border: 1px solid @off-white;
-    width: auto;
-    margin-top: 5px;
-    padding: 10px;
-    border-radius: 5px;
+.dropdown-content {
+  position: absolute;
+  z-index: 1;
+  visibility: hidden;
+  width: auto;
 
-    li {
-      list-style-type: none;
-      white-space: nowrap;
+  .dropdown-menu-item {
+    list-style-type: none;
+    white-space: nowrap;
 
-      button {
-        background: transparent;
-        border: 0;
-        border-radius: 5px;
-        color: inherit;
-        outline: 0;
-        cursor: pointer;
-        width: 120px;
-        text-align: left;
-
-        &:hover {
-          color: @white;
-          background: @light-blue;
-        }
-
-      }
-
+    .dropdown-action-item {
+      background: transparent;
     }
 
   }
