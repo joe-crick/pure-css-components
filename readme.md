@@ -7,7 +7,7 @@ Pure CSS Components
 [![GitHub license](https://img.shields.io/github/license/Day8/re-frame.svg)](license.txt) 
 ![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen.svg)
 [![GitHub Issues](https://img.shields.io/github/issues/joe-crick/responsive-css-accordion.svg)](https://github.com/joe-crick/responsive-css-accordion/issues)
-![Current Version](https://img.shields.io/badge/version-0.0.7-green.svg)
+![Current Version](https://img.shields.io/badge/version-0.0.8-green.svg)
 
 
 ![Pure Components](https://github.com/joe-crick/pure-css-components/blob/master/static/pure-css-components.png)
@@ -19,7 +19,7 @@ NOTE: This is an independent project, and is not directly associated with Pure C
 ### Use from the CDN
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/purecss-components@0.0.7/dist/pure-components.css">
+<link rel="stylesheet" href="https://unpkg.com/purecss-components@0.0.8/dist/pure-components.css">
 ```
 
 ### Install from NPM
