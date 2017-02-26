@@ -54,6 +54,7 @@
 .dropdown {
   position: relative;
   cursor: pointer;
+  display: inline-block;
 }
 .dropdown:focus {
   pointer-events: none;
@@ -346,6 +347,11 @@ body .alert-success {
 }
 body .tooltip {
   margin-bottom: 30px;
+}
+body .tooltip .tooltip-target {
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding: 5px;
 }
 body .tooltip .tooltip-body {
   margin-top: -90px;
