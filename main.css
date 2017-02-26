@@ -21,7 +21,7 @@
     float: left;
   }
 }
-.accordion.accordion-tab .accordion-section .tab-header {
+.accordion.accordion-tab .accordion-section .accordion-section-header {
   display: inline;
 }
 .accordion .accordion-section {
@@ -35,11 +35,11 @@
 .accordion .accordion-section .accordion-section-selector:checked ~ .accordion-section-content {
   display: block;
 }
-.accordion .accordion-section .accordion-section-selector:checked + .tab-header {
+.accordion .accordion-section .accordion-section-selector:checked + .accordion-section-header {
   background-color: white;
   color: gray;
 }
-.accordion .accordion-section .tab-header {
+.accordion .accordion-section .accordion-section-header {
   cursor: pointer;
   padding: 10px;
   background-color: lightgray;
