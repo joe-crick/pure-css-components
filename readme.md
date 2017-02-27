@@ -20,7 +20,9 @@ NOTE: This is an independent project, and is not directly associated with Pure C
 
 ```html
 <link rel="stylesheet" 
-	  href="https://unpkg.com/purecss-components@0.0.10/dist/pure-components.css">
+	  href="https://unpkg.com/purecss-components@0.0.10/dist/pure-components.css"
+      integrity="sha384-cCdXaMBDgc3krh5mlTnFgdTnizVUd2Ucy9HGShQMoYOc/4NgP4b7CBOdF23VxIy3"
+      crossorigin="anonymous">
 ```
 
 ### Install from NPM
