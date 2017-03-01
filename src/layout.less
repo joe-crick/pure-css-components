@@ -116,18 +116,15 @@ body {
 
   }
 
-  .right-accordion-side {
+  .right-accordion-side .accordion-section .accordion-section-content {
 
-    .accordion-section-content {
+    @media @medium-device {
+      right: 20%;
+      width: 80%;
+    }
 
-      @media @medium-device {
-        right: 20%;
-      }
-
-      @media @large-device {
-        right: 20%;
-      }
-
+    @media @large-device {
+      right: 20%;
     }
 
   }
