@@ -502,6 +502,7 @@ body .section-indicator-header:last-child .section-indicator-selector {
 @media only screen and (min-width: 959px) {
   body .right-accordion-side .accordion-section .accordion-section-content {
     right: 20%;
+    width: 80%;
   }
 }
 /*# sourceMappingURL=main.css.map */
