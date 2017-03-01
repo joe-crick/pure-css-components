@@ -1,8 +1,10 @@
 @import '../lib/mixins';
+@import '../lib/variables';
 
 .accordion {
   list-style: none;
   font-family: sans-serif;
+  position: relative;
   .clearfix();
 
   &.accordion-tab {
@@ -30,6 +32,40 @@
     }
 
   }
+
+  &.accordion-left-side {
+
+    .accordion-section {
+
+      display: flex;
+
+      @media @small-device {
+        display: block;
+      }
+
+
+      .accordion-section-selector {
+
+        &:checked ~ .accordion-section-content {
+
+          @media @medium-device {
+            position: absolute;
+            top: 0;
+          }
+
+          @media @large-device {
+            position: absolute;
+            top: 0;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
 
   .accordion-section {
     margin: 0;

@@ -705,6 +705,8 @@
                         render as an Accordion.
                     </p>
 
+                    <h3>Top tabs</h3>
+
                     <ul class="accordion accordion-tab">
                         <li class="accordion-section">
                             <input type="radio" class="accordion-section-selector pcssc-invisible" id="zero"
@@ -725,7 +727,7 @@
                                    role="tab"/>
                             <label for="one" class="accordion-section-header">Option 1</label>
                             <div class="accordion-section-content">
-                                <h2>Heading 1</h2>
+                                <h2>Heading 2</h2>
                                 Content goes here
                             </div>
                         </li>
@@ -735,7 +737,7 @@
                                    role="tab"/>
                             <label for="two" class="accordion-section-header">Option 2</label>
                             <div class="accordion-section-content">
-                                <h2>Heading 2</h2>
+                                <h2>Heading 3</h2>
                                 Lorem Ipsum
                             </div>
                         </li>
@@ -763,7 +765,7 @@
                             style="color: #a31515">&quot;tab&quot;</span>/&gt;
         &lt;label for=<span style="color: #a31515">&quot;one&quot;</span> class=<span style="color: #a31515">&quot;accordion-section-header&quot;</span>&gt;Option 1&lt;/label&gt;
         &lt;div class=<span style="color: #a31515">&quot;accordion-section-content&quot;</span>&gt;
-            &lt;h2&gt;Heading 1&lt;/h2&gt;
+            &lt;h2&gt;Heading 2&lt;/h2&gt;
             Content goes here
         &lt;/div&gt;
     &lt;/li&gt;
@@ -773,7 +775,7 @@
                             style="color: #a31515">&quot;tab&quot;</span>/&gt;
         &lt;label for=<span style="color: #a31515">&quot;two&quot;</span> class=<span style="color: #a31515">&quot;accordion-section-header&quot;</span>&gt;Option 2&lt;/label&gt;
         &lt;div class=<span style="color: #a31515">&quot;accordion-section-content&quot;</span>&gt;
-            &lt;h2&gt;Heading 2&lt;/h2&gt;
+            &lt;h2&gt;Heading 3&lt;/h2&gt;
             Lorem Ipsum
         &lt;/div&gt;
     &lt;/li&gt;
@@ -781,6 +783,54 @@
 </pre>
                     </div>
 
+                    <h3>Left-side tabs</h3>
+
+                    <p>
+                        Note: left-side tab content is positioned absolutely. You will (currently) need to set the left distance of the tab
+                        content from the tabs. For example:
+                    </p>
+                    <p>
+                        <pre><code>left: 15%;</code></pre>
+                    </p>
+                    <p>
+                        As with other tabs, left-side tabs collapse to an accordion on smaller devices.
+                    </p>
+
+                    <ul class="accordion accordion-tab accordion-left-side">
+                        <li class="accordion-section">
+                            <input type="radio" class="accordion-section-selector pcssc-invisible" id="zero-left"
+                                   name="tab-head-left"
+                                   role="tab"
+                                   checked/>
+                            <label for="zero-left" class="accordion-section-header">Option 0</label>
+                            <div class="accordion-section-content">
+                                <h2>Heading 1</h2>
+                                Donec mattis mauris gravida metus laoreet non rutrum sem viverra. Aenean nibh libero,
+                                viverra
+                                vel vestibulum in,
+                            </div>
+                        </li>
+                        <li class="accordion-section">
+                            <input type="radio" class="accordion-section-selector pcssc-invisible" id="one-left"
+                                   name="tab-head-left"
+                                   role="tab"/>
+                            <label for="one-left" class="accordion-section-header">Option 1</label>
+                            <div class="accordion-section-content">
+                                <h2>Heading 2</h2>
+                                Content goes here
+                            </div>
+                        </li>
+                        <li class="accordion-section">
+                            <input type="radio" class="accordion-section-selector pcssc-invisible" id="two-left"
+                                   name="tab-head-left"
+                                   role="tab"/>
+                            <label for="two-left" class="accordion-section-header">Option 2</label>
+                            <div class="accordion-section-content">
+                                <h2>Heading 3</h2>
+                                Lorem Ipsum
+                            </div>
+                        </li>
+                    </ul>
 
                 </div>
 

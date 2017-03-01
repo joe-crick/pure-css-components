@@ -2,6 +2,7 @@
 .accordion {
   list-style: none;
   font-family: sans-serif;
+  position: relative;
 }
 .accordion:before,
 .accordion:after {
@@ -23,6 +24,26 @@
 }
 .accordion.accordion-tab .accordion-section .accordion-section-header {
   display: inline;
+}
+.accordion.accordion-left-side .accordion-section {
+  display: flex;
+}
+@media only screen and (max-width: 479px) {
+  .accordion.accordion-left-side .accordion-section {
+    display: block;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .accordion.accordion-left-side .accordion-section .accordion-section-selector:checked ~ .accordion-section-content {
+    position: absolute;
+    top: 0;
+  }
+}
+@media only screen and (min-width: 959px) {
+  .accordion.accordion-left-side .accordion-section .accordion-section-selector:checked ~ .accordion-section-content {
+    position: absolute;
+    top: 0;
+  }
 }
 .accordion .accordion-section {
   margin: 0;
@@ -451,6 +472,16 @@ body .section-indicator-header:last-child .section-indicator-selector {
 @media only screen and (max-width: 479px) {
   body .section-indicator-header:last-child .section-indicator-selector {
     margin-left: 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  body .accordion-left-side .accordion-section-content {
+    left: 20%;
+  }
+}
+@media only screen and (min-width: 959px) {
+  body .accordion-left-side .accordion-section-content {
+    left: 20%;
   }
 }
 /*# sourceMappingURL=main.css.map */
