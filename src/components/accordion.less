@@ -33,7 +33,7 @@
 
   }
 
-  &.accordion-left-side {
+  &[class$='accordion-side'] {
 
     .accordion-section {
 
@@ -42,7 +42,6 @@
       @media @small-device {
         display: block;
       }
-
 
       .accordion-section-selector {
 
@@ -61,6 +60,16 @@
         }
 
       }
+
+    }
+
+  }
+
+  &.right-accordion-side {
+
+    .accordion-section {
+      display: flex;
+      flex-direction: row-reverse;
 
     }
 
