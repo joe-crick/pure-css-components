@@ -8,7 +8,7 @@
 @black: #191818;
 @light-gray: #999999;
 @menu-link: #777777;
-@menu-hover-color: #333333;
+@menu-gray: #333333;
 
 body {
   font-family: sans-serif;
@@ -83,6 +83,10 @@ body {
       transition: all 0.2s ease-out;
     }
 
+    .pure-menu-heading {
+      border-bottom: 1px solid @menu-gray;
+    }
+
   }
 
   .dropdown-content {
@@ -106,16 +110,20 @@ body {
       }
 
       @media @large-device {
-        top: 50px;
+        top: 56px;
       }
 
       .pure-menu-item {
+
+        &.menu-item-divided {
+          border-top: 1px solid @menu-gray;
+        }
 
         .pure-menu-link {
           color: @menu-link;
 
           &:hover {
-            background: @menu-hover-color;
+            background: @menu-gray;
           }
 
         }

@@ -473,6 +473,9 @@ body .pcssc-collapsing-menu {
 body .pcssc-collapsing-menu .dropdown:focus + .dropdown-content {
   transition: all 0.2s ease-out;
 }
+body .pcssc-collapsing-menu .pure-menu-heading {
+  border-bottom: 1px solid #333333;
+}
 body .dropdown-content {
   z-index: 1;
   transition: visibility 0.5s;
@@ -496,8 +499,11 @@ body .dropdown-content.pure-menu {
 }
 @media only screen and (min-width: 959px) {
   body .dropdown-content.pure-menu {
-    top: 50px;
+    top: 56px;
   }
+}
+body .dropdown-content.pure-menu .pure-menu-item.menu-item-divided {
+  border-top: 1px solid #333333;
 }
 body .dropdown-content.pure-menu .pure-menu-item .pure-menu-link {
   color: #777777;
