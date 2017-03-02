@@ -1,51 +1,43 @@
-@import '../lib/close-button';
+@modal-opaque: rgba(2, 2, 2, 0.80);
 
-.open-modal {
-  background-color: blue;
+.pcssc-modal {
 
-  &:checked ~ .modal-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .open-modal {
+
+    &:checked ~ .modal-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
   }
 
-}
+  .modal-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: @modal-opaque;
+    z-index: 2000;
 
-.modal-container {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: rgba(2, 2, 2, 0.80);
+    .modal-frame {
+      width: 50%;
+      height: 50%;
 
-  .modal-frame {
-    width: 50%;
-    height: 50%;
+      .modal-header {
+        text-align: center;
+        position: relative;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
 
-    > div {
-      padding: 10px;
-      width: 100%;
-    }
-
-    .modal-header {
-      background-color: steelblue;
-      text-align: center;
-      position: relative;
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px;
-      color: white;
-
-      .close-button {
-        .close-button();
       }
 
-    }
+      .modal-body {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
 
-    .modal-body {
-      background-color: white;
-      border-bottom-left-radius: 10px;
-      border-bottom-right-radius: 10px;
     }
 
   }

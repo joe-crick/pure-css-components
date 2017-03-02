@@ -102,52 +102,31 @@
 .dropdown-content .dropdown-menu-item .dropdown-action-item {
   background: transparent;
 }
-.close-button {
-  cursor: pointer;
-  position: absolute;
-  right: 3px;
-  top: 4px;
-}
-.open-modal {
-  background-color: blue;
-}
-.open-modal:checked ~ .modal-container {
+.pcssc-modal .open-modal:checked ~ .modal-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.modal-container {
+.pcssc-modal .modal-container {
   position: fixed;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   background: rgba(2, 2, 2, 0.8);
+  z-index: 2000;
 }
-.modal-container .modal-frame {
+.pcssc-modal .modal-container .modal-frame {
   width: 50%;
   height: 50%;
 }
-.modal-container .modal-frame > div {
-  padding: 10px;
-  width: 100%;
-}
-.modal-container .modal-frame .modal-header {
-  background-color: steelblue;
+.pcssc-modal .modal-container .modal-frame .modal-header {
   text-align: center;
   position: relative;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  color: white;
 }
-.modal-container .modal-frame .modal-header .close-button {
-  cursor: pointer;
-  position: absolute;
-  right: 3px;
-  top: 4px;
-}
-.modal-container .modal-frame .modal-body {
-  background-color: white;
+.pcssc-modal .modal-container .modal-frame .modal-body {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
@@ -196,6 +175,12 @@
 }
 .pcssc-carousel .carousel-item .carousel-label {
   cursor: pointer;
+}
+.close-button {
+  cursor: pointer;
+  position: absolute;
+  right: 3px;
+  top: 4px;
 }
 .popover-container {
   display: inline-block;
@@ -574,5 +559,27 @@ body .section-indicator-header:last-child .section-indicator-selector {
     right: 20%;
     width: 80%;
   }
+}
+body .pcssc-modal .modal-container .modal-frame > div {
+  padding: 10px;
+  width: 100%;
+}
+body .pcssc-modal .modal-container .modal-frame .modal-header {
+  background-color: steelblue;
+  color: #ffffff;
+}
+body .pcssc-modal .modal-container .modal-frame .modal-header .close-button {
+  background-color: white;
+  color: #191818;
+  padding: 3px 7px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+body .pcssc-modal .modal-container .modal-frame .modal-header .close-button:hover {
+  background-color: #4dbbdb;
+  color: white;
+}
+body .pcssc-modal .modal-container .modal-frame .modal-body {
+  background-color: #ffffff;
 }
 /*# sourceMappingURL=main.css.map */

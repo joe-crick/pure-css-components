@@ -281,24 +281,22 @@
                         </div>
                     </div>
 
-                    <div style="background: #ffffff; margin-top: 50px; overflow:auto;width:auto;border:solid gray;margin-top: 50px;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre
+                    <div style="background: #ffffff; margin-top: 50px; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre
                             style="margin: 0; line-height: 125%">
-&lt;input type=<span style="color: #a31515">&quot;checkbox&quot;</span> id=<span style="color: #a31515">&quot;close-alert&quot;</span> <span
-                            style="color: #0000ff">class</span>=<span style="color: #a31515">&quot;alert-toggle pcssc-invisible&quot;</span>/&gt;
-&lt;div <span style="color: #0000ff">class</span>=<span style="color: #a31515">&quot;alert alert-success alert-dismissible&quot;</span> role=<span
+&lt;div class=<span style="color: #a31515">&quot;pcssc-alert&quot;</span>&gt;
+    &lt;input type=<span style="color: #a31515">&quot;checkbox&quot;</span> id=<span style="color: #a31515">&quot;close-alert&quot;</span> class=<span
+                            style="color: #a31515">&quot;alert-toggle pcssc-invisible&quot;</span>/&gt;
+    &lt;div class=<span style="color: #a31515">&quot;alert alert-success alert-dismissible&quot;</span> role=<span
                             style="color: #a31515">&quot;alert&quot;</span>&gt;
-    &lt;span&gt;&lt;strong&gt;Uh oh...&lt;<span>/strong&gt; Something happened...&lt;/span&gt;</span>
-    &lt;label <span style="color: #0000ff">for</span>=<span style="color: #a31515">&quot;close-alert&quot;</span> <span
-                            style="color: #0000ff">class</span>=<span
-                            style="color: #a31515">&quot;close-alert&quot;</span> aria-label=<span
+        &lt;span&gt;&lt;strong&gt;Uh oh...&lt;/strong&gt; Something happened...&lt;/span&gt;
+        &lt;label for=<span style="color: #a31515">&quot;close-alert&quot;</span> class=<span style="color: #a31515">&quot;close-alert&quot;</span> aria-label=<span
                             style="color: #a31515">&quot;Close&quot;</span>&gt;
-        &lt;span aria-invisible=<span
-                            style="color: #a31515">&quot;true&quot;</span>&gt;&amp;times;&lt;<span>/span&gt;</span>
-    &lt;<span>/label&gt;</span>
-&lt;<span>/div&gt;</span>
+            &lt;span aria-invisible=<span style="color: #a31515">&quot;true&quot;</span>&gt;&amp;times;&lt;/span&gt;
+        &lt;/label&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 </pre>
                     </div>
-
 
                 </div>
 
@@ -597,44 +595,44 @@
                     <a name="modal"></a>
                     <h2 class="content-subhead">Modal</h2>
 
-                    <input type="radio" class="open-modal pcssc-invisible" id="test-modal" name="modal-toggle"/>
-                    <label for="test-modal" class="pure-button">Open Modal</label>
-                    <div class="modal-container pcssc-invisible">
-                        <div class="modal-frame">
-                            <div class="modal-header">
-                                Header
-                                <input type="radio" id="close-modal" name="modal-toggle"
-                                       class="close-modal pcssc-invisible"/>
-                                <label for="close-modal" class="close-button">x</label>
-                            </div>
-                            <div class="modal-body">
-                                Body
+                    <div class="pcssc-modal">
+                        <input type="radio" class="open-modal pcssc-invisible" id="test-modal" name="modal-toggle"/>
+                        <label for="test-modal" class="pure-button">Open Modal</label>
+                        <div class="modal-container pcssc-invisible">
+                            <div class="modal-frame">
+                                <div class="modal-header">
+                                    Header
+                                    <input type="radio" id="close-modal" name="modal-toggle"
+                                           class="close-modal pcssc-invisible"/>
+                                    <label for="close-modal" class="close-button">x</label>
+                                </div>
+                                <div class="modal-body">
+                                    Body
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;margin-top: 50px;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre
-                            style="margin: 0; line-height: 125%">
-&lt;input type=<span style="color: #a31515">&quot;radio&quot;</span> class=<span style="color: #a31515">&quot;open-modal pcssc-invisible&quot;</span> id=<span
-                            style="color: #a31515">&quot;test-modal&quot;</span> name=<span style="color: #a31515">&quot;modal-toggle&quot;</span>/&gt;
-&lt;label <span style="color: #0000ff">for</span>=<span style="color: #a31515">&quot;test-modal&quot;</span> class=<span
-                            style="color: #a31515">&quot;pure-button&quot;</span>&gt;Open Modal&lt;/label&gt;
-&lt;div class=<span style="color: #a31515">&quot;modal-container pcssc-invisible&quot;</span>&gt;
-    &lt;div class=<span style="color: #a31515">&quot;modal-frame&quot;</span>&gt;
-        &lt;div class=<span style="color: #a31515">&quot;modal-header&quot;</span>&gt;
-            Header
-            &lt;input type=<span style="color: #a31515">&quot;radio&quot;</span> id=<span style="color: #a31515">&quot;close-modal&quot;</span> name=<span
-                            style="color: #a31515">&quot;modal-toggle&quot;</span> class=<span style="color: #a31515">&quot;pcssc-invisible&quot;</span>/&gt;
-            &lt;label <span style="color: #0000ff">for</span>=<span
-                            style="color: #a31515">&quot;close-modal&quot;</span> class=<span style="color: #a31515">&quot;close-button&quot;</span>&gt;x&lt;/label&gt;
-        &lt;/div&gt;
-        &lt;div class=<span style="color: #a31515">&quot;modal-body&quot;</span>&gt;
-            Body
+<div style="background: #ffffff; margin-top: 50px; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">
+&lt;div class=<span style="color: #a31515">&quot;pcssc-modal&quot;</span>&gt;
+    &lt;input type=<span style="color: #a31515">&quot;radio&quot;</span> class=<span style="color: #a31515">&quot;open-modal pcssc-invisible&quot;</span> id=<span style="color: #a31515">&quot;test-modal&quot;</span> name=<span style="color: #a31515">&quot;modal-toggle&quot;</span>/&gt;
+    &lt;label for=<span style="color: #a31515">&quot;test-modal&quot;</span> class=<span style="color: #a31515">&quot;pure-button&quot;</span>&gt;Open Modal&lt;/label&gt;
+    &lt;div class=<span style="color: #a31515">&quot;modal-container pcssc-invisible&quot;</span>&gt;
+        &lt;div class=<span style="color: #a31515">&quot;modal-frame&quot;</span>&gt;
+            &lt;div class=<span style="color: #a31515">&quot;modal-header&quot;</span>&gt;
+                Header
+                &lt;input type=<span style="color: #a31515">&quot;radio&quot;</span> id=<span style="color: #a31515">&quot;close-modal&quot;</span> name=<span style="color: #a31515">&quot;modal-toggle&quot;</span>
+                       class=<span style="color: #a31515">&quot;close-modal pcssc-invisible&quot;</span>/&gt;
+                &lt;label for=<span style="color: #a31515">&quot;close-modal&quot;</span> class=<span style="color: #a31515">&quot;close-button&quot;</span>&gt;x&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class=<span style="color: #a31515">&quot;modal-body&quot;</span>&gt;
+                Body
+            &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
-</pre>
-                    </div>
+</pre></div>
+
 
 
                 </div>
