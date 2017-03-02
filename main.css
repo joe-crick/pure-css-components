@@ -39,19 +39,13 @@
     top: 0;
   }
 }
-@media only screen and (min-width: 959px) {
-  .accordion[class$='accordion-side'] .accordion-section .accordion-section-selector:checked ~ .accordion-section-content {
-    position: absolute;
-    top: 0;
-  }
-}
 .accordion.right-accordion-side .accordion-section {
-  display: flex;
-  flex-direction: row-reverse;
+  display: block;
 }
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width: 768px) {
   .accordion.right-accordion-side .accordion-section {
-    display: block;
+    display: flex;
+    flex-direction: row-reverse;
   }
 }
 .accordion .accordion-section {

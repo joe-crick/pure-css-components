@@ -52,11 +52,6 @@
             top: 0;
           }
 
-          @media @large-device {
-            position: absolute;
-            top: 0;
-          }
-
         }
 
       }
@@ -68,17 +63,16 @@
   &.right-accordion-side {
 
     .accordion-section {
-      display: flex;
-      flex-direction: row-reverse;
+      display: block;
 
-      @media @smart-phone {
-        display: block;
+      @media @medium-device {
+        display: flex;
+        flex-direction: row-reverse;
       }
 
     }
 
   }
-
 
   .accordion-section {
     margin: 0;
