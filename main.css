@@ -461,9 +461,16 @@ body .pure-menu-heading:hover {
 body .pcssc-collapsing-menu {
   background: #191818;
 }
-body .pcssc-collapsing-menu .pcssc-dropdown-content {
-  transition: visibility 1s, opacity 1s;
-  opacity: 0;
+@media only screen and (min-width: 320px) {
+  body .pcssc-collapsing-menu .pcssc-dropdown-content {
+    transition: visibility 1s, opacity 1s;
+    opacity: 0;
+  }
+}
+@media only screen and (min-width: 768px) {
+  body .pcssc-collapsing-menu .pcssc-dropdown-content {
+    opacity: 1;
+  }
 }
 body .pcssc-collapsing-menu .pcssc-dropdown:focus + .pcssc-dropdown-content {
   opacity: 1;

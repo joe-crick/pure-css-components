@@ -105,9 +105,21 @@ body {
   .pcssc-collapsing-menu {
     background: @black;
 
-    .pcssc-dropdown-content {
-      transition: visibility 1s, opacity 1s;
-      opacity: 0;
+    @media @smart-phone {
+
+      .pcssc-dropdown-content {
+        transition: visibility 1s, opacity 1s;
+        opacity: 0;
+      }
+
+    }
+
+    @media @medium-device {
+
+      .pcssc-dropdown-content {
+        opacity: 1;
+      }
+
     }
 
     .pcssc-dropdown:focus + .pcssc-dropdown-content {
