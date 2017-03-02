@@ -1,37 +1,80 @@
 @import '../lib/variables';
 
 .pcssc-dropdown {
-  position: relative;
-  cursor: pointer;
-  display: inline-block;
 
-  &:focus {
-    pointer-events: none;
-    outline: none;
+  @media @smart-phone {
 
-    & + .pcssc-dropdown-content {
-      opacity: 1;
-      visibility: visible;
-      pointer-events: auto;
-    }
-
-  }
-}
-
-.pcssc-dropdown-content {
-  position: absolute;
-  z-index: 1;
-  visibility: hidden;
-  width: auto;
-
-  .dropdown-menu-item {
-    list-style-type: none;
-    white-space: nowrap;
-
-    .dropdown-action-item {
-      background: transparent;
+    .focus-toggle {
+      display: none;
     }
 
   }
 
+  @media @large-device {
+
+    .click-toggle {
+      display: none;
+    }
+
+    .focus-toggle {
+      display: inline-block;
+    }
+
+  }
+
+  .dropdown-toggle {
+    position: relative;
+    cursor: pointer;
+
+    @media @smart-phone {
+
+      &:checked {
+        pointer-events: none;
+        outline: none;
+
+        & + .dropdown-content {
+          opacity: 1;
+          visibility: visible;
+          pointer-events: auto;
+        }
+
+      }
+
+    }
+
+    @media @large-device {
+
+      &:focus {
+        pointer-events: none;
+        outline: none;
+
+        & ~ .dropdown-content {
+          opacity: 1;
+          visibility: visible;
+          pointer-events: auto;
+        }
+
+      }
+
+    }
+
+  }
+
+  .dropdown-content {
+    position: absolute;
+    z-index: 1;
+    visibility: hidden;
+    width: auto;
+
+    .dropdown-menu-item {
+      list-style-type: none;
+      white-space: nowrap;
+
+      .dropdown-action-item {
+        background: transparent;
+      }
+
+    }
+
+  }
 }

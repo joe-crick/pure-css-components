@@ -24,7 +24,7 @@
                 <div tabindex="0" class="menu-link pcssc-dropdown">
                     <span></span>
                 </div>
-                <ul class="pcssc-dropdown-content pure-menu-list pure-menu">
+                <ul class="dropdown-content pure-menu-list pure-menu">
                     <li class="pure-menu-item">
                         <a href="#installation" class="pure-menu-link">Installation</a>
                     </li>
@@ -155,7 +155,7 @@
                         CDN.
                     </p>
 
-<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre
+                    <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre
                             style="margin: 0; line-height: 125%">
 &lt;link rel=<span style="color: #a31515">&quot;stylesheet&quot;</span>
          href=<span style="color: #a31515">&quot;https://unpkg.com/purecss-components@0.0.11/dist/pure-components.css&quot;</span>
@@ -524,20 +524,25 @@
                     <a name="dropdown"></a>
                     <h2 class="content-subhead">Dropdown</h2>
 
-                    <div tabindex="0" class="pcssc-dropdown pure-button">Dropdown Button</div>
-                    <ul class="pcssc-dropdown-content">
-                        <li class="dropdown-menu-item">
-                            <button class="dropdown-action-item">Edit</button>
-                        </li>
-                        <li class="dropdown-menu-item">
-                            <button class="dropdown-action-item">Delete</button>
-                        </li>
-                    </ul>
+                    <div class="pcssc-dropdown">
+                        <div tabindex="0" class="dropdown-toggle focus-toggle pure-button">Dropdown Button</div>
+                        <label for="menu-toggle" class="pure-button click-toggle" aria-label="Toggle">Dropdown
+                            Buton</label>
+                        <input type="checkbox" id="menu-toggle" class="dropdown-toggle pcssc-invisible"/>
+                        <ul class="dropdown-content">
+                            <li class="dropdown-menu-item">
+                                <button class="dropdown-action-item">Edit</button>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <button class="dropdown-action-item">Delete</button>
+                            </li>
+                        </ul>
+                    </div>
 
                     <div style="background: #ffffff; margin-top: 50px; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre
                             style="margin: 0; line-height: 125%">
 &lt;div tabindex=<span style="color: #a31515">&quot;0&quot;</span> class=<span style="color: #a31515">&quot;pcssc-dropdown pure-button&quot;</span>&gt;Dropdown Button&lt;/div&gt;
-&lt;ul class=<span style="color: #a31515">&quot;pcssc-dropdown-content&quot;</span>&gt;
+&lt;ul class=<span style="color: #a31515">&quot;dropdown-content&quot;</span>&gt;
     &lt;li class=<span style="color: #a31515">&quot;dropdown-menu-item&quot;</span>&gt;
         &lt;button class=<span style="color: #a31515">&quot;dropdown-action-item&quot;</span>&gt;Edit&lt;/button&gt;
     &lt;/li&gt;
@@ -613,17 +618,21 @@
                         </div>
                     </div>
 
-<div style="background: #ffffff; margin-top: 50px; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">
+                    <div style="background: #ffffff; margin-top: 50px; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre
+                            style="margin: 0; line-height: 125%">
 &lt;div class=<span style="color: #a31515">&quot;pcssc-modal&quot;</span>&gt;
-    &lt;input type=<span style="color: #a31515">&quot;radio&quot;</span> class=<span style="color: #a31515">&quot;open-modal pcssc-invisible&quot;</span> id=<span style="color: #a31515">&quot;test-modal&quot;</span> name=<span style="color: #a31515">&quot;modal-toggle&quot;</span>/&gt;
+    &lt;input type=<span style="color: #a31515">&quot;radio&quot;</span> class=<span style="color: #a31515">&quot;open-modal pcssc-invisible&quot;</span> id=<span
+                            style="color: #a31515">&quot;test-modal&quot;</span> name=<span style="color: #a31515">&quot;modal-toggle&quot;</span>/&gt;
     &lt;label for=<span style="color: #a31515">&quot;test-modal&quot;</span> class=<span style="color: #a31515">&quot;pure-button&quot;</span>&gt;Open Modal&lt;/label&gt;
     &lt;div class=<span style="color: #a31515">&quot;modal-container pcssc-invisible&quot;</span>&gt;
         &lt;div class=<span style="color: #a31515">&quot;modal-frame&quot;</span>&gt;
             &lt;div class=<span style="color: #a31515">&quot;modal-header&quot;</span>&gt;
                 Header
-                &lt;input type=<span style="color: #a31515">&quot;radio&quot;</span> id=<span style="color: #a31515">&quot;close-modal&quot;</span> name=<span style="color: #a31515">&quot;modal-toggle&quot;</span>
+                &lt;input type=<span style="color: #a31515">&quot;radio&quot;</span> id=<span style="color: #a31515">&quot;close-modal&quot;</span> name=<span
+                            style="color: #a31515">&quot;modal-toggle&quot;</span>
                        class=<span style="color: #a31515">&quot;close-modal pcssc-invisible&quot;</span>/&gt;
-                &lt;label for=<span style="color: #a31515">&quot;close-modal&quot;</span> class=<span style="color: #a31515">&quot;close-button&quot;</span>&gt;x&lt;/label&gt;
+                &lt;label for=<span style="color: #a31515">&quot;close-modal&quot;</span> class=<span
+                            style="color: #a31515">&quot;close-button&quot;</span>&gt;x&lt;/label&gt;
             &lt;/div&gt;
             &lt;div class=<span style="color: #a31515">&quot;modal-body&quot;</span>&gt;
                 Body
@@ -631,8 +640,8 @@
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
-</pre></div>
-
+</pre>
+                    </div>
 
 
                 </div>
