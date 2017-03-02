@@ -63,23 +63,6 @@ body {
 
   }
 
-  .position-fix-this {
-    position: fixed;
-    z-index: 1000;
-
-    .menu-link {
-      left: 0;
-    }
-
-    .dropdown-content {
-      top: 38px;
-      left: -1px;
-      border-radius: 0;
-
-    }
-
-  }
-
   .dropdown-content {
     z-index: 1;
     transition: visibility 0.5s;
@@ -148,7 +131,7 @@ body {
     &:nth-child(2) .section-indicator-selector {
       margin-left: 10%;
 
-      @media @small-device {
+      @media @smart-phone {
         margin-left: 0;
       }
 
@@ -157,7 +140,7 @@ body {
     &:last-child .section-indicator-selector {
       margin-left: 20%;
 
-      @media @small-device {
+      @media @smart-phone {
         margin-left: 0;
       }
 

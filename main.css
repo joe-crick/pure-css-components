@@ -28,12 +28,12 @@
 .accordion[class$='accordion-side'] .accordion-section {
   display: flex;
 }
-@media only screen and (max-width: 479px) {
+@media only screen and (min-width: 480px) {
   .accordion[class$='accordion-side'] .accordion-section {
     display: block;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 959px) {
+@media only screen and (min-width: 768px) {
   .accordion[class$='accordion-side'] .accordion-section .accordion-section-selector:checked ~ .accordion-section-content {
     position: absolute;
     top: 0;
@@ -49,7 +49,7 @@
   display: flex;
   flex-direction: row-reverse;
 }
-@media only screen and (max-width: 479px) {
+@media only screen and (min-width: 480px) {
   .accordion.right-accordion-side .accordion-section {
     display: block;
   }
@@ -292,7 +292,7 @@
 .tooltip {
   display: inline-block;
 }
-@media only screen and (max-width: 479px) {
+@media only screen and (min-width: 480px) {
   .tooltip {
     min-width: 0;
     font-size: 12px;
@@ -313,12 +313,12 @@
   max-width: 350px;
   z-index: 2000;
 }
-@media only screen and (min-width: 768px) and (max-width: 959px) {
+@media only screen and (min-width: 768px) {
   .tooltip .tooltip-body {
     min-width: 200px;
   }
 }
-@media only screen and (max-width: 479px) {
+@media only screen and (min-width: 480px) {
   .tooltip .tooltip-body {
     left: -150px;
     max-width: 200px;
@@ -340,7 +340,7 @@
   display: block;
   position: static;
 }
-@media only screen and (max-width: 479px) {
+@media only screen and (min-width: 480px) {
   .section-indicator .pure-menu-list .section-indicator-header {
     display: flex;
     flex-direction: column;
@@ -351,7 +351,7 @@
   width: 100%;
   white-space: normal;
 }
-@media only screen and (max-width: 479px) {
+@media only screen and (min-width: 480px) {
   .section-indicator .pure-menu-list .section-indicator-header .section-indicator-content {
     order: 2;
   }
@@ -365,7 +365,7 @@
   position: absolute;
   top: 0;
 }
-@media only screen and (max-width: 479px) {
+@media only screen and (min-width: 480px) {
   .section-indicator .pure-menu-list .section-indicator-header .section-indicator-selector {
     position: static;
     order: 1;
@@ -382,6 +382,23 @@
 .pcssc-menu {
   position: fixed;
   z-index: 1000;
+  left: 0;
+}
+@media only screen and (min-width: 480px) {
+  .pcssc-menu .pure-menu-heading {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .pcssc-menu .menu-link {
+    display: none;
+  }
+  .pcssc-menu .pure-menu-heading {
+    display: block;
+  }
+  .pcssc-menu .dropdown-content {
+    visibility: visible;
+  }
 }
 .pcssc-menu .menu-link {
   left: 0;
@@ -438,18 +455,6 @@ body .tooltip .tooltip-body {
   margin-top: -90px;
   margin-left: 100px;
 }
-body .position-fix-this {
-  position: fixed;
-  z-index: 1000;
-}
-body .position-fix-this .menu-link {
-  left: 0;
-}
-body .position-fix-this .dropdown-content {
-  top: 38px;
-  left: -1px;
-  border-radius: 0;
-}
 body .dropdown-content {
   z-index: 1;
   transition: visibility 0.5s;
@@ -495,7 +500,7 @@ body .section-indicator-content {
 body .section-indicator-header:nth-child(2) .section-indicator-selector {
   margin-left: 10%;
 }
-@media only screen and (max-width: 479px) {
+@media only screen and (min-width: 480px) {
   body .section-indicator-header:nth-child(2) .section-indicator-selector {
     margin-left: 0;
   }
@@ -503,12 +508,12 @@ body .section-indicator-header:nth-child(2) .section-indicator-selector {
 body .section-indicator-header:last-child .section-indicator-selector {
   margin-left: 20%;
 }
-@media only screen and (max-width: 479px) {
+@media only screen and (min-width: 480px) {
   body .section-indicator-header:last-child .section-indicator-selector {
     margin-left: 0;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 959px) {
+@media only screen and (min-width: 768px) {
   body .left-accordion-side .accordion-section-content {
     left: 20%;
   }
@@ -518,7 +523,7 @@ body .section-indicator-header:last-child .section-indicator-selector {
     left: 20%;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 959px) {
+@media only screen and (min-width: 768px) {
   body .right-accordion-side .accordion-section .accordion-section-content {
     right: 20%;
     width: 80%;

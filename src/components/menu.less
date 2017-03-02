@@ -1,6 +1,33 @@
+@import '../lib/variables';
+
 .pcssc-menu {
   position: fixed;
   z-index: 1000;
+  left: 0;
+
+  @media @smart-phone {
+
+    .pure-menu-heading {
+      display: none;
+    }
+
+  }
+
+  @media @medium-device {
+
+    .menu-link {
+      display: none;
+    }
+
+    .pure-menu-heading {
+      display: block;
+    }
+
+    .dropdown-content {
+      visibility: visible;
+    }
+
+  }
 
   .menu-link {
     left: 0;
