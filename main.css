@@ -161,40 +161,40 @@
 .alert .close-alert {
   cursor: pointer;
 }
-.carousel {
+.pcssc-carousel {
   list-style-type: none;
 }
-.carousel .carousel-item {
+.pcssc-carousel .carousel-item {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-.carousel .carousel-item:first-child .carousel-nav:checked + .linear-carousel-label:after {
+.pcssc-carousel .carousel-item:first-child .carousel-nav:checked + .linear-carousel-label:after {
   content: '\003c';
   color: lightgray;
   cursor: not-allowed;
 }
-.carousel .carousel-item:last-child .carousel-nav:checked ~ .carousel-last-nav:after {
+.pcssc-carousel .carousel-item:last-child .carousel-nav:checked ~ .carousel-last-nav:after {
   color: lightgray;
   cursor: not-allowed;
 }
-.carousel .carousel-item .carousel-nav:checked ~ .carousel-content {
+.pcssc-carousel .carousel-item .carousel-nav:checked ~ .carousel-content {
   display: inline;
 }
-.carousel .carousel-item .carousel-nav:checked ~ .carousel-label:after {
+.pcssc-carousel .carousel-item .carousel-nav:checked ~ .carousel-label:after {
   content: '\003e';
   color: black;
   cursor: pointer;
 }
-.carousel .carousel-item .carousel-nav:checked + .carousel-label:after {
+.pcssc-carousel .carousel-item .carousel-nav:checked + .carousel-label:after {
   content: '\003c';
 }
-.carousel .carousel-item .carousel-content {
+.pcssc-carousel .carousel-item .carousel-content {
   height: 400px;
   width: 300px;
   display: none;
 }
-.carousel .carousel-item .carousel-label {
+.pcssc-carousel .carousel-item .carousel-label {
   cursor: pointer;
 }
 .popover-container {
