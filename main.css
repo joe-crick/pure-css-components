@@ -1,76 +1,76 @@
 @import '../node_modules/purecss/build/pure-min.css';
-.accordion {
+.pcssc-accordion {
   list-style: none;
   font-family: sans-serif;
   position: relative;
 }
-.accordion:before,
-.accordion:after {
+.pcssc-accordion:before,
+.pcssc-accordion:after {
   content: ' ';
   display: table;
 }
-.accordion:after {
+.pcssc-accordion:after {
   clear: both;
 }
 @media only screen and (min-width: 768px) {
-  .accordion.accordion-tab .accordion-section {
+  .pcssc-accordion.accordion-tab .accordion-section {
     display: inline;
   }
 }
 @media only screen and (min-width: 768px) {
-  .accordion.accordion-tab .accordion-section .accordion-section-selector:checked ~ .accordion-section-content {
+  .pcssc-accordion.accordion-tab .accordion-section .accordion-section-selector:checked ~ .accordion-section-content {
     float: left;
   }
 }
-.accordion.accordion-tab .accordion-section .accordion-section-header {
+.pcssc-accordion.accordion-tab .accordion-section .accordion-section-header {
   display: inline;
 }
-.accordion[class$='accordion-side'] .accordion-section {
+.pcssc-accordion[class$='accordion-side'] .accordion-section {
   display: flex;
 }
 @media only screen and (min-width: 320px) {
-  .accordion[class$='accordion-side'] .accordion-section {
+  .pcssc-accordion[class$='accordion-side'] .accordion-section {
     display: block;
   }
 }
 @media only screen and (min-width: 768px) {
-  .accordion[class$='accordion-side'] .accordion-section .accordion-section-selector:checked ~ .accordion-section-content {
+  .pcssc-accordion[class$='accordion-side'] .accordion-section .accordion-section-selector:checked ~ .accordion-section-content {
     position: absolute;
     top: 0;
   }
 }
-.accordion.right-accordion-side .accordion-section {
+.pcssc-accordion.right-accordion-side .accordion-section {
   display: block;
 }
 @media only screen and (min-width: 768px) {
-  .accordion.right-accordion-side .accordion-section {
+  .pcssc-accordion.right-accordion-side .accordion-section {
     display: flex;
     flex-direction: row-reverse;
   }
 }
-.accordion .accordion-section {
+.pcssc-accordion .accordion-section {
   margin: 0;
   padding: 18px 0 4px;
   display: block;
 }
-.accordion .accordion-section .accordion-section-selector {
+.pcssc-accordion .accordion-section .accordion-section-selector {
   outline: none;
 }
-.accordion .accordion-section .accordion-section-selector:checked ~ .accordion-section-content {
+.pcssc-accordion .accordion-section .accordion-section-selector:checked ~ .accordion-section-content {
   display: block;
 }
-.accordion .accordion-section .accordion-section-selector:checked + .accordion-section-header {
+.pcssc-accordion .accordion-section .accordion-section-selector:checked + .accordion-section-header {
   background-color: white;
   color: gray;
 }
-.accordion .accordion-section .accordion-section-header {
+.pcssc-accordion .accordion-section .accordion-section-header {
   cursor: pointer;
   padding: 10px;
   background-color: lightgray;
   margin-right: -2px;
   display: block;
 }
-.accordion .accordion-section .accordion-section-content {
+.pcssc-accordion .accordion-section .accordion-section-content {
   margin-top: 14px;
   display: none;
   width: 100%;
