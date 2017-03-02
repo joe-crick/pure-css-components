@@ -5,8 +5,10 @@
 @light-blue: #4dbbdb;
 @white: #ffffff;
 @off-white: #dddddd;
-@black: #000000;
+@black: #191818;
 @light-gray: #999999;
+@menu-link: #777777;
+@menu-hover-color: #333333;
 
 body {
   font-family: sans-serif;
@@ -63,6 +65,26 @@ body {
 
   }
 
+  .pure-menu-heading {
+    background-color: @black;
+    width: 160px;
+    color: @white;
+
+    &:hover {
+      color: @light-gray;
+    }
+
+  }
+
+  .pcssc-collapsing-menu {
+    background: @black;
+
+    .dropdown:focus + .dropdown-content {
+      transition: all 0.2s ease-out;
+    }
+
+  }
+
   .dropdown-content {
     z-index: 1;
     transition: visibility 0.5s;
@@ -74,12 +96,23 @@ body {
     border-radius: 5px;
 
     &.pure-menu {
-      background: #191818;
+      background: @black;
+      padding: 0;
+      width: 160px;
+      border: 0;
+
+      @media @medium-device {
+        top: 50px;
+      }
 
       .pure-menu-item {
 
         .pure-menu-link {
-          color: @light-gray;
+          color: @menu-link;
+
+          &:hover {
+            background: @menu-hover-color;
+          }
 
         }
 
