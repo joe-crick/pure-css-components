@@ -21,51 +21,57 @@
                 <a class="pure-menu-heading" href="#top">Pure
                     <div class="small-caps">components</div>
                 </a>
-                <div tabindex="0" class="menu-link pcssc-dropdown">
-                    <span></span>
+                <div class="pcssc-dropdown">
+                    <div tabindex="0" class="dropdown-toggle focus-toggle menu-link">
+                        <span></span>
+                    </div>
+                    <label for="main-menu-toggle" class="menu-link click-toggle" aria-label="Toggle">
+                        <span></span>
+                    </label>
+                    <input type="checkbox" id="main-menu-toggle" class="dropdown-toggle pcssc-invisible"/>
+                    <ul class="dropdown-content pure-menu-list pure-menu">
+                        <li class="pure-menu-item">
+                            <a href="#installation" class="pure-menu-link">Installation</a>
+                        </li>
+                        <li class="pure-menu-item menu-item-divided">
+                            <a href="#accordion" class="pure-menu-link">Accordion</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="#alert" class="pure-menu-link">Alert</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="#carousel" class="pure-menu-link">Carousel</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="#collapse" class="pure-menu-link">Collapse</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="#dropdown" class="pure-menu-link">Dropdown</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="#menu" class="pure-menu-link">Menu</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="#modal" class="pure-menu-link">Modal</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="#popover" class="pure-menu-link">Popover</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="#tabs" class="pure-menu-link">Tabs</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="#tooltip" class="pure-menu-link">Tooltip</a>
+                        </li>
+                        <li class="pure-menu-item menu-item-divided ">
+                            <a href="#js-utils" class="pure-menu-link">JS Utils</a>
+                        </li>
+                        <li class="pure-menu-item menu-item-divided ">
+                            <a href="https://github.com/joe-crick/pure-css-components/releases"
+                               class="pure-menu-link">Releases</a>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="dropdown-content pure-menu-list pure-menu">
-                    <li class="pure-menu-item">
-                        <a href="#installation" class="pure-menu-link">Installation</a>
-                    </li>
-                    <li class="pure-menu-item menu-item-divided">
-                        <a href="#accordion" class="pure-menu-link">Accordion</a>
-                    </li>
-                    <li class="pure-menu-item">
-                        <a href="#alert" class="pure-menu-link">Alert</a>
-                    </li>
-                    <li class="pure-menu-item">
-                        <a href="#carousel" class="pure-menu-link">Carousel</a>
-                    </li>
-                    <li class="pure-menu-item">
-                        <a href="#collapse" class="pure-menu-link">Collapse</a>
-                    </li>
-                    <li class="pure-menu-item">
-                        <a href="#dropdown" class="pure-menu-link">Dropdown</a>
-                    </li>
-                    <li class="pure-menu-item">
-                        <a href="#menu" class="pure-menu-link">Menu</a>
-                    </li>
-                    <li class="pure-menu-item">
-                        <a href="#modal" class="pure-menu-link">Modal</a>
-                    </li>
-                    <li class="pure-menu-item">
-                        <a href="#popover" class="pure-menu-link">Popover</a>
-                    </li>
-                    <li class="pure-menu-item">
-                        <a href="#tabs" class="pure-menu-link">Tabs</a>
-                    </li>
-                    <li class="pure-menu-item">
-                        <a href="#tooltip" class="pure-menu-link">Tooltip</a>
-                    </li>
-                    <li class="pure-menu-item menu-item-divided ">
-                        <a href="#js-utils" class="pure-menu-link">JS Utils</a>
-                    </li>
-                    <li class="pure-menu-item menu-item-divided ">
-                        <a href="https://github.com/joe-crick/pure-css-components/releases"
-                           class="pure-menu-link">Releases</a>
-                    </li>
-                </ul>
             </div>
 
             <div id="main">
@@ -539,17 +545,24 @@
                         </ul>
                     </div>
 
-                    <div style="background: #ffffff; margin-top: 50px; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre
+                    <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre
                             style="margin: 0; line-height: 125%">
-&lt;div tabindex=<span style="color: #a31515">&quot;0&quot;</span> class=<span style="color: #a31515">&quot;pcssc-dropdown pure-button&quot;</span>&gt;Dropdown Button&lt;/div&gt;
-&lt;ul class=<span style="color: #a31515">&quot;dropdown-content&quot;</span>&gt;
-    &lt;li class=<span style="color: #a31515">&quot;dropdown-menu-item&quot;</span>&gt;
-        &lt;button class=<span style="color: #a31515">&quot;dropdown-action-item&quot;</span>&gt;Edit&lt;/button&gt;
-    &lt;/li&gt;
-    &lt;li class=<span style="color: #a31515">&quot;dropdown-menu-item&quot;</span>&gt;
-        &lt;button class=<span style="color: #a31515">&quot;dropdown-action-item&quot;</span>&gt;Delete&lt;/button&gt;
-    &lt;/li&gt;
-&lt;/ul&gt;
+&lt;div class=<span style="color: #a31515">&quot;pcssc-dropdown&quot;</span>&gt;
+    &lt;div tabindex=<span style="color: #a31515">&quot;0&quot;</span> class=<span style="color: #a31515">&quot;dropdown-toggle focus-toggle pure-button&quot;</span>&gt;Dropdown Button&lt;/div&gt;
+    &lt;label for=<span style="color: #a31515">&quot;menu-toggle&quot;</span> class=<span style="color: #a31515">&quot;pure-button click-toggle&quot;</span> aria-label=<span
+                            style="color: #a31515">&quot;Toggle&quot;</span>&gt;Dropdown
+        Buton&lt;/label&gt;
+    &lt;input type=<span style="color: #a31515">&quot;checkbox&quot;</span> id=<span style="color: #a31515">&quot;menu-toggle&quot;</span> class=<span
+                            style="color: #a31515">&quot;dropdown-toggle pcssc-invisible&quot;</span>/&gt;
+    &lt;ul class=<span style="color: #a31515">&quot;dropdown-content&quot;</span>&gt;
+        &lt;li class=<span style="color: #a31515">&quot;dropdown-menu-item&quot;</span>&gt;
+            &lt;button class=<span style="color: #a31515">&quot;dropdown-action-item&quot;</span>&gt;Edit&lt;/button&gt;
+        &lt;/li&gt;
+        &lt;li class=<span style="color: #a31515">&quot;dropdown-menu-item&quot;</span>&gt;
+            &lt;button class=<span style="color: #a31515">&quot;dropdown-action-item&quot;</span>&gt;Delete&lt;/button&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
 </pre>
                     </div>
 
@@ -569,29 +582,34 @@
                         menu requires both <strong>dropdown.css</strong> and <strong>menu.css</strong>.
                     </p>
 
-                    <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre
-                            style="margin: 0; line-height: 125%">
+<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">
 &lt;div class=<span style="color: #a31515">&quot;pcssc-collapsing-menu pcssc-menu-left&quot;</span>&gt;
     &lt;a class=<span style="color: #a31515">&quot;pure-menu-heading&quot;</span> href=<span style="color: #a31515">&quot;#top&quot;</span>&gt;Pure
         &lt;div class=<span style="color: #a31515">&quot;small-caps&quot;</span>&gt;components&lt;/div&gt;
     &lt;/a&gt;
-    &lt;div tabindex=<span style="color: #a31515">&quot;0&quot;</span> class=<span style="color: #a31515">&quot;menu-link pcssc-dropdown&quot;</span>&gt;
-        &lt;span&gt;&lt;/span&gt;
+    &lt;div class=<span style="color: #a31515">&quot;pcssc-dropdown&quot;</span>&gt;
+        &lt;div tabindex=<span style="color: #a31515">&quot;0&quot;</span> class=<span style="color: #a31515">&quot;dropdown-toggle focus-toggle menu-link&quot;</span>&gt;
+            &lt;span&gt;&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;label for=<span style="color: #a31515">&quot;main-menu-toggle&quot;</span> class=<span style="color: #a31515">&quot;menu-link click-toggle&quot;</span> aria-label=<span style="color: #a31515">&quot;Toggle&quot;</span>&gt;
+            &lt;span&gt;&lt;/span&gt;
+        &lt;/label&gt;
+        &lt;input type=<span style="color: #a31515">&quot;checkbox&quot;</span> id=<span style="color: #a31515">&quot;main-menu-toggle&quot;</span> class=<span style="color: #a31515">&quot;dropdown-toggle pcssc-invisible&quot;</span>/&gt;
+        &lt;ul class=<span style="color: #a31515">&quot;dropdown-content pure-menu-list pure-menu&quot;</span>&gt;
+            &lt;li class=<span style="color: #a31515">&quot;pure-menu-item&quot;</span>&gt;
+                &lt;a href=<span style="color: #a31515">&quot;#installation&quot;</span> class=<span style="color: #a31515">&quot;pure-menu-link&quot;</span>&gt;Installation&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class=<span style="color: #a31515">&quot;pure-menu-item menu-item-divided&quot;</span>&gt;
+                &lt;a href=<span style="color: #a31515">&quot;#accordion&quot;</span> class=<span style="color: #a31515">&quot;pure-menu-link&quot;</span>&gt;Accordion&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class=<span style="color: #a31515">&quot;pure-menu-item&quot;</span>&gt;
+                &lt;a href=<span style="color: #a31515">&quot;#alert&quot;</span> class=<span style="color: #a31515">&quot;pure-menu-link&quot;</span>&gt;Alert&lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
     &lt;/div&gt;
-    &lt;ul class=<span style="color: #a31515">&quot;dropdown-content pure-menu-list pure-menu&quot;</span>&gt;
-        &lt;li class=<span style="color: #a31515">&quot;pure-menu-item&quot;</span>&gt;
-            &lt;a href=<span style="color: #a31515">&quot;#installation&quot;</span> class=<span style="color: #a31515">&quot;pure-menu-link&quot;</span>&gt;Installation&lt;/a&gt;
-        &lt;/li&gt;
-        &lt;li class=<span style="color: #a31515">&quot;pure-menu-item menu-item-divided&quot;</span>&gt;
-            &lt;a href=<span style="color: #a31515">&quot;#accordion&quot;</span> class=<span style="color: #a31515">&quot;pure-menu-link&quot;</span>&gt;Accordion&lt;/a&gt;
-        &lt;/li&gt;
-        &lt;li class=<span style="color: #a31515">&quot;pure-menu-item&quot;</span>&gt;
-            &lt;a href=<span style="color: #a31515">&quot;#alert&quot;</span> class=<span style="color: #a31515">&quot;pure-menu-link&quot;</span>&gt;Alert&lt;/a&gt;
-        &lt;/li&gt;
-    &lt;/ul&gt;
 &lt;/div&gt;
-</pre>
-                    </div>
+</pre></div>
+
 
 
                 </div>

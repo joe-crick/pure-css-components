@@ -107,8 +107,8 @@ body {
 
     @media @smart-phone {
 
-      .pcssc-dropdown-content {
-        transition: visibility 1s, opacity 1s;
+      .dropdown-content {
+        transition: visibility 0.25s, opacity 0.25s;
         opacity: 0;
       }
 
@@ -116,13 +116,17 @@ body {
 
     @media @medium-device {
 
-      .pcssc-dropdown-content {
+      .dropdown-content {
         opacity: 1;
       }
 
     }
 
-    .pcssc-dropdown:focus + .pcssc-dropdown-content {
+    .dropdown-toggle:focus ~ .dropdown-content {
+      opacity: 1;
+    }
+
+    .dropdown-toggle:checked + .dropdown-content {
       opacity: 1;
     }
 
@@ -150,7 +154,7 @@ body {
       border-radius: 0;
 
       @media @medium-device {
-        top: 38px;
+        top: 34px;
       }
 
       @media @large-device {
