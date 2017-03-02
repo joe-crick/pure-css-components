@@ -28,7 +28,7 @@
 .accordion[class$='accordion-side'] .accordion-section {
   display: flex;
 }
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 320px) {
   .accordion[class$='accordion-side'] .accordion-section {
     display: block;
   }
@@ -49,7 +49,7 @@
   display: flex;
   flex-direction: row-reverse;
 }
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 320px) {
   .accordion.right-accordion-side .accordion-section {
     display: block;
   }
@@ -292,7 +292,7 @@
 .tooltip {
   display: inline-block;
 }
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 320px) {
   .tooltip {
     min-width: 0;
     font-size: 12px;
@@ -318,7 +318,7 @@
     min-width: 200px;
   }
 }
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 320px) {
   .tooltip .tooltip-body {
     left: -150px;
     max-width: 200px;
@@ -340,7 +340,7 @@
   display: block;
   position: static;
 }
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 320px) {
   .section-indicator .pure-menu-list .section-indicator-header {
     display: flex;
     flex-direction: column;
@@ -351,7 +351,7 @@
   width: 100%;
   white-space: normal;
 }
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 320px) {
   .section-indicator .pure-menu-list .section-indicator-header .section-indicator-content {
     order: 2;
   }
@@ -365,7 +365,7 @@
   position: absolute;
   top: 0;
 }
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 320px) {
   .section-indicator .pure-menu-list .section-indicator-header .section-indicator-selector {
     position: static;
     order: 1;
@@ -386,7 +386,7 @@
 .pcssc-collapsing-menu.pcssc-menu-left {
   left: 0;
 }
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 320px) {
   .pcssc-collapsing-menu {
     height: 0;
   }
@@ -394,7 +394,7 @@
     display: none;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 959px) {
   .pcssc-collapsing-menu {
     top: 0;
     bottom: 0;
@@ -535,7 +535,7 @@ body .section-indicator-content {
 body .section-indicator-header:nth-child(2) .section-indicator-selector {
   margin-left: 10%;
 }
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 320px) {
   body .section-indicator-header:nth-child(2) .section-indicator-selector {
     margin-left: 0;
   }
@@ -543,7 +543,7 @@ body .section-indicator-header:nth-child(2) .section-indicator-selector {
 body .section-indicator-header:last-child .section-indicator-selector {
   margin-left: 20%;
 }
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 320px) {
   body .section-indicator-header:last-child .section-indicator-selector {
     margin-left: 0;
   }
