@@ -271,12 +271,14 @@
                         <em>NOTE: A few styles have been applied here for illustrative purposes. The actual
                             styling of an alert is, in keeping with the spirit of Pure, up to you.</em>
                     </p>
-                    <input type="checkbox" id="close-alert" class="alert-toggle pcssc-invisible"/>
-                    <div class="alert alert-success alert-dismissible" role="alert">
-                        <span><strong>Uh oh...</strong> Something happened...</span>
-                        <label for="close-alert" class="close-alert" aria-label="Close">
-                            <span aria-invisible="true">&times;</span>
-                        </label>
+                    <div class="pcssc-alert">
+                        <input type="checkbox" id="close-alert" class="alert-toggle pcssc-invisible"/>
+                        <div class="alert alert-success alert-dismissible" role="alert">
+                            <span><strong>Uh oh...</strong> Something happened...</span>
+                            <label for="close-alert" class="close-alert" aria-label="Close">
+                                <span aria-invisible="true">&times;</span>
+                            </label>
+                        </div>
                     </div>
 
                     <div style="background: #ffffff; margin-top: 50px; overflow:auto;width:auto;border:solid gray;margin-top: 50px;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre
@@ -470,18 +472,21 @@
                     </div>
 
 
-<div style="background: #ffffff; margin-top: 50px; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">
+                    <div style="background: #ffffff; margin-top: 50px; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre
+                            style="margin: 0; line-height: 125%">
 &lt;div class=<span style="color: #a31515">&quot;pcssc-collapse&quot;</span>&gt;
-    &lt;label for=<span style="color: #a31515">&quot;collapse-toggle&quot;</span> class=<span style="color: #a31515">&quot;collapse-button pure-button&quot;</span> aria-label=<span style="color: #a31515">&quot;Toggle&quot;</span>&gt;
+    &lt;label for=<span style="color: #a31515">&quot;collapse-toggle&quot;</span> class=<span style="color: #a31515">&quot;collapse-button pure-button&quot;</span> aria-label=<span
+                            style="color: #a31515">&quot;Toggle&quot;</span>&gt;
         &lt;span&gt;Toggle&lt;/span&gt;
     &lt;/label&gt;
-    &lt;input type=<span style="color: #a31515">&quot;checkbox&quot;</span> id=<span style="color: #a31515">&quot;collapse-toggle&quot;</span> class=<span style="color: #a31515">&quot;collapse-toggle pcssc-invisible&quot;</span>/&gt;
+    &lt;input type=<span style="color: #a31515">&quot;checkbox&quot;</span> id=<span style="color: #a31515">&quot;collapse-toggle&quot;</span> class=<span
+                            style="color: #a31515">&quot;collapse-toggle pcssc-invisible&quot;</span>/&gt;
     &lt;div class=<span style="color: #a31515">&quot;collapse-content pcssc-invisible&quot;</span>&gt;
         Pooka pooka!
     &lt;/div&gt;
 &lt;/div&gt;
-</pre></div>
-
+</pre>
+                    </div>
 
 
                     <h3>Toggling Button Label Collapse</h3>

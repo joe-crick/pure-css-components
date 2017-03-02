@@ -151,14 +151,14 @@
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-.alert-toggle:checked + .alert {
+.pcssc-alert .alert-toggle:checked + .alert {
   display: none;
 }
-.alert {
+.pcssc-alert .alert {
   display: flex;
   justify-content: space-between;
 }
-.alert .close-alert {
+.pcssc-alert .alert .close-alert {
   cursor: pointer;
 }
 .pcssc-carousel {
