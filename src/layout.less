@@ -105,7 +105,7 @@ body {
   .pcssc-collapsing-menu {
     background: @black;
 
-    .dropdown:focus + .dropdown-content {
+    .dropdown:focus + .pcssc-dropdown-content {
       transition: all 0.2s ease-out;
     }
 
@@ -115,7 +115,7 @@ body {
 
   }
 
-  .dropdown-content {
+  .pcssc-dropdown-content {
     z-index: 1;
     transition: visibility 0.5s;
     background-color: @white;
@@ -130,6 +130,7 @@ body {
       padding: 0;
       width: 160px;
       border: 0;
+      border-radius: 0;
 
       @media @medium-device {
         top: 38px;
@@ -180,7 +181,7 @@ body {
 
   }
 
-  .popover {
+  .pcssc-popover {
     background-color: @white;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 0.3rem;
