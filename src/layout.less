@@ -105,8 +105,13 @@ body {
   .pcssc-collapsing-menu {
     background: @black;
 
-    .dropdown:focus + .pcssc-dropdown-content {
-      transition: all 0.2s ease-out;
+    .pcssc-dropdown-content {
+      transition: visibility 1s, opacity 1s;
+      opacity: 0;
+    }
+
+    .pcssc-dropdown:focus + .pcssc-dropdown-content {
+      opacity: 1;
     }
 
     .pure-menu-heading {

@@ -461,8 +461,12 @@ body .pure-menu-heading:hover {
 body .pcssc-collapsing-menu {
   background: #191818;
 }
-body .pcssc-collapsing-menu .dropdown:focus + .pcssc-dropdown-content {
-  transition: all 0.2s ease-out;
+body .pcssc-collapsing-menu .pcssc-dropdown-content {
+  transition: visibility 1s, opacity 1s;
+  opacity: 0;
+}
+body .pcssc-collapsing-menu .pcssc-dropdown:focus + .pcssc-dropdown-content {
+  opacity: 1;
 }
 body .pcssc-collapsing-menu .pure-menu-heading {
   border-bottom: 1px solid #333333;
