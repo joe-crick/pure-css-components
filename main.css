@@ -268,41 +268,19 @@
 .pcssc-collapse.collapse-toggle-button .collapse-toggle:checked + .collapse-button .collapse-button-label:last-child {
   display: inline;
 }
-.tooltip {
+.pcssc-tooltip {
   display: inline-block;
 }
-@media only screen and (min-width: 320px) {
-  .tooltip {
-    min-width: 0;
-    font-size: 12px;
-  }
-}
-.tooltip .tooltip-target {
+.pcssc-tooltip .tooltip-target {
   cursor: help;
 }
-.tooltip .tooltip-target:hover + .tooltip-body {
+.pcssc-tooltip .tooltip-target:hover + .tooltip-body {
   display: block;
 }
-.tooltip .tooltip-body {
+.pcssc-tooltip .tooltip-body {
   display: none;
   position: absolute;
-  padding: 20px;
-  text-align: justify;
-  min-width: 250px;
-  max-width: 350px;
-  z-index: 2000;
-}
-@media only screen and (min-width: 768px) {
-  .tooltip .tooltip-body {
-    min-width: 200px;
-  }
-}
-@media only screen and (min-width: 320px) {
-  .tooltip .tooltip-body {
-    left: -150px;
-    max-width: 200px;
-    min-width: 100px;
-  }
+  z-index: 1500;
 }
 .section-indicator {
   list-style: none;
@@ -432,17 +410,46 @@ body .alert-success {
   background-color: #dff0d8;
   border: 1px solid green;
 }
-body .tooltip {
+body .pcssc-tooltip {
   margin-bottom: 30px;
 }
-body .tooltip .tooltip-target {
+@media only screen and (min-width: 320px) {
+  body .pcssc-tooltip {
+    min-width: 0;
+    font-size: 12px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  body .pcssc-tooltip {
+    font-size: inherit;
+  }
+}
+body .pcssc-tooltip .tooltip-target {
   border: 1px solid lightgrey;
   border-radius: 5px;
   padding: 5px;
 }
-body .tooltip .tooltip-body {
+body .pcssc-tooltip .tooltip-body {
   margin-top: -90px;
   margin-left: 100px;
+  text-align: justify;
+  padding: 20px;
+  min-width: 250px;
+  max-width: 350px;
+}
+@media only screen and (min-width: 320px) {
+  body .pcssc-tooltip .tooltip-body {
+    left: -150px;
+    max-width: 200px;
+    min-width: 100px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  body .pcssc-tooltip .tooltip-body {
+    min-width: 200px;
+    max-width: 300px;
+    left: inherit;
+  }
 }
 body .pure-menu-heading {
   background-color: #191818;

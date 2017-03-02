@@ -49,8 +49,17 @@ body {
     border: 1px solid green;
   }
 
-  .tooltip {
+  .pcssc-tooltip {
     margin-bottom: 30px;
+
+    @media @smart-phone {
+      min-width: 0;
+      font-size: 12px;
+    }
+
+    @media @medium-device {
+      font-size: inherit;
+    }
 
     .tooltip-target {
       border: 1px solid lightgrey;
@@ -61,6 +70,23 @@ body {
     .tooltip-body {
       margin-top: -90px;
       margin-left: 100px;
+      text-align: justify;
+      padding: 20px;
+      min-width: 250px;
+      max-width: 350px;
+
+      @media @smart-phone {
+        left: -150px;
+        max-width: 200px;
+        min-width: 100px;
+      }
+
+      @media @medium-device {
+        min-width: 200px;
+        max-width: 300px;
+        left: inherit;
+      }
+
     }
 
   }
