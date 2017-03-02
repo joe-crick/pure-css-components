@@ -516,12 +516,12 @@ body .pcssc-dropdown-content .dropdown-menu-item .dropdown-action-item:hover {
   color: #ffffff;
   background: #4dbbdb;
 }
-body .pcssc-popover {
+body .pcssc-popover .popover {
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.3rem;
 }
-body .pcssc-popover .popover-title {
+body .pcssc-popover .popover .popover-title {
   font-size: 1rem;
   background-color: #f7f7f7;
   border-bottom: 1px solid #ebebeb;
