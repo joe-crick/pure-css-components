@@ -16,54 +16,72 @@
     <body>
 
         <div id="layout">
-            <a href="#menu" id="menuLink" class="menu-link">
-                <span></span>
-            </a>
-            <div id="menu">
-                <div class="pure-menu">
-                    <a class="pure-menu-heading" href="#top">Pure
-                        <div class="small-caps">components</div>
-                    </a>
-                    <ul class="pure-menu-list">
-                        <li class="pure-menu-item">
-                            <a href="#installation" class="pure-menu-link">Installation</a>
-                        </li>
-                        <li class="pure-menu-item menu-item-divided">
-                            <a href="#accordion" class="pure-menu-link">Accordion</a>
-                        </li>
-                        <li class="pure-menu-item">
-                            <a href="#alert" class="pure-menu-link">Alert</a>
-                        </li>
-                        <li class="pure-menu-item">
-                            <a href="#carousel" class="pure-menu-link">Carousel</a>
-                        </li>
-                        <li class="pure-menu-item">
-                            <a href="#collapse" class="pure-menu-link">Collapse</a>
-                        </li>
-                        <li class="pure-menu-item">
-                            <a href="#dropdown" class="pure-menu-link">Dropdown</a>
-                        </li>
-                        <li class="pure-menu-item">
-                            <a href="#modal" class="pure-menu-link">Modal</a>
-                        </li>
-                        <li class="pure-menu-item">
-                            <a href="#popover" class="pure-menu-link">Popover</a>
-                        </li>
-                        <li class="pure-menu-item">
-                            <a href="#tabs" class="pure-menu-link">Tabs</a>
-                        </li>
-                        <li class="pure-menu-item">
-                            <a href="#tooltip" class="pure-menu-link">Tooltip</a>
-                        </li>
-                        <li class="pure-menu-item menu-item-divided ">
-                            <a href="#js-utils" class="pure-menu-link">JS Utils</a>
-                        </li>
-                        <li class="pure-menu-item menu-item-divided ">
-                            <a href="https://github.com/joe-crick/pure-css-components/releases" class="pure-menu-link">Releases</a>
-                        </li>
-                    </ul>
+
+            <div class="position-fix-this">
+                <div tabindex="0" class="menu-link dropdown">
+                    <span></span>
                 </div>
+                <ul class="dropdown-content pure-menu-list pure-menu">
+                    <li class="pure-menu-item">
+                        <a href="#collapse" class="pure-menu-link">Collapse</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a href="#dropdown" class="pure-menu-link">Dropdown</a>
+                    </li>
+                </ul>
             </div>
+
+            <!--<div class="full-page-menu">-->
+                <!--<a href="#menu" id="menuLink" class="menu-link pcssc-menu-extend">-->
+                    <!--<span></span>-->
+                <!--</a>-->
+                <!--<div class="pcssc-menu">-->
+                    <!--<div class="pure-menu">-->
+                        <!--<a class="pure-menu-heading" href="#top">Pure-->
+                            <!--<div class="small-caps">components</div>-->
+                        <!--</a>-->
+                        <!--<ul class="pure-menu-list">-->
+                            <!--<li class="pure-menu-item">-->
+                                <!--<a href="#installation" class="pure-menu-link">Installation</a>-->
+                            <!--</li>-->
+                            <!--<li class="pure-menu-item menu-item-divided">-->
+                                <!--<a href="#accordion" class="pure-menu-link">Accordion</a>-->
+                            <!--</li>-->
+                            <!--<li class="pure-menu-item">-->
+                                <!--<a href="#alert" class="pure-menu-link">Alert</a>-->
+                            <!--</li>-->
+                            <!--<li class="pure-menu-item">-->
+                                <!--<a href="#carousel" class="pure-menu-link">Carousel</a>-->
+                            <!--</li>-->
+                            <!--<li class="pure-menu-item">-->
+                                <!--<a href="#collapse" class="pure-menu-link">Collapse</a>-->
+                            <!--</li>-->
+                            <!--<li class="pure-menu-item">-->
+                                <!--<a href="#dropdown" class="pure-menu-link">Dropdown</a>-->
+                            <!--</li>-->
+                            <!--<li class="pure-menu-item">-->
+                                <!--<a href="#modal" class="pure-menu-link">Modal</a>-->
+                            <!--</li>-->
+                            <!--<li class="pure-menu-item">-->
+                                <!--<a href="#popover" class="pure-menu-link">Popover</a>-->
+                            <!--</li>-->
+                            <!--<li class="pure-menu-item">-->
+                                <!--<a href="#tabs" class="pure-menu-link">Tabs</a>-->
+                            <!--</li>-->
+                            <!--<li class="pure-menu-item">-->
+                                <!--<a href="#tooltip" class="pure-menu-link">Tooltip</a>-->
+                            <!--</li>-->
+                            <!--<li class="pure-menu-item menu-item-divided ">-->
+                                <!--<a href="#js-utils" class="pure-menu-link">JS Utils</a>-->
+                            <!--</li>-->
+                            <!--<li class="pure-menu-item menu-item-divided ">-->
+                                <!--<a href="https://github.com/joe-crick/pure-css-components/releases"-->
+                                   <!--class="pure-menu-link">Releases</a>-->
+                            <!--</li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
 
             <div id="main">
                 <a href="https://github.com/you">
@@ -107,17 +125,21 @@
                     </p>
                     <p>
                         Like Pure CSS, Pure.CSS Components is very small. It is only 2KB* (minified and zipped). Each
-                        component is also available as a module. So, if you only need modals, and nothing else, you don't have to
+                        component is also available as a module. So, if you only need modals, and nothing else, you
+                        don't have to
                         include the entire package.
                     </p>
                     <p>
                         Finally, please note that Pure.CSS Components makes liberal use of
-                        <a href="http://caniuse.com/#search=flexbox" target="_blank"><strong>flexbox</strong></a>. Therefore,
+                        <a href="http://caniuse.com/#search=flexbox" target="_blank"><strong>flexbox</strong></a>.
+                        Therefore,
                         it is only supported on more modern browsers (IE11*, FF 50, Chrome 49, Safari 10, Opera 43).
                     </p>
                     <p>
-                        *IE11, which has a known buggy implementation of flexbox, has been quickly tested. My quick tests indicated
-                        that you shouldn't have any problems using Pure.CSS Components on IE11; however, <em>caveat emptor</em>.
+                        *IE11, which has a known buggy implementation of flexbox, has been quickly tested. My quick
+                        tests indicated
+                        that you shouldn't have any problems using Pure.CSS Components on IE11; however, <em>caveat
+                        emptor</em>.
                     </p>
                 </div>
 
@@ -818,7 +840,8 @@
                     <h3>Side tabs</h3>
 
                     <p>
-                        Note: Side tab content is positioned absolutely. You will (currently) need to set the distance of the tab
+                        Note: Side tab content is positioned absolutely. You will (currently) need to set the distance
+                        of the tab
                         content from the tabs. For example, for a left-side tab:
                     </p>
                     <p>
@@ -868,15 +891,18 @@
                     </ul>
 
                     <p>
-                        To make tab headings left sided, simply add the <strong>left-accordion-side</strong> class to the
+                        To make tab headings left sided, simply add the <strong>left-accordion-side</strong> class to
+                        the
                         tab set:
                     </p>
 
-                    <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">
+                    <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre
+                            style="margin: 0; line-height: 125%">
 &lt;ul class=<span style="color: #a31515">&quot;accordion accordion-tab left-accordion-side&quot;</span>&gt;
     <span style="color: #008000">&lt;!-- Tab Content Here --&gt;</span>
 &lt;/ul&gt;
-</pre></div>
+</pre>
+                    </div>
 
                     <a name="right-side-tabs"></a>
                     <h4>Right side tabs</h4>
@@ -918,15 +944,18 @@
                     </ul>
 
                     <p>
-                        To make tab headings right sided, simply add the <strong>right-accordion-side</strong> class to the
+                        To make tab headings right sided, simply add the <strong>right-accordion-side</strong> class to
+                        the
                         tab set:
                     </p>
 
-                    <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">
+                    <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre
+                            style="margin: 0; line-height: 125%">
 &lt;ul class=<span style="color: #a31515">&quot;accordion accordion-tab right-accordion-side&quot;</span>&gt;
     <span style="color: #008000">&lt;!-- Tab Content Here --&gt;</span>
 &lt;/ul&gt;
-</pre></div>
+</pre>
+                    </div>
 
 
                 </div>
