@@ -75,16 +75,16 @@
   display: none;
   width: 100%;
 }
-.dropdown {
+.pcssc-dropdown {
   position: relative;
   cursor: pointer;
   display: inline-block;
 }
-.dropdown:focus {
+.pcssc-dropdown:focus {
   pointer-events: none;
   outline: none;
 }
-.dropdown:focus + .dropdown-content {
+.pcssc-dropdown:focus + .dropdown-content {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
