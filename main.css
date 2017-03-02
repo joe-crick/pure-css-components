@@ -497,6 +497,11 @@ body .dropdown-content.pure-menu {
 }
 @media only screen and (min-width: 768px) {
   body .dropdown-content.pure-menu {
+    top: 38px;
+  }
+}
+@media only screen and (min-width: 959px) {
+  body .dropdown-content.pure-menu {
     top: 50px;
   }
 }
