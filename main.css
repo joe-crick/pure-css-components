@@ -379,31 +379,33 @@
 .section-indicator .pure-menu-list .section-indicator-header .section-indicator-header {
   display: inline;
 }
-.pcssc-menu {
+.pcssc-collapsing-menu {
   position: fixed;
   z-index: 1000;
+}
+.pcssc-collapsing-menu.pcssc-menu-left {
   left: 0;
 }
 @media only screen and (min-width: 480px) {
-  .pcssc-menu .pure-menu-heading {
+  .pcssc-collapsing-menu .pure-menu-heading {
     display: none;
   }
 }
 @media only screen and (min-width: 768px) {
-  .pcssc-menu .menu-link {
+  .pcssc-collapsing-menu .menu-link {
     display: none;
   }
-  .pcssc-menu .pure-menu-heading {
+  .pcssc-collapsing-menu .pure-menu-heading {
     display: block;
   }
-  .pcssc-menu .dropdown-content {
+  .pcssc-collapsing-menu .dropdown-content {
     visibility: visible;
   }
 }
-.pcssc-menu .menu-link {
+.pcssc-collapsing-menu .menu-link {
   left: 0;
 }
-.pcssc-menu .dropdown-content {
+.pcssc-collapsing-menu .dropdown-content {
   top: 38px;
   left: -1px;
   border-radius: 0;
