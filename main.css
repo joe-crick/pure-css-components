@@ -271,16 +271,16 @@
   margin-top: 0;
   margin-bottom: 1rem;
 }
-.collapse-toggle:checked + .collapse-content {
+.pcssc-collapse .collapse-toggle:checked + .collapse-content {
   display: block;
 }
-.collapse-toggle-button .collapse-toggle:checked ~ .collapse-content {
+.pcssc-collapse.collapse-toggle-button .collapse-toggle:checked ~ .collapse-content {
   display: block;
 }
-.collapse-toggle-button .collapse-toggle:checked + .collapse-button .collapse-button-label:first-child {
+.pcssc-collapse.collapse-toggle-button .collapse-toggle:checked + .collapse-button .collapse-button-label:first-child {
   display: none;
 }
-.collapse-toggle-button .collapse-toggle:checked + .collapse-button .collapse-button-label:last-child {
+.pcssc-collapse.collapse-toggle-button .collapse-toggle:checked + .collapse-button .collapse-button-label:last-child {
   display: inline;
 }
 .tooltip {

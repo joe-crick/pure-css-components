@@ -1,22 +1,26 @@
-.collapse-toggle:checked + .collapse-content {
-  display: block;
-}
+.pcssc-collapse {
 
-.collapse-toggle-button {
+  .collapse-toggle:checked + .collapse-content {
+    display: block;
+  }
 
-  .collapse-toggle:checked {
+  &.collapse-toggle-button {
 
-    & ~ .collapse-content {
-      display: block;
-    }
+    .collapse-toggle:checked {
 
-    & + .collapse-button {
-      .collapse-button-label:first-child {
-        display: none;
+      & ~ .collapse-content {
+        display: block;
       }
 
-      .collapse-button-label:last-child {
-        display: inline;
+      & + .collapse-button {
+        .collapse-button-label:first-child {
+          display: none;
+        }
+
+        .collapse-button-label:last-child {
+          display: inline;
+        }
+
       }
 
     }

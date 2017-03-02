@@ -104,12 +104,14 @@
                     <h2 class="content-subhead">Pure CSS Components<a class="content-link"></a></h2>
                     <p>
                         Pure CSS doesn't have many components, so I wrote some. And some of the components they have
-                        are missing some useful functionality (unless you add in some JS). <em>Please note, this is still a work in
+                        are missing some useful functionality (unless you add in some JS). <em>Please note, this is
+                        still a work in
                         progress. The usual cautions apply</em>.
                     </p>
                     <p>
                         Like Pure CSS, Pure.CSS Components is very small. It is only 2KB* (minified and zipped). Each
-                        component is also available as a module. So, if you only need <strong>modals</strong>, and nothing else, you
+                        component is also available as a module. So, if you only need <strong>modals</strong>, and
+                        nothing else, you
                         don't have to
                         include the entire package.
                     </p>
@@ -457,33 +459,34 @@
 
                     <h3>Basic Collapse</h3>
 
-                    <label for="collapse-toggle" class="collapse-button pure-button" aria-label="Toggle">
-                        <span>Toggle</span>
-                    </label>
-                    <input type="checkbox" id="collapse-toggle" class="collapse-toggle pcssc-invisible"/>
-                    <div class="collapse-content pcssc-invisible">
-                        Pooka pooka!
+                    <div class="pcssc-collapse">
+                        <label for="collapse-toggle" class="collapse-button pure-button" aria-label="Toggle">
+                            <span>Toggle</span>
+                        </label>
+                        <input type="checkbox" id="collapse-toggle" class="collapse-toggle pcssc-invisible"/>
+                        <div class="collapse-content pcssc-invisible">
+                            Pooka pooka!
+                        </div>
                     </div>
 
 
-                    <div style="background: #ffffff; margin-top: 50px; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre
-                            style="margin: 0; line-height: 125%">
-&lt;label for=<span style="color: #a31515">&quot;collapse-toggle&quot;</span> class=<span style="color: #a31515">&quot;collapse-button pure-button&quot;</span> aria-label=<span
-                            style="color: #a31515">&quot;Toggle&quot;</span>&gt;
-    &lt;span&gt;Toggle&lt;/span&gt;
-&lt;/label&gt;
-&lt;input type=<span style="color: #a31515">&quot;checkbox&quot;</span> id=<span style="color: #a31515">&quot;collapse-toggle&quot;</span> class=<span
-                            style="color: #a31515">&quot;collapse-toggle pcssc-invisible&quot;</span>/&gt;
-&lt;div class=<span style="color: #a31515">&quot;collapse-content pcssc-invisible&quot;</span>&gt;
-    Pooka pooka!
+<div style="background: #ffffff; margin-top: 50px; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">
+&lt;div class=<span style="color: #a31515">&quot;pcssc-collapse&quot;</span>&gt;
+    &lt;label for=<span style="color: #a31515">&quot;collapse-toggle&quot;</span> class=<span style="color: #a31515">&quot;collapse-button pure-button&quot;</span> aria-label=<span style="color: #a31515">&quot;Toggle&quot;</span>&gt;
+        &lt;span&gt;Toggle&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;input type=<span style="color: #a31515">&quot;checkbox&quot;</span> id=<span style="color: #a31515">&quot;collapse-toggle&quot;</span> class=<span style="color: #a31515">&quot;collapse-toggle pcssc-invisible&quot;</span>/&gt;
+    &lt;div class=<span style="color: #a31515">&quot;collapse-content pcssc-invisible&quot;</span>&gt;
+        Pooka pooka!
+    &lt;/div&gt;
 &lt;/div&gt;
-</pre>
-                    </div>
+</pre></div>
+
 
 
                     <h3>Toggling Button Label Collapse</h3>
 
-                    <div class="collapse-toggle-button">
+                    <div class="pcssc-collapse collapse-toggle-button">
                         <input type="checkbox" id="collapse-toggle-button" class="collapse-toggle pcssc-invisible"/>
                         <label for="collapse-toggle-button" class="collapse-button pure-button" aria-label="Toggle">
                             <span class="collapse-button-label">Open</span>
@@ -496,7 +499,7 @@
 
                     <div style="background: #ffffff; margin-top: 50px;overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre
                             style="margin: 0; line-height: 125%">
-&lt;div class=<span style="color: #a31515">&quot;collapse-toggle-button&quot;</span>&gt;
+&lt;div class=<span style="color: #a31515">&quot;pcssc-collapse collapse-toggle-button&quot;</span>&gt;
     &lt;input type=<span style="color: #a31515">&quot;checkbox&quot;</span> id=<span style="color: #a31515">&quot;collapse-toggle-button&quot;</span> class=<span
                             style="color: #a31515">&quot;collapse-toggle pcssc-invisible&quot;</span>/&gt;
     &lt;label for=<span style="color: #a31515">&quot;collapse-toggle-button&quot;</span> class=<span
@@ -551,12 +554,15 @@
 
                     <p>
                         The menu on the left side of this page is an example of a left-side collapsing menu. The
-                        collapsing menu builds off of the <a href="#dropdown"><strong>dropdown</strong></a> component, and
-                        Pure CSS' vertical <a href="https://purecss.io/menus/"><strong>menu</strong></a>. As a stand-alone module, the collapsing
+                        collapsing menu builds off of the <a href="#dropdown"><strong>dropdown</strong></a> component,
+                        and
+                        Pure CSS' vertical <a href="https://purecss.io/menus/"><strong>menu</strong></a>. As a
+                        stand-alone module, the collapsing
                         menu requires both <strong>dropdown.css</strong> and <strong>menu.css</strong>.
                     </p>
 
-<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">
+                    <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre
+                            style="margin: 0; line-height: 125%">
 &lt;div class=<span style="color: #a31515">&quot;pcssc-collapsing-menu pcssc-menu-left&quot;</span>&gt;
     &lt;a class=<span style="color: #a31515">&quot;pure-menu-heading&quot;</span> href=<span style="color: #a31515">&quot;#top&quot;</span>&gt;Pure
         &lt;div class=<span style="color: #a31515">&quot;small-caps&quot;</span>&gt;components&lt;/div&gt;
@@ -576,8 +582,8 @@
         &lt;/li&gt;
     &lt;/ul&gt;
 &lt;/div&gt;
-</pre></div>
-
+</pre>
+                    </div>
 
 
                 </div>
